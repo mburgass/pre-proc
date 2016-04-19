@@ -140,8 +140,39 @@ NWT_Jobs = NWT_Employment2 %>% separate(Year,c("X","Year"),remove=T,sep="X")%>% 
   group_by(Year)%>%
   dplyr::summarize(Marine.Jobs = sum(Marine.Jobs, na.rm=T))%>%
   ungroup()
-NWT_Jobs$Region <- "NWT"
+NWT_Jobs$Region <- "Beaufort"
 NWT_jobs_final=NWT_Jobs[c(3,1,2)]
 NWT_jobs_final
 
-##Work out Arctic ocean employment as percentage of NWT to calculate Arctic Ocean area marine jobs.
+##Beaufort Delta area accounts for ~14.2% of NWT employment based on data from
+##C:\Users\MB4514\Documents\github\pre-proc\Livelihoods\Employment_Figures\Raw files\Canada\Community Labour Force Activity, 1986 to 2014.xlsx
+##Now calculate Beaufort Delta region based on 14.2% of NWT_jobs_final
+
+NWT_jobs_final=dplyr::mutate(NWT_jobs_final, Marine.Jobs = (NWT_jobs_final$Marine.Jobs/100)*14.2)
+NWT_jobs_final$Marine.Jobs<- round(NWT_jobs_final$Marine.Jobs, digits=0)
+
+# Nunavut -----------------------------------------------------------------
+
+Nunavut_Employment = read_excel("Livelihoods/Employment_Figures/Canada/Nunavut_Employment_2008_2014.xlsx", sheet = 1, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Nunavut_Employment<-data.frame(Nunavut_Employment)
+Nunavut_Employment2 = dplyr::filter(Nunavut_Employment, (Job.Type %in% c("Fishing, Hunting, Trapping, Mining and Quarrying", "Transportation and Warehousing", "Accommodation and Food Services")))
+## Job types quite general - taken ones with most likely marine connections.
+
+Nunavut_Employment2<-gather(Nunavut_Employment2, "Year", "Marine.Jobs", 2:8)
+Nunavut_Employment2<-select(Nunavut_Employment2, -Job.Type)
+Nunavut_Jobs = Nunavut_Employment2 %>% separate(Year,c("X","Year"),remove=T,sep="X")%>%
+  select(Year, Marine.Jobs)%>%
+  group_by(Year)%>%
+  dplyr::summarize(Marine.Jobs = sum(Marine.Jobs, na.rm=T))%>%
+  ungroup()
+Nunavut_Jobs
+Nunavut_Jobs$Region <- "Nunavut"
+Nunavut_jobs_final=Nunavut_Jobs[c(3,1,2)]
+Nunavut_jobs_final
+
+
+# Canada Join -------------------------------------------------------------
+
+canada_jobs = rbind(NWT_jobs_final, Nunavut_jobs_final)
+canada_jobs
+write.csv(canada_jobs, "Canada_Jobs.csv")
