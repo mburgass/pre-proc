@@ -209,6 +209,7 @@ Alaska_Employment14 <- dplyr::tbl_df(Alaska_Employment14)
 Alaska_Employment14 <- dplyr::select(Alaska_Employment14, AREANAME, NAICS.DESCRIPTION, NA., NA..1, NA..2, AVERAGE.EMPLOYMENT)
 Alaska_Employment14 <- dplyr::filter(Alaska_Employment14, AVERAGE.EMPLOYMENT > 0)
 Alaska_Employment14 <- dplyr::filter(Alaska_Employment14, (NA. %in% c("NATURAL RESOURCES AND MINING", "MANUFACTURING", "TRADE, TRANSPORTATION AND UTILITIES", "LEISURE AND HOSPITALITY" )))
+Alaska_Employment14$Year <- "2014"
 Alaska_Employment14
 
 ##Not really any marine jobs listed in these areas. National figures don't seem to be matched by the regional figures though..?
@@ -221,6 +222,7 @@ Alaska_Employment13 <- dplyr::tbl_df(Alaska_Employment13)
 Alaska_Employment13 <- dplyr::select(Alaska_Employment13, AREANAME, NAICS.DESCRIPTION, NA., NA..1, NA..2, AVERAGE.EMPLOYMENT)
 Alaska_Employment13 <- dplyr::filter(Alaska_Employment13, AVERAGE.EMPLOYMENT > 0)
 Alaska_Employment13 <- dplyr::filter(Alaska_Employment13, (NA. %in% c("NATURAL RESOURCES AND MINING", "MANUFACTURING", "TRADE, TRANSPORTATION AND UTILITIES", "LEISURE AND HOSPITALITY" )))
+Alaska_Employment13$Year <- "2013"
 Alaska_Employment13
 
 
@@ -232,6 +234,7 @@ Alaska_Employment12 <- dplyr::tbl_df(Alaska_Employment12)
 Alaska_Employment12 <- dplyr::select(Alaska_Employment12, AREANAME, NAICS.DESCRIPTION, NA., NA..1, NA..2, AVERAGE.EMPLOYMENT)
 Alaska_Employment12 <- dplyr::filter(Alaska_Employment12, AVERAGE.EMPLOYMENT > 0)
 Alaska_Employment12 <- dplyr::filter(Alaska_Employment12, (NA. %in% c("NATURAL RESOURCES AND MINING", "MANUFACTURING", "TRADE, TRANSPORTATION AND UTILITIES", "LEISURE AND HOSPITALITY" )))
+Alaska_Employment12$Year <- "2012"
 Alaska_Employment12
 
 # 2011 --------------------------------------------------------------------
@@ -243,6 +246,7 @@ Alaska_Employment11 <- dplyr::select(Alaska_Employment11, AREANAME, NAICS.DESCRI
 Alaska_Employment11 <- dplyr::filter(Alaska_Employment11, AVERAGE.EMPLOYMENT > 0)
 Alaska_Employment11 <- dplyr::filter(Alaska_Employment11, (NA. %in% c("NATURAL RESOURCES & MINING", "MANUFACTURING", "TRADE, TRANS. & UTILITIES", "LEISURE & HOSPITALITY" )))
 ##Note slight difference in Job types i.e. use of & rather than and. To correct later
+Alaska_Employment11$Year <- "2011"
 Alaska_Employment11
 
 # 2010 --------------------------------------------------------------------
@@ -253,6 +257,7 @@ Alaska_Employment10 <- dplyr::tbl_df(Alaska_Employment10)
 Alaska_Employment10 <- dplyr::select(Alaska_Employment10, AREANAME, NAICS.DESCRIPTION, NA., NA..1, NA..2, AVERAGE.EMPLOYMENT)
 Alaska_Employment10 <- dplyr::filter(Alaska_Employment10, AVERAGE.EMPLOYMENT > 0)
 Alaska_Employment10 <- dplyr::filter(Alaska_Employment10, (NA. %in% c("NATURAL RESOURCES & MINING", "MANUFACTURING", "TRADE, TRANS. & UTILITIES", "LEISURE & HOSPITALITY" )))
+Alaska_Employment10$Year <- "2010"
 Alaska_Employment10
 
 # 2009 --------------------------------------------------------------------
@@ -263,6 +268,7 @@ Alaska_Employment09 <- dplyr::tbl_df(Alaska_Employment09)
 Alaska_Employment09 <- dplyr::select(Alaska_Employment09, AREANAME, NAICS.DESCRIPTION, NA., NA..1, NA..2, AVERAGE.EMPLOYMENT)
 Alaska_Employment09 <- dplyr::filter(Alaska_Employment09, AVERAGE.EMPLOYMENT > 0)
 Alaska_Employment09 <- dplyr::filter(Alaska_Employment09, (NA. %in% c("NATURAL RESOURCES & MINING", "MANUFACTURING", "TRADE, TRANS. & UTILITIES", "LEISURE & HOSPITALITY" )))
+Alaska_Employment09$Year <- "2009"
 Alaska_Employment09
 
 # 2008 --------------------------------------------------------------------
@@ -273,6 +279,7 @@ Alaska_Employment08 <- dplyr::tbl_df(Alaska_Employment08)
 Alaska_Employment08 <- dplyr::select(Alaska_Employment08, AREANAME, NAICS.DESCRIPTION, NA., NA..1, NA..2, AVERAGE.EMPLOYMENT)
 Alaska_Employment08 <- dplyr::filter(Alaska_Employment08, AVERAGE.EMPLOYMENT > 0)
 Alaska_Employment08 <- dplyr::filter(Alaska_Employment08, (NA. %in% c("NATURAL RESOURCES & MINING", "MANUFACTURING", "TRADE, TRANS. & UTILITIES", "LEISURE & HOSPITALITY" )))
+Alaska_Employment08$Year <- "2008"
 Alaska_Employment08
 
 # 2007 --------------------------------------------------------------------
@@ -283,6 +290,7 @@ Alaska_Employment07 <- dplyr::tbl_df(Alaska_Employment07)
 Alaska_Employment07 <- dplyr::select(Alaska_Employment07, AREANAME, NAICS.DESCRIPTION, NA., NA..1, NA..2, AVERAGE.EMPLOYMENT)
 Alaska_Employment07 <- dplyr::filter(Alaska_Employment07, AVERAGE.EMPLOYMENT > 0)
 Alaska_Employment07 <- dplyr::filter(Alaska_Employment07, (NA. %in% c("NATURAL RESOURCES & MINING", "MANUFACTURING", "TRADE, TRANS. & UTILITIES", "LEISURE & HOSPITALITY" )))
+Alaska_Employment07$Year <- "2007"
 Alaska_Employment07
 
 # 2006 --------------------------------------------------------------------
@@ -293,6 +301,7 @@ Alaska_Employment06 <- dplyr::tbl_df(Alaska_Employment06)
 Alaska_Employment06 <- dplyr::select(Alaska_Employment06, AREANAME, NAICS.DESCRIPTION, NA., NA..1, NA..2, AVERAGE.EMPLOYMENT)
 Alaska_Employment06 <- dplyr::filter(Alaska_Employment06, AVERAGE.EMPLOYMENT > 0)
 Alaska_Employment06 <- dplyr::filter(Alaska_Employment06, (NA. %in% c("NATURAL RESOURCES & MINING", "MANUFACTURING", "TRADE, TRANS. & UTILITIES", "LEISURE & HOSPITALITY" )))
+Alaska_Employment06$Year <- "2006"
 Alaska_Employment06
 
 # 2005 --------------------------------------------------------------------
@@ -303,6 +312,7 @@ Alaska_Employment05 <- dplyr::tbl_df(Alaska_Employment05)
 Alaska_Employment05 <- dplyr::select(Alaska_Employment05, AREANAME, NAICS.DESCRIPTION, NA., NA..1, NA..2, AVERAGE.EMPLOYMENT)
 Alaska_Employment05 <- dplyr::filter(Alaska_Employment05, AVERAGE.EMPLOYMENT > 0)
 Alaska_Employment05 <- dplyr::filter(Alaska_Employment05, (NA. %in% c("NATURAL RESOURCE & MINING", "MANUFACTURING", "TRADE, TRANS. & UTILITIES", "LEISURE & HOSPITALITY" )))
+Alaska_Employment05$Year <- "2005"
 Alaska_Employment05
 ##Slight name change in Resource rather than Resources
 
@@ -314,5 +324,34 @@ Alaska_Employment04 <- dplyr::tbl_df(Alaska_Employment04)
 Alaska_Employment04 <- dplyr::select(Alaska_Employment04, AREANAME, NAICS.DESCRIPTION, NA., NA..1, NA..2, AVERAGE.EMPLOYMENT)
 Alaska_Employment04 <- dplyr::filter(Alaska_Employment04, AVERAGE.EMPLOYMENT > 0)
 Alaska_Employment04 <- dplyr::filter(Alaska_Employment04, (NA. %in% c("NATURAL RESOURCE & MINING", "MANUFACTURING", "TRADE, TRANS. & UTILITIES", "LEISURE & HOSPITALITY" )))
+Alaska_Employment04$Year <- "2004"
 Alaska_Employment04
+
+# Alaska join and sort ----------------------------------------------------
+Alaska_Group = rbind(Alaska_Employment04, Alaska_Employment05, Alaska_Employment06, Alaska_Employment07, Alaska_Employment08, Alaska_Employment09, Alaska_Employment10, Alaska_Employment11, Alaska_Employment12, Alaska_Employment13, Alaska_Employment14)
+Alaska_Group<- select(Alaska_Group, Year, AREANAME, NA., AVERAGE.EMPLOYMENT)
+Alaska_Group<-filter(Alaska_Group, !(NA. %in% c('NATURAL RESOURCE & MINING', 'NATURAL RESOURCES & MINING', 'NATURAL RESOURCES AND MINING')))
+##Dropped natural resource and mining as detailed check of data shows that it is all related to oil/gas/mining - not fishing or trapping
+Alaska_Group<-select(Alaska_Group, Year, AVERAGE.EMPLOYMENT)
+Alaska_Group<-plyr::rename(Alaska_Group, c("AVERAGE.EMPLOYMENT"="Marine.Jobs"))
+Alaska_Jobs = Alaska_Group%>% group_by(Year)%>%
+  dplyr::summarize(Marine.Jobs = sum(Marine.Jobs, na.rm=T))%>%
+  ungroup()
+Alaska_Jobs$Region <- "Alaska"
+Alaska_Jobs<-Alaska_Jobs[c(3,1,2)]
+Alaska_Jobs
+write.csv(Alaska_Jobs, "Alaska_Jobs.csv")
+
+# Russia ------------------------------------------------------------------
+
+
+# 2014 --------------------------------------------------------------------
+
+Russia_Employment14 = read_excel("Livelihoods/Employment_Figures/Russia/Russia_Employment_2010_2014.xlsx", sheet = 1, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Russia_Employment14<-data.frame(Russia_Employment14)
+Russia_Employment14 <- dplyr::tbl_df(Russia_Employment14)
+Russia_Employment14 <- dplyr::filter(Russia_Employment14, !(District %in% c("North-western Federal District", "Including Nenets Autonomous Okrug", "Without Nenets", "Ural Federal District", "Siberian Federal District", "Far Eastern Federal District")))
+Russia_Employment14<- mutate(Russia_Employment14, "Transport" = Transport.and...communication-of.them...communication)
+Russia_Employment14<- dplyr::select(Russia_Employment14, District, Agriculture..hunting.and.forestry..fishing..fish.farming, Hotels.and...restaurants, Transport)
+Russia_Employment14$Year <- "2014"
 
