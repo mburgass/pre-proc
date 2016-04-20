@@ -176,3 +176,23 @@ Nunavut_jobs_final
 canada_jobs = rbind(NWT_jobs_final, Nunavut_jobs_final)
 canada_jobs
 write.csv(canada_jobs, "Canada_Jobs.csv")
+
+# Greenland ---------------------------------------------------------------
+
+## Only figures for whole country
+Greenland_Employment = read_excel("Livelihoods/Employment_Figures/Greenland/Greenland_Employment_2008_2014.xlsx", sheet = 1, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Greenland_Employment<-data.frame(Greenland_Employment)
+Greenland_Employment2 = dplyr::filter(Greenland_Employment, (Job.Type %in% c("Fishing, hunting & agriculture", "Transportation", "Hotels and restaurants")))
+##Jobs quite general - kept with theme of fishing/ship transport and tourism
+Greenland_Employment2<-select(Greenland_Employment2, -Job.Type)
+Greenland_Jobs = Greenland_Employment2 %>% select(Year, Jobs)%>%
+  group_by(Year)%>%
+  dplyr::summarize(Marine.Jobs = sum(Jobs, na.rm=T))%>%
+  ungroup()
+Greenland_Jobs$Region <- "Greenland"
+Greenland_jobs_final=Greenland_Jobs[c(3,1,2)]
+Greenland_jobs_final
+
+##Check how best to separate out between east and west Greenland? Roughly 80% of people live in West Greenland
+
+write.csv(Greenland_jobs_final, "Greenland_Jobs.csv")
