@@ -350,8 +350,103 @@ write.csv(Alaska_Jobs, "Alaska_Jobs.csv")
 Russia_Employment14 = read_excel("Livelihoods/Employment_Figures/Russia/Russia_Employment_2010_2014.xlsx", sheet = 1, col_names = TRUE, col_types = NULL, na = "", skip = 0)
 Russia_Employment14<-data.frame(Russia_Employment14)
 Russia_Employment14 <- dplyr::tbl_df(Russia_Employment14)
-Russia_Employment14 <- dplyr::filter(Russia_Employment14, !(District %in% c("North-western Federal District", "Including Nenets Autonomous Okrug", "Without Nenets", "Ural Federal District", "Siberian Federal District", "Far Eastern Federal District")))
+Russia_Employment14 <- dplyr::filter(Russia_Employment14, !(District %in% c("North-western Federal District", "Including Nenets Autonomous Okrug", "Without Nenets", "Ural Federal District", "Siberian Federal District", "Far Eastern Federal District", "Republic of Kaerlia")))
 Russia_Employment14<- mutate(Russia_Employment14, "Transport" = Transport.and...communication-of.them...communication)
 Russia_Employment14<- dplyr::select(Russia_Employment14, District, Agriculture..hunting.and.forestry..fishing..fish.farming, Hotels.and...restaurants, Transport)
 Russia_Employment14$Year <- "2014"
+Russia_Employment14$Transport<-Russia_Employment14$Transport*1000
+Russia_Employment14$Agriculture..hunting.and.forestry..fishing..fish.farming<-Russia_Employment14$Agriculture..hunting.and.forestry..fishing..fish.farming*1000
+Russia_Employment14$Hotels.and...restaurants<-Russia_Employment14$Hotels.and...restaurants*1000
+Russia_Employment14<-dplyr::mutate(Russia_Employment14, "Marine.Jobs" = Agriculture..hunting.and.forestry..fishing..fish.farming%>%
+                                     + Transport + Hotels.and...restaurants)
+Russia_Employment14<-select(Russia_Employment14, District, Year, Marine.Jobs)
 
+
+# #2013 -------------------------------------------------------------------
+
+Russia_Employment13 = read_excel("Livelihoods/Employment_Figures/Russia/Russia_Employment_2010_2014.xlsx", sheet = 2, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Russia_Employment13<-data.frame(Russia_Employment13)
+Russia_Employment13 <- dplyr::tbl_df(Russia_Employment13)
+Russia_Employment13 <- dplyr::filter(Russia_Employment13, !(District %in% c("North-western Federal District", "Including Nenets Autonomous Okrug", "Without Nenets", "Ural Federal District", "Siberian Federal District", "Far Eastern Federal District", "Republic of Kaerlia")))
+Russia_Employment13<- mutate(Russia_Employment13, "Transport" = Transport.and...communication-of.them...communication)
+Russia_Employment13<- dplyr::select(Russia_Employment13, District, Agriculture..hunting.and.forestry..fishing..fish.farming, Hotels.and...restaurants, Transport)
+Russia_Employment13$Year <- "2013"
+Russia_Employment13$Transport<-Russia_Employment13$Transport*1000
+Russia_Employment13$Agriculture..hunting.and.forestry..fishing..fish.farming<-Russia_Employment13$Agriculture..hunting.and.forestry..fishing..fish.farming*1000
+Russia_Employment13$Hotels.and...restaurants<-Russia_Employment13$Hotels.and...restaurants*1000
+Russia_Employment13<-dplyr::mutate(Russia_Employment13, "Marine.Jobs" = Agriculture..hunting.and.forestry..fishing..fish.farming%>%
+                                     + Transport + Hotels.and...restaurants)
+Russia_Employment13<-select(Russia_Employment13, District, Year, Marine.Jobs)
+
+
+# #2012 -------------------------------------------------------------------
+Russia_Employment12 = read_excel("Livelihoods/Employment_Figures/Russia/Russia_Employment_2010_2014.xlsx", sheet = 3, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Russia_Employment12<-data.frame(Russia_Employment12)
+Russia_Employment12 <- dplyr::tbl_df(Russia_Employment12)
+Russia_Employment12 <- dplyr::filter(Russia_Employment12, !(District %in% c("North-western Federal District", "Including Nenets Autonomous Okrug", "Without Nenets", "Ural Federal District", "Siberian Federal District", "Far Eastern Federal District", "Republic of Kaerlia")))
+Russia_Employment12<- mutate(Russia_Employment12, "Transport" = Transport.and...communication-of.them...communication)
+Russia_Employment12<- dplyr::select(Russia_Employment12, District, Agriculture..hunting.and.forestry..fishing..fish.farming, Hotels.and...restaurants, Transport)
+Russia_Employment12$Year <- "2012"
+Russia_Employment12$Transport<-Russia_Employment12$Transport*1000
+Russia_Employment12$Agriculture..hunting.and.forestry..fishing..fish.farming<-Russia_Employment12$Agriculture..hunting.and.forestry..fishing..fish.farming*1000
+Russia_Employment12$Hotels.and...restaurants<-Russia_Employment12$Hotels.and...restaurants*1000
+Russia_Employment12<-dplyr::mutate(Russia_Employment12, "Marine.Jobs" = Agriculture..hunting.and.forestry..fishing..fish.farming%>%
+                                     + Transport + Hotels.and...restaurants)
+Russia_Employment12<-select(Russia_Employment12, District, Year, Marine.Jobs)
+
+
+# #2011 -------------------------------------------------------------------
+Russia_Employment11 = read_excel("Livelihoods/Employment_Figures/Russia/Russia_Employment_2010_2014.xlsx", sheet = 4, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Russia_Employment11<-data.frame(Russia_Employment11)
+Russia_Employment11 <- dplyr::tbl_df(Russia_Employment11)
+Russia_Employment11 <- dplyr::filter(Russia_Employment11, !(District %in% c("North-western Federal District", "Including Nenets Autonomous Okrug", "Without Nenets", "Ural Federal District", "Siberian Federal District", "Far Eastern Federal District", "Republic of Kaerlia")))
+Russia_Employment11<- mutate(Russia_Employment11, "Transport" = Transport.and...communication-of.them...communication)
+Russia_Employment11<- dplyr::select(Russia_Employment11, District, Agriculture..hunting.and.forestry..fishing..fish.farming, Hotels.and...restaurants, Transport)
+Russia_Employment11$Year <- "2011"
+Russia_Employment11$Transport<-Russia_Employment11$Transport*1000
+Russia_Employment11$Agriculture..hunting.and.forestry..fishing..fish.farming<-Russia_Employment11$Agriculture..hunting.and.forestry..fishing..fish.farming*1000
+Russia_Employment11$Hotels.and...restaurants<-Russia_Employment11$Hotels.and...restaurants*1000
+Russia_Employment11<-dplyr::mutate(Russia_Employment11, "Marine.Jobs" = Agriculture..hunting.and.forestry..fishing..fish.farming%>%
+                                     + Transport + Hotels.and...restaurants)
+Russia_Employment11<-select(Russia_Employment11, District, Year, Marine.Jobs)
+
+# 2010 --------------------------------------------------------------------
+Russia_Employment10 = read_excel("Livelihoods/Employment_Figures/Russia/Russia_Employment_2010_2014.xlsx", sheet = 5, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Russia_Employment10<-data.frame(Russia_Employment10)
+Russia_Employment10 <- dplyr::tbl_df(Russia_Employment10)
+Russia_Employment10 <- dplyr::filter(Russia_Employment10, !(District %in% c("North-western Federal District", "Including Nenets Autonomous Okrug", "Without Nenets", "Ural Federal District", "Siberian Federal District", "Far Eastern Federal District", "Republic of Kaerlia")))
+Russia_Employment10<- mutate(Russia_Employment10, "Transport" = Transport.and...communication-of.them...communication)
+Russia_Employment10<- dplyr::select(Russia_Employment10, District, Agriculture..hunting.and.forestry..fishing..fish.farming, Hotels.and...restaurants, Transport)
+Russia_Employment10$Year <- "2010"
+Russia_Employment10$Transport<-Russia_Employment10$Transport*1000
+Russia_Employment10$Agriculture..hunting.and.forestry..fishing..fish.farming<-Russia_Employment10$Agriculture..hunting.and.forestry..fishing..fish.farming*1000
+Russia_Employment10$Hotels.and...restaurants<-Russia_Employment10$Hotels.and...restaurants*1000
+Russia_Employment10<-dplyr::mutate(Russia_Employment10, "Marine.Jobs" = Agriculture..hunting.and.forestry..fishing..fish.farming%>%
+                                     + Transport + Hotels.and...restaurants)
+Russia_Employment10<-select(Russia_Employment10, District, Year, Marine.Jobs)
+
+
+# # bind ------------------------------------------------------------------
+
+Russia_Group = rbind(Russia_Employment10, Russia_Employment11, Russia_Employment12, Russia_Employment13, Russia_Employment14)
+Russia_Group_Wide = spread(Russia_Group, District, Marine.Jobs)
+Russia_Group_Wide<-plyr::rename(Russia_Group_Wide, c("Chukotka Autonomous Okrug"="Chukotka"))
+Russia_Group_Wide<-dplyr::mutate(Russia_Group_Wide, Chukotka = (Russia_Group_Wide$`Chukotka`/100)*43.94)
+Russia_Group_Wide$Chukotka<- round(Russia_Group_Wide$Chukotka, digits=0)
+
+Russia_Group_Wide<-plyr::rename(Russia_Group_Wide, c("Krasnoyarsk region"="Krasnoyarsk"))
+Russia_Group_Wide<-dplyr::mutate(Russia_Group_Wide, Krasnoyarsk = (Russia_Group_Wide$`Krasnoyarsk`/100)*1.2)
+Russia_Group_Wide$Krasnoyarsk<- round(Russia_Group_Wide$Krasnoyarsk, digits=0)
+
+Russia_Group_Wide<-plyr::rename(Russia_Group_Wide, c("The Republic of Sakha (Yakutia)"="Sakha"))
+Russia_Group_Wide<-dplyr::mutate(Russia_Group_Wide, Sakha = (Russia_Group_Wide$`Sakha`/100)*1.2)
+Russia_Group_Wide$Sakha<- round(Russia_Group_Wide$Sakha, digits=0)
+##Work out % employment in each region so can amend jobs - Krasnoyarsk region is huge.
+
+##Taymyrsky Dolgano-Nenetsky District in Krasnoyarsk krai = population 34,432. KK population = 2,828,187. 1.2% of the data below
+## Chukotsky, Iulintsky, Chaunsky and Bilibinksy districts in Chukotka = poppulation = 22,201. Chukotka pop = 50,526. 43.94%
+##Sakha coastal districts = population 28,325. sakha pop = 958, 528. 2.96%
+
+Russia_Jobs<- gather(Russia_Group_Wide, District, Marine.Jobs, 2:7)
+Russia_Jobs<-Russia_Jobs[c(2,1,3)]
+write.csv(Russia_Jobs, "Russia_Jobs.csv")
