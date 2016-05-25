@@ -1,0 +1,571 @@
+"","Country","Year","Species","totalcatch"
+"1","East Greenland","1950","Hooded seal",0
+"2","East Greenland","1951","Hooded seal",0
+"3","East Greenland","1952","Hooded seal",0
+"4","East Greenland","1953","Hooded seal",0
+"5","East Greenland","1954","Harp seal",507
+"6","East Greenland","1954","Hooded seal",201
+"7","East Greenland","1955","Harp seal",223
+"8","East Greenland","1955","Hooded seal",344
+"9","East Greenland","1956","Harp seal",185
+"10","East Greenland","1956","Hooded seal",264
+"11","East Greenland","1957","Harp seal",173
+"12","East Greenland","1957","Hooded seal",412
+"13","East Greenland","1958","Harp seal",390
+"14","East Greenland","1958","Hooded seal",365
+"15","East Greenland","1959","Harp seal",175
+"16","East Greenland","1959","Hooded seal",734
+"17","East Greenland","1960","Harp seal",365
+"18","East Greenland","1960","Hooded seal",331
+"19","East Greenland","1961","Harp seal",232
+"20","East Greenland","1961","Hooded seal",1151
+"21","East Greenland","1962","Harp seal",221
+"22","East Greenland","1962","Hooded seal",1314
+"23","East Greenland","1963","Harp seal",235
+"24","East Greenland","1963","Hooded seal",1129
+"25","East Greenland","1964","Harp seal",132
+"26","East Greenland","1964","Hooded seal",918
+"27","East Greenland","1965","Harp seal",78
+"28","East Greenland","1965","Hooded seal",310
+"29","East Greenland","1966","Harp seal",61
+"30","East Greenland","1966","Hooded seal",1052
+"31","East Greenland","1967","Harp seal",64
+"32","East Greenland","1967","Hooded seal",729
+"33","East Greenland","1968","Harp seal",184
+"34","East Greenland","1968","Hooded seal",661
+"35","East Greenland","1969","Harp seal",119
+"36","East Greenland","1969","Hooded seal",411
+"37","East Greenland","1969","Ringed seal",14000
+"38","East Greenland","1970","Bearded seal",372
+"39","East Greenland","1970","Harbour seal",3
+"40","East Greenland","1970","Harp seal",197
+"41","East Greenland","1970","Hooded seal",713
+"42","East Greenland","1970","Ringed seal",18241
+"43","East Greenland","1971","Bearded seal",187
+"44","East Greenland","1971","Harbour seal",2
+"45","East Greenland","1971","Harp seal",68
+"46","East Greenland","1971","Hooded seal",744
+"47","East Greenland","1971","Ringed seal",17568
+"48","East Greenland","1972","Bearded seal",195
+"49","East Greenland","1972","Harbour seal",9
+"50","East Greenland","1972","Harp seal",90
+"51","East Greenland","1972","Hooded seal",1827
+"52","East Greenland","1972","Ringed seal",15770
+"53","East Greenland","1973","Bearded seal",137
+"54","East Greenland","1973","Harbour seal",3
+"55","East Greenland","1973","Harp seal",138
+"56","East Greenland","1973","Hooded seal",677
+"57","East Greenland","1973","Ringed seal",15821
+"58","East Greenland","1974","Bearded seal",123
+"59","East Greenland","1974","Harbour seal",14
+"60","East Greenland","1974","Harp seal",171
+"61","East Greenland","1974","Hooded seal",1218
+"62","East Greenland","1974","Ringed seal",16422
+"63","East Greenland","1975","Bearded seal",114
+"64","East Greenland","1975","Harbour seal",3
+"65","East Greenland","1975","Harp seal",193
+"66","East Greenland","1975","Hooded seal",1085
+"67","East Greenland","1975","Ringed seal",18789
+"68","East Greenland","1976","Bearded seal",296
+"69","East Greenland","1976","Harbour seal",9
+"70","East Greenland","1976","Harp seal",287
+"71","East Greenland","1976","Hooded seal",833
+"72","East Greenland","1976","Ringed seal",16163
+"73","East Greenland","1977","Bearded seal",145
+"74","East Greenland","1977","Harbour seal",7
+"75","East Greenland","1977","Harp seal",93
+"76","East Greenland","1977","Hooded seal",2258
+"77","East Greenland","1977","Ringed seal",13362
+"78","East Greenland","1978","Bearded seal",197
+"79","East Greenland","1978","Harbour seal",1
+"80","East Greenland","1978","Harp seal",438
+"81","East Greenland","1978","Hooded seal",2769
+"82","East Greenland","1978","Ringed seal",13172
+"83","East Greenland","1979","Bearded seal",133
+"84","East Greenland","1979","Harbour seal",3
+"85","East Greenland","1979","Harp seal",189
+"86","East Greenland","1979","Hooded seal",2304
+"87","East Greenland","1979","Ringed seal",14242
+"88","East Greenland","1980","Bearded seal",198
+"89","East Greenland","1980","Harbour seal",6
+"90","East Greenland","1980","Harp seal",353
+"91","East Greenland","1980","Hooded seal",2637
+"92","East Greenland","1980","Ringed seal",12640
+"93","East Greenland","1981","Bearded seal",230
+"94","East Greenland","1981","Harbour seal",6
+"95","East Greenland","1981","Harp seal",476
+"96","East Greenland","1981","Hooded seal",2452
+"97","East Greenland","1981","Ringed seal",17612
+"98","East Greenland","1982","Bearded seal",243
+"99","East Greenland","1982","Harbour seal",1
+"100","East Greenland","1982","Harp seal",317
+"101","East Greenland","1982","Hooded seal",2051
+"102","East Greenland","1982","Ringed seal",14067
+"103","East Greenland","1983","Bearded seal",276
+"104","East Greenland","1983","Harbour seal",0
+"105","East Greenland","1983","Harp seal",414
+"106","East Greenland","1983","Hooded seal",1330
+"107","East Greenland","1983","Ringed seal",15858
+"108","East Greenland","1984","Bearded seal",395
+"109","East Greenland","1984","Harbour seal",0
+"110","East Greenland","1984","Harp seal",586
+"111","East Greenland","1984","Hooded seal",1345
+"112","East Greenland","1984","Ringed seal",20100
+"113","East Greenland","1985","Bearded seal",0
+"114","East Greenland","1985","Harbour seal",0
+"115","East Greenland","1985","Harp seal",0
+"116","East Greenland","1985","Hooded seal",0
+"117","East Greenland","1985","Ringed seal",0
+"118","East Greenland","1986","Harbour seal",0
+"119","East Greenland","1986","Harp seal",570
+"120","East Greenland","1986","Hooded seal",3050
+"121","East Greenland","1987","Bearded seal",247
+"122","East Greenland","1987","Harbour seal",0
+"123","East Greenland","1987","Harp seal",1075
+"124","East Greenland","1987","Hooded seal",2475
+"125","East Greenland","1987","Ringed seal",9322
+"126","East Greenland","1988","Bearded seal",478
+"127","East Greenland","1988","Harbour seal",0
+"128","East Greenland","1988","Harp seal",743
+"129","East Greenland","1988","Hooded seal",367
+"130","East Greenland","1988","Ringed seal",11758
+"131","East Greenland","1989","Bearded seal",67
+"132","East Greenland","1989","Harbour seal",0
+"133","East Greenland","1989","Harp seal",802
+"134","East Greenland","1989","Hooded seal",824
+"135","East Greenland","1989","Ringed seal",10333
+"136","East Greenland","1990","Bearded seal",58
+"137","East Greenland","1990","Harbour seal",0
+"138","East Greenland","1990","Harp seal",779
+"139","East Greenland","1990","Hooded seal",1509
+"140","East Greenland","1990","Ringed seal",10429
+"141","East Greenland","1991","Bearded seal",1051
+"142","East Greenland","1991","Harbour seal",0
+"143","East Greenland","1991","Harp seal",1578
+"144","East Greenland","1991","Hooded seal",4241
+"145","East Greenland","1991","Ringed seal",13526
+"146","East Greenland","1992","Bearded seal",83
+"147","East Greenland","1992","Harbour seal",0
+"148","East Greenland","1992","Harp seal",1465
+"149","East Greenland","1992","Hooded seal",2000
+"150","East Greenland","1992","Ringed seal",12873
+"151","East Greenland","1993","Bearded seal",407
+"152","East Greenland","1993","Harbour seal",44
+"153","East Greenland","1993","Harp seal",3247
+"154","East Greenland","1993","Hooded seal",2832
+"155","East Greenland","1993","Ringed seal",23154
+"156","East Greenland","1994","Bearded seal",424
+"157","East Greenland","1994","Harbour seal",50
+"158","East Greenland","1994","Harp seal",3408
+"159","East Greenland","1994","Hooded seal",3341
+"160","East Greenland","1994","Ringed seal",22863
+"161","East Greenland","1995","Bearded seal",482
+"162","East Greenland","1995","Harbour seal",46
+"163","East Greenland","1995","Harp seal",3905
+"164","East Greenland","1995","Hooded seal",2997
+"165","East Greenland","1995","Ringed seal",24290
+"166","East Greenland","1996","Bearded seal",504
+"167","East Greenland","1996","Harbour seal",36
+"168","East Greenland","1996","Harp seal",4945
+"169","East Greenland","1996","Hooded seal",4106
+"170","East Greenland","1996","Ringed seal",27309
+"171","East Greenland","1997","Bearded seal",549
+"172","East Greenland","1997","Harbour seal",45
+"173","East Greenland","1997","Harp seal",4663
+"174","East Greenland","1997","Hooded seal",3100
+"175","East Greenland","1997","Ringed seal",24387
+"176","East Greenland","1998","Bearded seal",363
+"177","East Greenland","1998","Harbour seal",19
+"178","East Greenland","1998","Harp seal",1780
+"179","East Greenland","1998","Hooded seal",1284
+"180","East Greenland","1998","Ringed seal",14211
+"181","East Greenland","1998","Walrus",7
+"182","East Greenland","1999","Bearded seal",369
+"183","East Greenland","1999","Harbour seal",25
+"184","East Greenland","1999","Harp seal",3696
+"185","East Greenland","1999","Hooded seal",2603
+"186","East Greenland","1999","Ringed seal",14555
+"187","East Greenland","1999","Walrus",26
+"188","East Greenland","2000","Bearded seal",320
+"189","East Greenland","2000","Harbour seal",4
+"190","East Greenland","2000","Harp seal",2572
+"191","East Greenland","2000","Hooded seal",2075
+"192","East Greenland","2000","Ringed seal",12575
+"193","East Greenland","2000","Walrus",7
+"194","East Greenland","2001","Bearded seal",334
+"195","East Greenland","2001","Harbour seal",5
+"196","East Greenland","2001","Harp seal",2598
+"197","East Greenland","2001","Hooded seal",1504
+"198","East Greenland","2001","Ringed seal",12572
+"199","East Greenland","2001","Walrus",10
+"200","East Greenland","2002","Bearded seal",313
+"201","East Greenland","2002","Harbour seal",6
+"202","East Greenland","2002","Harp seal",1915
+"203","East Greenland","2002","Hooded seal",1200
+"204","East Greenland","2002","Ringed seal",13768
+"205","East Greenland","2002","Walrus",34
+"206","East Greenland","2003","Bearded seal",355
+"207","East Greenland","2003","Harbour seal",81
+"208","East Greenland","2003","Harp seal",2872
+"209","East Greenland","2003","Hooded seal",2002
+"210","East Greenland","2003","Ringed seal",13417
+"211","East Greenland","2003","Walrus",11
+"212","East Greenland","2004","Bearded seal",274
+"213","East Greenland","2004","Harbour seal",152
+"214","East Greenland","2004","Harp seal",2831
+"215","East Greenland","2004","Hooded seal",1707
+"216","East Greenland","2004","Ringed seal",13482
+"217","East Greenland","2004","Walrus",3
+"218","East Greenland","2005","Bearded seal",529
+"219","East Greenland","2005","Harbour seal",110
+"220","East Greenland","2005","Harp seal",18338
+"221","East Greenland","2005","Hooded seal",1882
+"222","East Greenland","2005","Ringed seal",16235
+"223","East Greenland","2005","Walrus",16
+"224","East Greenland","2006","Bearded seal",433
+"225","East Greenland","2006","Harbour seal",19
+"226","East Greenland","2006","Harp seal",19466
+"227","East Greenland","2006","Hooded seal",1667
+"228","East Greenland","2006","Ringed seal",16112
+"229","East Greenland","2006","Walrus",5
+"230","East Greenland","2007","Bearded seal",490
+"231","East Greenland","2007","Harbour seal",55
+"232","East Greenland","2007","Harp seal",16365
+"233","East Greenland","2007","Hooded seal",1384
+"234","East Greenland","2007","Ringed seal",14918
+"235","East Greenland","2007","Walrus",10
+"236","East Greenland","2008","Bearded seal",432
+"237","East Greenland","2008","Harbour seal",59
+"238","East Greenland","2008","Harp seal",15404
+"239","East Greenland","2008","Hooded seal",1096
+"240","East Greenland","2008","Ringed seal",12351
+"241","East Greenland","2008","Walrus",9
+"242","East Greenland","2009","Bearded seal",363
+"243","East Greenland","2009","Harbour seal",13
+"244","East Greenland","2009","Harp seal",14837
+"245","East Greenland","2009","Hooded seal",827
+"246","East Greenland","2009","Ringed seal",10882
+"247","East Greenland","2009","Walrus",4
+"248","East Greenland","2010","Bearded seal",315
+"249","East Greenland","2010","Harbour seal",13
+"250","East Greenland","2010","Harp seal",10652
+"251","East Greenland","2010","Hooded seal",771
+"252","East Greenland","2010","Ringed seal",8758
+"253","East Greenland","2010","Walrus",7
+"254","East Greenland","2011","Bearded seal",312
+"255","East Greenland","2011","Harbour seal",10
+"256","East Greenland","2011","Harp seal",10491
+"257","East Greenland","2011","Hooded seal",686
+"258","East Greenland","2011","Ringed seal",8792
+"259","East Greenland","2011","Walrus",5
+"260","East Greenland","2012","Bearded seal",221
+"261","East Greenland","2012","Harbour seal",0
+"262","East Greenland","2012","Harp seal",7681
+"263","East Greenland","2012","Hooded seal",807
+"264","East Greenland","2012","Ringed seal",8695
+"265","East Greenland","2012","Walrus",4
+"266","East Greenland","2013","Bearded seal",186
+"267","East Greenland","2013","Harbour seal",0
+"268","East Greenland","2013","Harp seal",10315
+"269","East Greenland","2013","Hooded seal",561
+"270","East Greenland","2013","Ringed seal",8747
+"271","East Greenland","2013","Walrus",8
+"272","West Greenland","1950","Hooded seal",0
+"273","West Greenland","1951","Hooded seal",0
+"274","West Greenland","1952","Hooded seal",0
+"275","West Greenland","1953","Hooded seal",0
+"276","West Greenland","1954","Harp seal",18912
+"277","West Greenland","1954","Hooded seal",1097
+"278","West Greenland","1955","Harp seal",15445
+"279","West Greenland","1955","Hooded seal",972
+"280","West Greenland","1956","Harp seal",10883
+"281","West Greenland","1956","Hooded seal",593
+"282","West Greenland","1957","Harp seal",12817
+"283","West Greenland","1957","Hooded seal",797
+"284","West Greenland","1958","Harp seal",16705
+"285","West Greenland","1958","Hooded seal",846
+"286","West Greenland","1959","Harp seal",8844
+"287","West Greenland","1959","Hooded seal",780
+"288","West Greenland","1960","Harp seal",15979
+"289","West Greenland","1960","Hooded seal",965
+"290","West Greenland","1961","Harp seal",11886
+"291","West Greenland","1961","Hooded seal",673
+"292","West Greenland","1962","Harp seal",8394
+"293","West Greenland","1962","Hooded seal",545
+"294","West Greenland","1963","Harp seal",10003
+"295","West Greenland","1963","Hooded seal",885
+"296","West Greenland","1964","Harp seal",9140
+"297","West Greenland","1964","Hooded seal",2185
+"298","West Greenland","1965","Harp seal",9251
+"299","West Greenland","1965","Hooded seal",1822
+"300","West Greenland","1966","Harp seal",7029
+"301","West Greenland","1966","Hooded seal",1821
+"302","West Greenland","1967","Harp seal",4215
+"303","West Greenland","1967","Hooded seal",1608
+"304","West Greenland","1968","Harp seal",7026
+"305","West Greenland","1968","Hooded seal",1392
+"306","West Greenland","1969","Harp seal",6383
+"307","West Greenland","1969","Hooded seal",1822
+"308","West Greenland","1969","Ringed seal",22000
+"309","West Greenland","1970","Bearded seal",366
+"310","West Greenland","1970","Harbour seal",74
+"311","West Greenland","1970","Harp seal",6178
+"312","West Greenland","1970","Hooded seal",1412
+"313","West Greenland","1970","Ringed seal",51584
+"314","West Greenland","1970","Walrus",0
+"315","West Greenland","1971","Bearded seal",520
+"316","West Greenland","1971","Harbour seal",90
+"317","West Greenland","1971","Harp seal",5540
+"318","West Greenland","1971","Hooded seal",1634
+"319","West Greenland","1971","Ringed seal",46966
+"320","West Greenland","1971","Walrus",0
+"321","West Greenland","1972","Bearded seal",512
+"322","West Greenland","1972","Harbour seal",62
+"323","West Greenland","1972","Harp seal",5952
+"324","West Greenland","1972","Hooded seal",2383
+"325","West Greenland","1972","Ringed seal",51944
+"326","West Greenland","1972","Walrus",0
+"327","West Greenland","1973","Bearded seal",524
+"328","West Greenland","1973","Harbour seal",46
+"329","West Greenland","1973","Harp seal",9162
+"330","West Greenland","1973","Hooded seal",2654
+"331","West Greenland","1973","Ringed seal",61954
+"332","West Greenland","1973","Walrus",0
+"333","West Greenland","1974","Bearded seal",493
+"334","West Greenland","1974","Harbour seal",54
+"335","West Greenland","1974","Harp seal",7073
+"336","West Greenland","1974","Hooded seal",2801
+"337","West Greenland","1974","Ringed seal",57629
+"338","West Greenland","1974","Walrus",0
+"339","West Greenland","1975","Bearded seal",571
+"340","West Greenland","1975","Harbour seal",69
+"341","West Greenland","1975","Harp seal",5953
+"342","West Greenland","1975","Hooded seal",3679
+"343","West Greenland","1975","Ringed seal",54004
+"344","West Greenland","1975","Walrus",0
+"345","West Greenland","1976","Bearded seal",568
+"346","West Greenland","1976","Harbour seal",74
+"347","West Greenland","1976","Harp seal",7787
+"348","West Greenland","1976","Hooded seal",4230
+"349","West Greenland","1976","Ringed seal",55713
+"350","West Greenland","1976","Walrus",0
+"351","West Greenland","1977","Bearded seal",497
+"352","West Greenland","1977","Harbour seal",51
+"353","West Greenland","1977","Harp seal",9938
+"354","West Greenland","1977","Hooded seal",3751
+"355","West Greenland","1977","Ringed seal",67806
+"356","West Greenland","1977","Walrus",0
+"357","West Greenland","1978","Bearded seal",482
+"358","West Greenland","1978","Harbour seal",36
+"359","West Greenland","1978","Harp seal",10540
+"360","West Greenland","1978","Hooded seal",3635
+"361","West Greenland","1978","Ringed seal",77356
+"362","West Greenland","1978","Walrus",0
+"363","West Greenland","1979","Bearded seal",651
+"364","West Greenland","1979","Harbour seal",35
+"365","West Greenland","1979","Harp seal",12774
+"366","West Greenland","1979","Hooded seal",3612
+"367","West Greenland","1979","Ringed seal",83084
+"368","West Greenland","1979","Walrus",0
+"369","West Greenland","1980","Bearded seal",500
+"370","West Greenland","1980","Harbour seal",38
+"371","West Greenland","1980","Harp seal",12270
+"372","West Greenland","1980","Hooded seal",3779
+"373","West Greenland","1980","Ringed seal",61903
+"374","West Greenland","1980","Walrus",0
+"375","West Greenland","1981","Bearded seal",428
+"376","West Greenland","1981","Harbour seal",31
+"377","West Greenland","1981","Harp seal",13605
+"378","West Greenland","1981","Hooded seal",3745
+"379","West Greenland","1981","Ringed seal",59377
+"380","West Greenland","1981","Walrus",0
+"381","West Greenland","1982","Bearded seal",645
+"382","West Greenland","1982","Harbour seal",63
+"383","West Greenland","1982","Harp seal",17244
+"384","West Greenland","1982","Hooded seal",4398
+"385","West Greenland","1982","Ringed seal",57424
+"386","West Greenland","1982","Walrus",0
+"387","West Greenland","1983","Bearded seal",642
+"388","West Greenland","1983","Harbour seal",56
+"389","West Greenland","1983","Harp seal",18739
+"390","West Greenland","1983","Hooded seal",4155
+"391","West Greenland","1983","Ringed seal",51324
+"392","West Greenland","1983","Walrus",0
+"393","West Greenland","1984","Bearded seal",764
+"394","West Greenland","1984","Harbour seal",48
+"395","West Greenland","1984","Harp seal",17667
+"396","West Greenland","1984","Hooded seal",3364
+"397","West Greenland","1984","Ringed seal",55154
+"398","West Greenland","1984","Walrus",0
+"399","West Greenland","1985","Bearded seal",0
+"400","West Greenland","1985","Harbour seal",0
+"401","West Greenland","1985","Harp seal",0
+"402","West Greenland","1985","Hooded seal",0
+"403","West Greenland","1985","Ringed seal",0
+"404","West Greenland","1985","Walrus",0
+"405","West Greenland","1986","Harbour seal",0
+"406","West Greenland","1986","Harp seal",13932
+"407","West Greenland","1986","Hooded seal",2796
+"408","West Greenland","1986","Walrus",0
+"409","West Greenland","1987","Bearded seal",327
+"410","West Greenland","1987","Harbour seal",0
+"411","West Greenland","1987","Harp seal",16053
+"412","West Greenland","1987","Hooded seal",2333
+"413","West Greenland","1987","Ringed seal",28447
+"414","West Greenland","1987","Walrus",0
+"415","West Greenland","1988","Bearded seal",397
+"416","West Greenland","1988","Harbour seal",0
+"417","West Greenland","1988","Harp seal",7715
+"418","West Greenland","1988","Hooded seal",413
+"419","West Greenland","1988","Ringed seal",33036
+"420","West Greenland","1988","Walrus",0
+"421","West Greenland","1989","Bearded seal",85
+"422","West Greenland","1989","Harbour seal",0
+"423","West Greenland","1989","Harp seal",8191
+"424","West Greenland","1989","Hooded seal",429
+"425","West Greenland","1989","Ringed seal",24307
+"426","West Greenland","1989","Walrus",0
+"427","West Greenland","1990","Bearded seal",61
+"428","West Greenland","1990","Harbour seal",0
+"429","West Greenland","1990","Harp seal",10369
+"430","West Greenland","1990","Hooded seal",521
+"431","West Greenland","1990","Ringed seal",29725
+"432","West Greenland","1990","Walrus",0
+"433","West Greenland","1991","Bearded seal",269
+"434","West Greenland","1991","Harbour seal",0
+"435","West Greenland","1991","Harp seal",9110
+"436","West Greenland","1991","Hooded seal",1070
+"437","West Greenland","1991","Ringed seal",33685
+"438","West Greenland","1991","Walrus",0
+"439","West Greenland","1992","Bearded seal",155
+"440","West Greenland","1992","Harbour seal",0
+"441","West Greenland","1992","Harp seal",16896
+"442","West Greenland","1992","Hooded seal",1155
+"443","West Greenland","1992","Ringed seal",34201
+"444","West Greenland","1992","Walrus",0
+"445","West Greenland","1993","Bearded seal",1400
+"446","West Greenland","1993","Harbour seal",230
+"447","West Greenland","1993","Harp seal",53500
+"448","West Greenland","1993","Hooded seal",4150
+"449","West Greenland","1993","Ringed seal",54000
+"450","West Greenland","1993","Walrus",0
+"451","West Greenland","1994","Bearded seal",1550
+"452","West Greenland","1994","Harbour seal",235
+"453","West Greenland","1994","Harp seal",54500
+"454","West Greenland","1994","Hooded seal",4800
+"455","West Greenland","1994","Ringed seal",50000
+"456","West Greenland","1994","Walrus",0
+"457","West Greenland","1995","Bearded seal",1550
+"458","West Greenland","1995","Harbour seal",230
+"459","West Greenland","1995","Harp seal",59500
+"460","West Greenland","1995","Hooded seal",4200
+"461","West Greenland","1995","Ringed seal",55000
+"462","West Greenland","1995","Walrus",0
+"463","West Greenland","1996","Bearded seal",1630
+"464","West Greenland","1996","Harbour seal",220
+"465","West Greenland","1996","Harp seal",70000
+"466","West Greenland","1996","Hooded seal",5800
+"467","West Greenland","1996","Ringed seal",63000
+"468","West Greenland","1996","Walrus",305
+"469","West Greenland","1997","Bearded seal",1800
+"470","West Greenland","1997","Harbour seal",250
+"471","West Greenland","1997","Harp seal",65000
+"472","West Greenland","1997","Hooded seal",4400
+"473","West Greenland","1997","Ringed seal",56000
+"474","West Greenland","1997","Walrus",317
+"475","West Greenland","1998","Bearded seal",1986
+"476","West Greenland","1998","Harbour seal",198
+"477","West Greenland","1998","Harp seal",80437
+"478","West Greenland","1998","Hooded seal",5051
+"479","West Greenland","1998","Ringed seal",64537
+"480","West Greenland","1998","Walrus",211
+"481","West Greenland","1999","Bearded seal",1965
+"482","West Greenland","1999","Harbour seal",123
+"483","West Greenland","1999","Harp seal",91321
+"484","West Greenland","1999","Hooded seal",4852
+"485","West Greenland","1999","Ringed seal",68790
+"486","West Greenland","1999","Walrus",285
+"487","West Greenland","2000","Bearded seal",2374
+"488","West Greenland","2000","Harbour seal",120
+"489","West Greenland","2000","Harp seal",97229
+"490","West Greenland","2000","Hooded seal",3769
+"491","West Greenland","2000","Ringed seal",67727
+"492","West Greenland","2000","Walrus",322
+"493","West Greenland","2001","Bearded seal",2016
+"494","West Greenland","2001","Harbour seal",75
+"495","West Greenland","2001","Harp seal",84165
+"496","West Greenland","2001","Hooded seal",5010
+"497","West Greenland","2001","Ringed seal",65865
+"498","West Greenland","2001","Walrus",333
+"499","West Greenland","2002","Bearded seal",1652
+"500","West Greenland","2002","Harbour seal",181
+"501","West Greenland","2002","Harp seal",65810
+"502","West Greenland","2002","Hooded seal",3606
+"503","West Greenland","2002","Ringed seal",68736
+"504","West Greenland","2002","Walrus",297
+"505","West Greenland","2003","Bearded seal",1361
+"506","West Greenland","2003","Harbour seal",643
+"507","West Greenland","2003","Harp seal",64735
+"508","West Greenland","2003","Hooded seal",4351
+"509","West Greenland","2003","Ringed seal",67229
+"510","West Greenland","2003","Walrus",273
+"511","West Greenland","2004","Bearded seal",1092
+"512","West Greenland","2004","Harbour seal",652
+"513","West Greenland","2004","Harp seal",69414
+"514","West Greenland","2004","Hooded seal",4146
+"515","West Greenland","2004","Ringed seal",63947
+"516","West Greenland","2004","Walrus",153
+"517","West Greenland","2005","Bearded seal",925
+"518","West Greenland","2005","Harbour seal",327
+"519","West Greenland","2005","Harp seal",75156
+"520","West Greenland","2005","Hooded seal",2274
+"521","West Greenland","2005","Ringed seal",75823
+"522","West Greenland","2005","Walrus",198
+"523","West Greenland","2006","Bearded seal",1359
+"524","West Greenland","2006","Harbour seal",59
+"525","West Greenland","2006","Harp seal",76488
+"526","West Greenland","2006","Hooded seal",3175
+"527","West Greenland","2006","Ringed seal",70162
+"528","West Greenland","2006","Walrus",141
+"529","West Greenland","2007","Bearded seal",1078
+"530","West Greenland","2007","Harbour seal",32
+"531","West Greenland","2007","Harp seal",67910
+"532","West Greenland","2007","Hooded seal",1910
+"533","West Greenland","2007","Ringed seal",56351
+"534","West Greenland","2007","Walrus",123
+"535","West Greenland","2008","Bearded seal",1005
+"536","West Greenland","2008","Harbour seal",22
+"537","West Greenland","2008","Harp seal",66783
+"538","West Greenland","2008","Hooded seal",1510
+"539","West Greenland","2008","Ringed seal",58185
+"540","West Greenland","2008","Walrus",94
+"541","West Greenland","2009","Bearded seal",896
+"542","West Greenland","2009","Harbour seal",20
+"543","West Greenland","2009","Harp seal",58617
+"544","West Greenland","2009","Hooded seal",1160
+"545","West Greenland","2009","Ringed seal",54852
+"546","West Greenland","2009","Walrus",123
+"547","West Greenland","2010","Bearded seal",1091
+"548","West Greenland","2010","Harbour seal",13
+"549","West Greenland","2010","Harp seal",80344
+"550","West Greenland","2010","Hooded seal",1373
+"551","West Greenland","2010","Ringed seal",52885
+"552","West Greenland","2010","Walrus",100
+"553","West Greenland","2011","Bearded seal",990
+"554","West Greenland","2011","Harbour seal",69
+"555","West Greenland","2011","Harp seal",63886
+"556","West Greenland","2011","Hooded seal",1383
+"557","West Greenland","2011","Ringed seal",53487
+"558","West Greenland","2011","Walrus",92
+"559","West Greenland","2012","Bearded seal",879
+"560","West Greenland","2012","Harbour seal",0
+"561","West Greenland","2012","Harp seal",53016
+"562","West Greenland","2012","Hooded seal",900
+"563","West Greenland","2012","Ringed seal",51912
+"564","West Greenland","2012","Walrus",110
+"565","West Greenland","2013","Bearded seal",610
+"566","West Greenland","2013","Harbour seal",0
+"567","West Greenland","2013","Harp seal",48093
+"568","West Greenland","2013","Hooded seal",657
+"569","West Greenland","2013","Ringed seal",35180
+"570","West Greenland","2013","Walrus",112
