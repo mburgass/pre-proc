@@ -28,8 +28,8 @@ natural_resources = natural_resources%>% group_by(Country, Year, Species)%>%
   dplyr::summarise(totalcatch=sum(Number, na.rm=T))%>%
  ungroup()
 
-##import narwhal
-narwhal = read_excel("Natural_Resources/narwhal.xlsx", sheet = 1, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+##import other marine mammals
+narwhal = read_excel("Natural_Resources/marine_mammals.xlsx", sheet = 1, col_names = TRUE, col_types = NULL, na = "", skip = 0)
 narwhal<- data.frame(narwhal)
 narwhal<-select(narwhal, -Measure..Measure.)
 narwhal<-gather(narwhal, "Year", "Number", starts_with('X'))%>%
@@ -42,9 +42,19 @@ narwhal<-dplyr::filter(narwhal, !(Country %in% c("Totals 0 Quantity (number)","T
 narwhal$Number<-as.numeric(narwhal$Number) ## change number column from character to numbers
 narwhal<-plyr::rename(narwhal, c("Number"="totalcatch"))
 narwhal<-select(narwhal, -FAO.Area)
+
+##Separate out by country
 narwhal_canada=dplyr::filter(narwhal, (Country %in% c("Canada")))
-narwhal_green=dplyr::filter(narwhal, !(Country %in% c("Canada")))
-narwhal_green$totalcatch<- narwhal_green$totalcatch/2 ## Greenland catches equally split between East and West Greenland
+narwhal_green=dplyr::filter(narwhal, (Country %in% c("Greenland")))
+narwhal_usa=dplyr::filter(narwhal, (Country %in% c("United States of America")))
+narwhal_russia=dplyr::filter(narwhal, (Country %in% c("Russia")))
+narwhal_norway=dplyr::filter(narwhal, (Country %in% c("Norway")))
+
+
+
+## Greenland catches equally split between East and West Greenland
+
+narwhal_green$totalcatch<- narwhal_green$totalcatch/2 
 narwhal_green$totalcatch<- round(narwhal_green$totalcatch, digits=0)
 narwhal_egreen= narwhal_green
 narwhal_egreen$Country<- "East Greenland"
@@ -60,10 +70,19 @@ natural_resources_russia=dplyr::filter(natural_resources, (Country %in% c("Russi
 natural_resources_usa=dplyr::filter(natural_resources, (Country %in% c("United States of America")))
 
 
-##add narwhal
+##add marine mammals in
 natural_resources_canada<-bind_rows(natural_resources_canada, narwhal_canada)
+natural_resources_canada<- arrange(natural_resources_canada, Species)
 natural_resources_greenland<- bind_rows(natural_resources_greenland, narwhal_greenland)
-natural_resources<-bind_rows(natural_resources, narwhal_greenland, narwhal_canada)
+natural_resources_greenland<- arrange(natural_resources_greenland, Country, Species)
+natural_resources_usa<- bind_rows(natural_resources_usa, narwhal_usa)
+natural_resources_usa<- arrange(natural_resources_usa, Species)
+natural_resources_norway<- bind_rows(natural_resources_norway, narwhal_norway)
+natural_resources_norway<- arrange(natural_resources_norway, Species)
+natural_resources_russia<- bind_rows(natural_resources_russia, narwhal_russia)
+natural_resources_russia<- arrange(natural_resources_russia, Species)
+natural_resources<-bind_rows(natural_resources, narwhal)
+natural_resources<- arrange(natural_resources,Country, Species)
 
 write.csv(natural_resources, "natural_resources.csv")
 write.csv(natural_resources_norway, "natural_resources_norway.csv")

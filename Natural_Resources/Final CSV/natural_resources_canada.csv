@@ -1,300 +1,934 @@
 "","Country","Year","Species","totalcatch"
-"1","Canada","1950","Harp seal",181377
-"2","Canada","1950","Hooded seal",1663
-"3","Canada","1951","Harp seal",321581
-"4","Canada","1951","Hooded seal",5182
-"5","Canada","1952","Harp seal",177071
-"6","Canada","1952","Hooded seal",919
-"7","Canada","1953","Harp seal",158966
-"8","Canada","1953","Hooded seal",2135
-"9","Canada","1954","Harp seal",136720
-"10","Canada","1954","Hooded seal",1243
-"11","Canada","1955","Harp seal",168265
-"12","Canada","1955","Hooded seal",2388
-"13","Canada","1956","Harp seal",199467
-"14","Canada","1956","Hooded seal",1759
-"15","Canada","1957","Harp seal",122483
-"16","Canada","1957","Hooded seal",73
-"17","Canada","1958","Harp seal",165895
-"18","Canada","1958","Hooded seal",801
-"19","Canada","1959","Harp seal",102419
-"20","Canada","1959","Hooded seal",1397
-"21","Canada","1960","Harp seal",147993
-"22","Canada","1960","Hooded seal",242
-"23","Canada","1961","Harp seal",64526
-"24","Canada","1961","Hooded seal",2487
-"25","Canada","1962","Harp seal",165482
-"26","Canada","1962","Hooded seal",529
-"27","Canada","1963","Harp seal",186383
-"28","Canada","1963","Hooded seal",750
-"29","Canada","1964","Harp seal",176402
-"30","Canada","1964","Hooded seal",1511
-"31","Canada","1965","Harp seal",170758
-"32","Canada","1965","Hooded seal",2079
-"33","Canada","1966","Harp seal",173062
-"34","Canada","1966","Hooded seal",5766
-"35","Canada","1967","Harp seal",149673
-"36","Canada","1967","Hooded seal",1361
-"37","Canada","1968","Harp seal",108221
-"38","Canada","1968","Hooded seal",147
-"39","Canada","1969","Harp seal",171398
-"40","Canada","1969","Hooded seal",900
-"41","Canada","1970","Bearded seal",0
-"42","Canada","1970","Harp seal",142295
-"43","Canada","1970","Hooded seal",2869
-"44","Canada","1970","Ringed seal",0
-"45","Canada","1971","Bearded seal",0
-"46","Canada","1971","Harp seal",132660
-"47","Canada","1971","Hooded seal",432
-"48","Canada","1971","Ringed seal",0
-"49","Canada","1972","Bearded seal",0
-"50","Canada","1972","Harp seal",76583
-"51","Canada","1972","Hooded seal",422
-"52","Canada","1972","Ringed seal",0
-"53","Canada","1973","Bearded seal",0
-"54","Canada","1973","Harp seal",65542
-"55","Canada","1973","Hooded seal",312
-"56","Canada","1973","Ringed seal",0
-"57","Canada","1974","Bearded seal",0
-"58","Canada","1974","Harp seal",92050
-"59","Canada","1974","Hooded seal",203
-"60","Canada","1974","Ringed seal",0
-"61","Canada","1975","Bearded seal",0
-"62","Canada","1975","Harp seal",114202
-"63","Canada","1975","Hooded seal",5385
-"64","Canada","1975","Ringed seal",0
-"65","Canada","1975","Seals nei",3332
-"66","Canada","1976","Bearded seal",0
-"67","Canada","1976","Harp seal",119519
-"68","Canada","1976","Hooded seal",3867
-"69","Canada","1976","Ringed seal",0
-"70","Canada","1976","Seals nei",3761
-"71","Canada","1977","Bearded seal",0
-"72","Canada","1977","Harp seal",119519
-"73","Canada","1977","Hooded seal",6044
-"74","Canada","1977","Ringed seal",0
-"75","Canada","1977","Seals nei",2491
-"76","Canada","1978","Bearded seal",0
-"77","Canada","1978","Harp seal",145469
-"78","Canada","1978","Hooded seal",4189
-"79","Canada","1978","Ringed seal",0
-"80","Canada","1978","Seals nei",2879
-"81","Canada","1979","Bearded seal",0
-"82","Canada","1979","Harp seal",140253
-"83","Canada","1979","Hooded seal",6819
-"84","Canada","1979","Ringed seal",0
-"85","Canada","1979","Seals nei",3362
-"86","Canada","1980","Bearded seal",0
-"87","Canada","1980","Harp seal",149313
-"88","Canada","1980","Hooded seal",7409
-"89","Canada","1980","Ringed seal",0
-"90","Canada","1980","Seals nei",9773
-"91","Canada","1981","Bearded seal",0
-"92","Canada","1981","Harp seal",175450
-"93","Canada","1981","Hooded seal",8309
-"94","Canada","1981","Ringed seal",0
-"95","Canada","1981","Seals nei",8993
-"96","Canada","1982","Bearded seal",0
-"97","Canada","1982","Harp seal",142501
-"98","Canada","1982","Hooded seal",5831
-"99","Canada","1982","Ringed seal",0
-"100","Canada","1982","Seals nei",5204
-"101","Canada","1983","Bearded seal",0
-"102","Canada","1983","Harp seal",57889
-"103","Canada","1983","Hooded seal",128
-"104","Canada","1983","Ringed seal",0
-"105","Canada","1983","Seals nei",6492
-"106","Canada","1984","Bearded seal",0
-"107","Canada","1984","Harp seal",30900
-"108","Canada","1984","Hooded seal",444
-"109","Canada","1984","Ringed seal",0
-"110","Canada","1984","Seals nei",1993
-"111","Canada","1985","Bearded seal",0
-"112","Canada","1985","Harp seal",19030
-"113","Canada","1985","Hooded seal",784
-"114","Canada","1985","Ringed seal",0
-"115","Canada","1985","Seals nei",1994
-"116","Canada","1986","Bearded seal",0
-"117","Canada","1986","Harp seal",25934
-"118","Canada","1986","Hooded seal",33
-"119","Canada","1986","Ringed seal",0
-"120","Canada","1986","Seals nei",2874
-"121","Canada","1987","Bearded seal",0
-"122","Canada","1987","Harp seal",44035
-"123","Canada","1987","Hooded seal",1828
-"124","Canada","1987","Ringed seal",0
-"125","Canada","1987","Seals nei",3236
-"126","Canada","1988","Bearded seal",0
-"127","Canada","1988","Harp seal",94046
-"128","Canada","1988","Hooded seal",908
-"129","Canada","1988","Ringed seal",0
-"130","Canada","1988","Seals nei",1036
-"131","Canada","1989","Bearded seal",0
-"132","Canada","1989","Harp seal",65072
-"133","Canada","1989","Hooded seal",367
-"134","Canada","1989","Ringed seal",0
-"135","Canada","1989","Seals nei",2561
-"136","Canada","1990","Bearded seal",0
-"137","Canada","1990","Harp seal",60040
-"138","Canada","1990","Hooded seal",636
-"139","Canada","1990","Ringed seal",0
-"140","Canada","1990","Seals nei",1821
-"141","Canada","1991","Bearded seal",0
-"142","Canada","1991","Harp seal",52565
-"143","Canada","1991","Hooded seal",6321
-"144","Canada","1991","Ringed seal",0
-"145","Canada","1991","Seals nei",1771
-"146","Canada","1992","Bearded seal",0
-"147","Canada","1992","Harp seal",67428
-"148","Canada","1992","Hooded seal",119
-"149","Canada","1992","Ringed seal",0
-"150","Canada","1992","Seals nei",1127
-"151","Canada","1993","Bearded seal",0
-"152","Canada","1993","Harp seal",25175
-"153","Canada","1993","Hooded seal",19
-"154","Canada","1993","Ringed seal",0
-"155","Canada","1993","Seals nei",1125
-"156","Canada","1994","Bearded seal",0
-"157","Canada","1994","Harp seal",61176
-"158","Canada","1994","Hooded seal",149
-"159","Canada","1994","Ringed seal",0
-"160","Canada","1994","Seals nei",1798
-"161","Canada","1995","Bearded seal",0
-"162","Canada","1995","Harp seal",65391
-"163","Canada","1995","Hooded seal",857
-"164","Canada","1995","Ringed seal",0
-"165","Canada","1995","Seals nei",1799
-"166","Canada","1996","Bearded seal",45
-"167","Canada","1996","Harp seal",242717
-"168","Canada","1996","Hooded seal",25754
-"169","Canada","1996","Ringed seal",670
-"170","Canada","1996","Seals nei",190
-"171","Canada","1997","Bearded seal",0
-"172","Canada","1997","Harp seal",264204
-"173","Canada","1997","Hooded seal",7058
-"174","Canada","1997","Ringed seal",0
-"175","Canada","1997","Seals nei",1838
-"176","Canada","1998","Bearded seal",59
-"177","Canada","1998","Harp seal",249053
-"178","Canada","1998","Hooded seal",10020
-"179","Canada","1998","Ringed seal",1234
-"180","Canada","1998","Seals nei",55
-"181","Canada","1999","Bearded seal",50
-"182","Canada","1999","Harp seal",228828
-"183","Canada","1999","Hooded seal",49
-"184","Canada","1999","Ringed seal",742
-"185","Canada","1999","Seals nei",28
-"186","Canada","2000","Bearded seal",75
-"187","Canada","2000","Harp seal",87084
-"188","Canada","2000","Hooded seal",10
-"189","Canada","2000","Ringed seal",1747
-"190","Canada","2000","Seals nei",7
-"191","Canada","2001","Bearded seal",170
-"192","Canada","2001","Harp seal",193366
-"193","Canada","2001","Hooded seal",257
-"194","Canada","2001","Ringed seal",2035
-"195","Canada","2001","Seals nei",39
-"196","Canada","2002","Bearded seal",70
-"197","Canada","2002","Harp seal",285510
-"198","Canada","2002","Hooded seal",11
-"199","Canada","2002","Ringed seal",1340
-"200","Canada","2002","Seals nei",1005
-"201","Canada","2003","Bearded seal",0
-"202","Canada","2003","Harp seal",262048
-"203","Canada","2003","Hooded seal",6
-"204","Canada","2003","Ringed seal",850
-"205","Canada","2003","Seals nei",22
-"206","Canada","2004","Bearded seal",0
-"207","Canada","2004","Harp seal",325346
-"208","Canada","2004","Hooded seal",389
-"209","Canada","2004","Ringed seal",290
-"210","Canada","2004","Seals nei",40
-"211","Canada","2005","Bearded seal",1
-"212","Canada","2005","Harp seal",289908
-"213","Canada","2005","Hooded seal",20
-"214","Canada","2005","Ringed seal",306
-"215","Canada","2005","Seals nei",7
-"216","Canada","2006","Bearded seal",0
-"217","Canada","2006","Harp seal",296595
-"218","Canada","2006","Hooded seal",40
-"219","Canada","2006","Ringed seal",77
-"220","Canada","2006","Seals nei",37
-"221","Canada","2007","Bearded seal",14
-"222","Canada","2007","Harp seal",223443
-"223","Canada","2007","Hooded seal",5
-"224","Canada","2007","Ringed seal",113
-"225","Canada","2007","Seals nei",66
-"226","Canada","2008","Bearded seal",0
-"227","Canada","2008","Harp seal",215382
-"228","Canada","2008","Hooded seal",3
-"229","Canada","2008","Ringed seal",49
-"230","Canada","2008","Seals nei",6
-"231","Canada","2009","Bearded seal",0
-"232","Canada","2009","Harp seal",53496
-"233","Canada","2009","Hooded seal",10
-"234","Canada","2009","Ringed seal",21
-"235","Canada","2009","Seals nei",4
-"236","Canada","2010","Bearded seal",0
-"237","Canada","2010","Harp seal",67001
-"238","Canada","2010","Hooded seal",0
-"239","Canada","2010","Ringed seal",6
-"240","Canada","2010","Seals nei",0
-"241","Canada","2011","Bearded seal",0
-"242","Canada","2011","Harp seal",37908
-"243","Canada","2011","Hooded seal",2
-"244","Canada","2011","Ringed seal",4
-"245","Canada","2011","Seals nei",4
-"246","Canada","2012","Bearded seal",0
-"247","Canada","2012","Harp seal",67561
-"248","Canada","2012","Hooded seal",1
-"249","Canada","2012","Ringed seal",7
-"250","Canada","2012","Seals nei",2
-"251","Canada","2013","Bearded seal",0
-"252","Canada","2013","Harp seal",95204
-"253","Canada","2013","Hooded seal",0
-"254","Canada","2013","Ringed seal",16
-"255","Canada","2013","Seals nei",1
-"256","Canada","1970","Narwhal",88
-"257","Canada","1971","Narwhal",30
-"258","Canada","1972","Narwhal",0
-"259","Canada","1973","Narwhal",341
-"260","Canada","1974","Narwhal",291
-"261","Canada","1975","Narwhal",251
-"262","Canada","1976","Narwhal",300
-"263","Canada","1977","Narwhal",263
-"264","Canada","1978","Narwhal",279
-"265","Canada","1979","Narwhal",319
-"266","Canada","1980","Narwhal",339
-"267","Canada","1981","Narwhal",406
-"268","Canada","1982","Narwhal",402
-"269","Canada","1983","Narwhal",344
-"270","Canada","1984","Narwhal",285
-"271","Canada","1985","Narwhal",314
-"272","Canada","1986","Narwhal",263
-"273","Canada","1987","Narwhal",181
-"274","Canada","1988","Narwhal",237
-"275","Canada","1989","Narwhal",342
-"276","Canada","1990","Narwhal",0
-"277","Canada","1991","Narwhal",0
-"278","Canada","1992","Narwhal",325
-"279","Canada","1993","Narwhal",0
-"280","Canada","1994","Narwhal",0
-"281","Canada","1995","Narwhal",0
-"282","Canada","1996","Narwhal",0
-"283","Canada","1997","Narwhal",0
-"284","Canada","1998","Narwhal",0
-"285","Canada","1999","Narwhal",0
-"286","Canada","2000","Narwhal",0
-"287","Canada","2001","Narwhal",559
-"288","Canada","2002","Narwhal",0
-"289","Canada","2003","Narwhal",0
-"290","Canada","2004","Narwhal",0
-"291","Canada","2005","Narwhal",0
-"292","Canada","2006","Narwhal",0
-"293","Canada","2007","Narwhal",0
-"294","Canada","2008","Narwhal",0
-"295","Canada","2009","Narwhal",0
-"296","Canada","2010","Narwhal",0
-"297","Canada","2011","Narwhal",0
-"298","Canada","2012","Narwhal",0
-"299","Canada","2013","Narwhal",0
+"1","Canada","1950","Baleen whales nei",314
+"2","Canada","1951","Baleen whales nei",437
+"3","Canada","1952","Baleen whales nei",465
+"4","Canada","1953","Baleen whales nei",539
+"5","Canada","1954","Baleen whales nei",630
+"6","Canada","1955","Baleen whales nei",630
+"7","Canada","1956","Baleen whales nei",375
+"8","Canada","1957","Baleen whales nei",0
+"9","Canada","1958","Baleen whales nei",774
+"10","Canada","1959","Baleen whales nei",869
+"11","Canada","1960","Baleen whales nei",0
+"12","Canada","1961","Baleen whales nei",0
+"13","Canada","1962","Baleen whales nei",713
+"14","Canada","1963","Baleen whales nei",578
+"15","Canada","1964","Baleen whales nei",880
+"16","Canada","1965","Baleen whales nei",865
+"17","Canada","1966","Baleen whales nei",717
+"18","Canada","1967","Baleen whales nei",495
+"19","Canada","1968","Baleen whales nei",0
+"20","Canada","1969","Baleen whales nei",0
+"21","Canada","1970","Baleen whales nei",0
+"22","Canada","1971","Baleen whales nei",0
+"23","Canada","1972","Baleen whales nei",0
+"24","Canada","1973","Baleen whales nei",0
+"25","Canada","1974","Baleen whales nei",0
+"26","Canada","1975","Baleen whales nei",1
+"27","Canada","1976","Baleen whales nei",0
+"28","Canada","1977","Baleen whales nei",0
+"29","Canada","1978","Baleen whales nei",0
+"30","Canada","1979","Baleen whales nei",0
+"31","Canada","1980","Baleen whales nei",0
+"32","Canada","1981","Baleen whales nei",0
+"33","Canada","1982","Baleen whales nei",0
+"34","Canada","1983","Baleen whales nei",0
+"35","Canada","1984","Baleen whales nei",0
+"36","Canada","1985","Baleen whales nei",0
+"37","Canada","1986","Baleen whales nei",0
+"38","Canada","1987","Baleen whales nei",0
+"39","Canada","1988","Baleen whales nei",0
+"40","Canada","1989","Baleen whales nei",0
+"41","Canada","1990","Baleen whales nei",0
+"42","Canada","1991","Baleen whales nei",2
+"43","Canada","1992","Baleen whales nei",0
+"44","Canada","1993","Baleen whales nei",0
+"45","Canada","1994","Baleen whales nei",0
+"46","Canada","1995","Baleen whales nei",0
+"47","Canada","1996","Baleen whales nei",1
+"48","Canada","1997","Baleen whales nei",0
+"49","Canada","1998","Baleen whales nei",1
+"50","Canada","1999","Baleen whales nei",0
+"51","Canada","2000","Baleen whales nei",0
+"52","Canada","2001","Baleen whales nei",0
+"53","Canada","2002","Baleen whales nei",0
+"54","Canada","2003","Baleen whales nei",0
+"55","Canada","2004","Baleen whales nei",0
+"56","Canada","2005","Baleen whales nei",0
+"57","Canada","2006","Baleen whales nei",0
+"58","Canada","2007","Baleen whales nei",0
+"59","Canada","2008","Baleen whales nei",0
+"60","Canada","2009","Baleen whales nei",0
+"61","Canada","2010","Baleen whales nei",0
+"62","Canada","2011","Baleen whales nei",0
+"63","Canada","2012","Baleen whales nei",0
+"64","Canada","2013","Baleen whales nei",0
+"65","Canada","1970","Bearded seal",0
+"66","Canada","1971","Bearded seal",0
+"67","Canada","1972","Bearded seal",0
+"68","Canada","1973","Bearded seal",0
+"69","Canada","1974","Bearded seal",0
+"70","Canada","1975","Bearded seal",0
+"71","Canada","1976","Bearded seal",0
+"72","Canada","1977","Bearded seal",0
+"73","Canada","1978","Bearded seal",0
+"74","Canada","1979","Bearded seal",0
+"75","Canada","1980","Bearded seal",0
+"76","Canada","1981","Bearded seal",0
+"77","Canada","1982","Bearded seal",0
+"78","Canada","1983","Bearded seal",0
+"79","Canada","1984","Bearded seal",0
+"80","Canada","1985","Bearded seal",0
+"81","Canada","1986","Bearded seal",0
+"82","Canada","1987","Bearded seal",0
+"83","Canada","1988","Bearded seal",0
+"84","Canada","1989","Bearded seal",0
+"85","Canada","1990","Bearded seal",0
+"86","Canada","1991","Bearded seal",0
+"87","Canada","1992","Bearded seal",0
+"88","Canada","1993","Bearded seal",0
+"89","Canada","1994","Bearded seal",0
+"90","Canada","1995","Bearded seal",0
+"91","Canada","1996","Bearded seal",45
+"92","Canada","1997","Bearded seal",0
+"93","Canada","1998","Bearded seal",59
+"94","Canada","1999","Bearded seal",50
+"95","Canada","2000","Bearded seal",75
+"96","Canada","2001","Bearded seal",170
+"97","Canada","2002","Bearded seal",70
+"98","Canada","2003","Bearded seal",0
+"99","Canada","2004","Bearded seal",0
+"100","Canada","2005","Bearded seal",1
+"101","Canada","2006","Bearded seal",0
+"102","Canada","2007","Bearded seal",14
+"103","Canada","2008","Bearded seal",0
+"104","Canada","2009","Bearded seal",0
+"105","Canada","2010","Bearded seal",0
+"106","Canada","2011","Bearded seal",0
+"107","Canada","2012","Bearded seal",0
+"108","Canada","2013","Bearded seal",0
+"109","Canada","1950","Fin whale",485
+"110","Canada","1951","Fin whale",587
+"111","Canada","1952","Fin whale",19
+"112","Canada","1953","Fin whale",22
+"113","Canada","1954","Fin whale",0
+"114","Canada","1955","Fin whale",15
+"115","Canada","1956","Fin whale",22
+"116","Canada","1957","Fin whale",677
+"117","Canada","1958","Fin whale",66
+"118","Canada","1959","Fin whale",20
+"119","Canada","1960","Fin whale",2
+"120","Canada","1961","Fin whale",1
+"121","Canada","1962","Fin whale",0
+"122","Canada","1963","Fin whale",1
+"123","Canada","1964","Fin whale",2
+"124","Canada","1965","Fin whale",9
+"125","Canada","1966","Fin whale",166
+"126","Canada","1967","Fin whale",443
+"127","Canada","1968","Fin whale",442
+"128","Canada","1969","Fin whale",389
+"129","Canada","1970","Fin whale",576
+"130","Canada","1971","Fin whale",418
+"131","Canada","1972","Fin whale",360
+"132","Canada","1973","Fin whale",0
+"133","Canada","1974","Fin whale",0
+"134","Canada","1975","Fin whale",0
+"135","Canada","1976","Fin whale",0
+"136","Canada","1977","Fin whale",0
+"137","Canada","1978","Fin whale",0
+"138","Canada","1979","Fin whale",0
+"139","Canada","1980","Fin whale",0
+"140","Canada","1981","Fin whale",0
+"141","Canada","1982","Fin whale",0
+"142","Canada","1983","Fin whale",0
+"143","Canada","1984","Fin whale",0
+"144","Canada","1985","Fin whale",0
+"145","Canada","1986","Fin whale",0
+"146","Canada","1987","Fin whale",0
+"147","Canada","1988","Fin whale",0
+"148","Canada","1989","Fin whale",0
+"149","Canada","1990","Fin whale",0
+"150","Canada","1991","Fin whale",0
+"151","Canada","1992","Fin whale",0
+"152","Canada","1993","Fin whale",0
+"153","Canada","1994","Fin whale",0
+"154","Canada","1995","Fin whale",0
+"155","Canada","1996","Fin whale",0
+"156","Canada","1997","Fin whale",0
+"157","Canada","1998","Fin whale",0
+"158","Canada","1999","Fin whale",0
+"159","Canada","2000","Fin whale",0
+"160","Canada","2001","Fin whale",0
+"161","Canada","2002","Fin whale",0
+"162","Canada","2003","Fin whale",0
+"163","Canada","2004","Fin whale",0
+"164","Canada","2005","Fin whale",0
+"165","Canada","2006","Fin whale",0
+"166","Canada","2007","Fin whale",0
+"167","Canada","2008","Fin whale",0
+"168","Canada","2009","Fin whale",0
+"169","Canada","2010","Fin whale",0
+"170","Canada","2011","Fin whale",0
+"171","Canada","2012","Fin whale",0
+"172","Canada","2013","Fin whale",0
+"173","Canada","1970","Harbour porpoise",0
+"174","Canada","1971","Harbour porpoise",0
+"175","Canada","1972","Harbour porpoise",0
+"176","Canada","1973","Harbour porpoise",0
+"177","Canada","1974","Harbour porpoise",0
+"178","Canada","1975","Harbour porpoise",0
+"179","Canada","1976","Harbour porpoise",0
+"180","Canada","1977","Harbour porpoise",0
+"181","Canada","1978","Harbour porpoise",0
+"182","Canada","1979","Harbour porpoise",0
+"183","Canada","1980","Harbour porpoise",0
+"184","Canada","1981","Harbour porpoise",0
+"185","Canada","1982","Harbour porpoise",317
+"186","Canada","1983","Harbour porpoise",1
+"187","Canada","1984","Harbour porpoise",0
+"188","Canada","1985","Harbour porpoise",0
+"189","Canada","1986","Harbour porpoise",0
+"190","Canada","1987","Harbour porpoise",0
+"191","Canada","1988","Harbour porpoise",2
+"192","Canada","1989","Harbour porpoise",91
+"193","Canada","1990","Harbour porpoise",1
+"194","Canada","1991","Harbour porpoise",5
+"195","Canada","1992","Harbour porpoise",1
+"196","Canada","1993","Harbour porpoise",257
+"197","Canada","1994","Harbour porpoise",98
+"198","Canada","1995","Harbour porpoise",0
+"199","Canada","1996","Harbour porpoise",0
+"200","Canada","1997","Harbour porpoise",0
+"201","Canada","1998","Harbour porpoise",0
+"202","Canada","1999","Harbour porpoise",0
+"203","Canada","2000","Harbour porpoise",0
+"204","Canada","2001","Harbour porpoise",0
+"205","Canada","2002","Harbour porpoise",0
+"206","Canada","2003","Harbour porpoise",0
+"207","Canada","2004","Harbour porpoise",0
+"208","Canada","2005","Harbour porpoise",0
+"209","Canada","2006","Harbour porpoise",0
+"210","Canada","2007","Harbour porpoise",0
+"211","Canada","2008","Harbour porpoise",0
+"212","Canada","2009","Harbour porpoise",0
+"213","Canada","2010","Harbour porpoise",0
+"214","Canada","2011","Harbour porpoise",0
+"215","Canada","2012","Harbour porpoise",0
+"216","Canada","2013","Harbour porpoise",0
+"217","Canada","1950","Harp seal",181377
+"218","Canada","1951","Harp seal",321581
+"219","Canada","1952","Harp seal",177071
+"220","Canada","1953","Harp seal",158966
+"221","Canada","1954","Harp seal",136720
+"222","Canada","1955","Harp seal",168265
+"223","Canada","1956","Harp seal",199467
+"224","Canada","1957","Harp seal",122483
+"225","Canada","1958","Harp seal",165895
+"226","Canada","1959","Harp seal",102419
+"227","Canada","1960","Harp seal",147993
+"228","Canada","1961","Harp seal",64526
+"229","Canada","1962","Harp seal",165482
+"230","Canada","1963","Harp seal",186383
+"231","Canada","1964","Harp seal",176402
+"232","Canada","1965","Harp seal",170758
+"233","Canada","1966","Harp seal",173062
+"234","Canada","1967","Harp seal",149673
+"235","Canada","1968","Harp seal",108221
+"236","Canada","1969","Harp seal",171398
+"237","Canada","1970","Harp seal",142295
+"238","Canada","1971","Harp seal",132660
+"239","Canada","1972","Harp seal",76583
+"240","Canada","1973","Harp seal",65542
+"241","Canada","1974","Harp seal",92050
+"242","Canada","1975","Harp seal",114202
+"243","Canada","1976","Harp seal",119519
+"244","Canada","1977","Harp seal",119519
+"245","Canada","1978","Harp seal",145469
+"246","Canada","1979","Harp seal",140253
+"247","Canada","1980","Harp seal",149313
+"248","Canada","1981","Harp seal",175450
+"249","Canada","1982","Harp seal",142501
+"250","Canada","1983","Harp seal",57889
+"251","Canada","1984","Harp seal",30900
+"252","Canada","1985","Harp seal",19030
+"253","Canada","1986","Harp seal",25934
+"254","Canada","1987","Harp seal",44035
+"255","Canada","1988","Harp seal",94046
+"256","Canada","1989","Harp seal",65072
+"257","Canada","1990","Harp seal",60040
+"258","Canada","1991","Harp seal",52565
+"259","Canada","1992","Harp seal",67428
+"260","Canada","1993","Harp seal",25175
+"261","Canada","1994","Harp seal",61176
+"262","Canada","1995","Harp seal",65391
+"263","Canada","1996","Harp seal",242717
+"264","Canada","1997","Harp seal",264204
+"265","Canada","1998","Harp seal",249053
+"266","Canada","1999","Harp seal",228828
+"267","Canada","2000","Harp seal",87084
+"268","Canada","2001","Harp seal",193366
+"269","Canada","2002","Harp seal",285510
+"270","Canada","2003","Harp seal",262048
+"271","Canada","2004","Harp seal",325346
+"272","Canada","2005","Harp seal",289908
+"273","Canada","2006","Harp seal",296595
+"274","Canada","2007","Harp seal",223443
+"275","Canada","2008","Harp seal",215382
+"276","Canada","2009","Harp seal",53496
+"277","Canada","2010","Harp seal",67001
+"278","Canada","2011","Harp seal",37908
+"279","Canada","2012","Harp seal",67561
+"280","Canada","2013","Harp seal",95204
+"281","Canada","1950","Hooded seal",1663
+"282","Canada","1951","Hooded seal",5182
+"283","Canada","1952","Hooded seal",919
+"284","Canada","1953","Hooded seal",2135
+"285","Canada","1954","Hooded seal",1243
+"286","Canada","1955","Hooded seal",2388
+"287","Canada","1956","Hooded seal",1759
+"288","Canada","1957","Hooded seal",73
+"289","Canada","1958","Hooded seal",801
+"290","Canada","1959","Hooded seal",1397
+"291","Canada","1960","Hooded seal",242
+"292","Canada","1961","Hooded seal",2487
+"293","Canada","1962","Hooded seal",529
+"294","Canada","1963","Hooded seal",750
+"295","Canada","1964","Hooded seal",1511
+"296","Canada","1965","Hooded seal",2079
+"297","Canada","1966","Hooded seal",5766
+"298","Canada","1967","Hooded seal",1361
+"299","Canada","1968","Hooded seal",147
+"300","Canada","1969","Hooded seal",900
+"301","Canada","1970","Hooded seal",2869
+"302","Canada","1971","Hooded seal",432
+"303","Canada","1972","Hooded seal",422
+"304","Canada","1973","Hooded seal",312
+"305","Canada","1974","Hooded seal",203
+"306","Canada","1975","Hooded seal",5385
+"307","Canada","1976","Hooded seal",3867
+"308","Canada","1977","Hooded seal",6044
+"309","Canada","1978","Hooded seal",4189
+"310","Canada","1979","Hooded seal",6819
+"311","Canada","1980","Hooded seal",7409
+"312","Canada","1981","Hooded seal",8309
+"313","Canada","1982","Hooded seal",5831
+"314","Canada","1983","Hooded seal",128
+"315","Canada","1984","Hooded seal",444
+"316","Canada","1985","Hooded seal",784
+"317","Canada","1986","Hooded seal",33
+"318","Canada","1987","Hooded seal",1828
+"319","Canada","1988","Hooded seal",908
+"320","Canada","1989","Hooded seal",367
+"321","Canada","1990","Hooded seal",636
+"322","Canada","1991","Hooded seal",6321
+"323","Canada","1992","Hooded seal",119
+"324","Canada","1993","Hooded seal",19
+"325","Canada","1994","Hooded seal",149
+"326","Canada","1995","Hooded seal",857
+"327","Canada","1996","Hooded seal",25754
+"328","Canada","1997","Hooded seal",7058
+"329","Canada","1998","Hooded seal",10020
+"330","Canada","1999","Hooded seal",49
+"331","Canada","2000","Hooded seal",10
+"332","Canada","2001","Hooded seal",257
+"333","Canada","2002","Hooded seal",11
+"334","Canada","2003","Hooded seal",6
+"335","Canada","2004","Hooded seal",389
+"336","Canada","2005","Hooded seal",20
+"337","Canada","2006","Hooded seal",40
+"338","Canada","2007","Hooded seal",5
+"339","Canada","2008","Hooded seal",3
+"340","Canada","2009","Hooded seal",10
+"341","Canada","2010","Hooded seal",0
+"342","Canada","2011","Hooded seal",2
+"343","Canada","2012","Hooded seal",1
+"344","Canada","2013","Hooded seal",0
+"345","Canada","1970","Humpback whale",15
+"346","Canada","1971","Humpback whale",20
+"347","Canada","1972","Humpback whale",0
+"348","Canada","1973","Humpback whale",0
+"349","Canada","1974","Humpback whale",0
+"350","Canada","1975","Humpback whale",0
+"351","Canada","1976","Humpback whale",0
+"352","Canada","1977","Humpback whale",0
+"353","Canada","1978","Humpback whale",0
+"354","Canada","1979","Humpback whale",0
+"355","Canada","1980","Humpback whale",0
+"356","Canada","1981","Humpback whale",0
+"357","Canada","1982","Humpback whale",0
+"358","Canada","1983","Humpback whale",0
+"359","Canada","1984","Humpback whale",0
+"360","Canada","1985","Humpback whale",0
+"361","Canada","1986","Humpback whale",0
+"362","Canada","1987","Humpback whale",0
+"363","Canada","1988","Humpback whale",0
+"364","Canada","1989","Humpback whale",0
+"365","Canada","1990","Humpback whale",0
+"366","Canada","1991","Humpback whale",0
+"367","Canada","1992","Humpback whale",0
+"368","Canada","1993","Humpback whale",0
+"369","Canada","1994","Humpback whale",0
+"370","Canada","1995","Humpback whale",0
+"371","Canada","1996","Humpback whale",0
+"372","Canada","1997","Humpback whale",0
+"373","Canada","1998","Humpback whale",0
+"374","Canada","1999","Humpback whale",0
+"375","Canada","2000","Humpback whale",0
+"376","Canada","2001","Humpback whale",0
+"377","Canada","2002","Humpback whale",0
+"378","Canada","2003","Humpback whale",0
+"379","Canada","2004","Humpback whale",0
+"380","Canada","2005","Humpback whale",0
+"381","Canada","2006","Humpback whale",0
+"382","Canada","2007","Humpback whale",0
+"383","Canada","2008","Humpback whale",0
+"384","Canada","2009","Humpback whale",0
+"385","Canada","2010","Humpback whale",0
+"386","Canada","2011","Humpback whale",0
+"387","Canada","2012","Humpback whale",0
+"388","Canada","2013","Humpback whale",0
+"389","Canada","1950","Killer whale",0
+"390","Canada","1951","Killer whale",0
+"391","Canada","1952","Killer whale",0
+"392","Canada","1953","Killer whale",0
+"393","Canada","1954","Killer whale",0
+"394","Canada","1955","Killer whale",1
+"395","Canada","1956","Killer whale",0
+"396","Canada","1957","Killer whale",0
+"397","Canada","1958","Killer whale",0
+"398","Canada","1959","Killer whale",0
+"399","Canada","1960","Killer whale",0
+"400","Canada","1961","Killer whale",0
+"401","Canada","1962","Killer whale",0
+"402","Canada","1963","Killer whale",0
+"403","Canada","1964","Killer whale",2
+"404","Canada","1965","Killer whale",0
+"405","Canada","1966","Killer whale",0
+"406","Canada","1967","Killer whale",1
+"407","Canada","1968","Killer whale",0
+"408","Canada","1969","Killer whale",0
+"409","Canada","1970","Killer whale",0
+"410","Canada","1971","Killer whale",2
+"411","Canada","1972","Killer whale",0
+"412","Canada","1973","Killer whale",0
+"413","Canada","1974","Killer whale",0
+"414","Canada","1975","Killer whale",0
+"415","Canada","1976","Killer whale",0
+"416","Canada","1977","Killer whale",14
+"417","Canada","1978","Killer whale",0
+"418","Canada","1979","Killer whale",0
+"419","Canada","1980","Killer whale",0
+"420","Canada","1981","Killer whale",0
+"421","Canada","1982","Killer whale",0
+"422","Canada","1983","Killer whale",0
+"423","Canada","1984","Killer whale",0
+"424","Canada","1985","Killer whale",0
+"425","Canada","1986","Killer whale",0
+"426","Canada","1987","Killer whale",0
+"427","Canada","1988","Killer whale",0
+"428","Canada","1989","Killer whale",0
+"429","Canada","1990","Killer whale",0
+"430","Canada","1991","Killer whale",0
+"431","Canada","1992","Killer whale",0
+"432","Canada","1993","Killer whale",0
+"433","Canada","1994","Killer whale",0
+"434","Canada","1995","Killer whale",0
+"435","Canada","1996","Killer whale",0
+"436","Canada","1997","Killer whale",0
+"437","Canada","1998","Killer whale",0
+"438","Canada","1999","Killer whale",0
+"439","Canada","2000","Killer whale",0
+"440","Canada","2001","Killer whale",0
+"441","Canada","2002","Killer whale",0
+"442","Canada","2003","Killer whale",0
+"443","Canada","2004","Killer whale",0
+"444","Canada","2005","Killer whale",0
+"445","Canada","2006","Killer whale",0
+"446","Canada","2007","Killer whale",0
+"447","Canada","2008","Killer whale",0
+"448","Canada","2009","Killer whale",0
+"449","Canada","2010","Killer whale",0
+"450","Canada","2011","Killer whale",0
+"451","Canada","2012","Killer whale",0
+"452","Canada","2013","Killer whale",0
+"453","Canada","1955","Long0finned pilot whale",6612
+"454","Canada","1956","Long0finned pilot whale",9799
+"455","Canada","1957","Long0finned pilot whale",7797
+"456","Canada","1958","Long0finned pilot whale",789
+"457","Canada","1959","Long0finned pilot whale",1725
+"458","Canada","1960","Long0finned pilot whale",1957
+"459","Canada","1961","Long0finned pilot whale",6262
+"460","Canada","1962","Long0finned pilot whale",220
+"461","Canada","1963","Long0finned pilot whale",221
+"462","Canada","1964","Long0finned pilot whale",2849
+"463","Canada","1965","Long0finned pilot whale",1520
+"464","Canada","1966","Long0finned pilot whale",887
+"465","Canada","1967","Long0finned pilot whale",739
+"466","Canada","1968","Long0finned pilot whale",204
+"467","Canada","1969","Long0finned pilot whale",0
+"468","Canada","1970","Long0finned pilot whale",155
+"469","Canada","1971","Long0finned pilot whale",0
+"470","Canada","1972","Long0finned pilot whale",0
+"471","Canada","1973","Long0finned pilot whale",0
+"472","Canada","1974","Long0finned pilot whale",0
+"473","Canada","1975","Long0finned pilot whale",0
+"474","Canada","1976","Long0finned pilot whale",0
+"475","Canada","1977","Long0finned pilot whale",0
+"476","Canada","1978","Long0finned pilot whale",0
+"477","Canada","1979","Long0finned pilot whale",0
+"478","Canada","1980","Long0finned pilot whale",0
+"479","Canada","1981","Long0finned pilot whale",0
+"480","Canada","1982","Long0finned pilot whale",5
+"481","Canada","1983","Long0finned pilot whale",0
+"482","Canada","1984","Long0finned pilot whale",0
+"483","Canada","1985","Long0finned pilot whale",0
+"484","Canada","1986","Long0finned pilot whale",0
+"485","Canada","1987","Long0finned pilot whale",0
+"486","Canada","1988","Long0finned pilot whale",0
+"487","Canada","1989","Long0finned pilot whale",0
+"488","Canada","1990","Long0finned pilot whale",0
+"489","Canada","1991","Long0finned pilot whale",0
+"490","Canada","1992","Long0finned pilot whale",0
+"491","Canada","1993","Long0finned pilot whale",14
+"492","Canada","1994","Long0finned pilot whale",3
+"493","Canada","1995","Long0finned pilot whale",9
+"494","Canada","1996","Long0finned pilot whale",6
+"495","Canada","1997","Long0finned pilot whale",15
+"496","Canada","1998","Long0finned pilot whale",0
+"497","Canada","1999","Long0finned pilot whale",0
+"498","Canada","2000","Long0finned pilot whale",0
+"499","Canada","2001","Long0finned pilot whale",0
+"500","Canada","2002","Long0finned pilot whale",0
+"501","Canada","2003","Long0finned pilot whale",0
+"502","Canada","2004","Long0finned pilot whale",0
+"503","Canada","2005","Long0finned pilot whale",0
+"504","Canada","2006","Long0finned pilot whale",0
+"505","Canada","2007","Long0finned pilot whale",0
+"506","Canada","2008","Long0finned pilot whale",0
+"507","Canada","2009","Long0finned pilot whale",0
+"508","Canada","2010","Long0finned pilot whale",0
+"509","Canada","2011","Long0finned pilot whale",0
+"510","Canada","2012","Long0finned pilot whale",0
+"511","Canada","2013","Long0finned pilot whale",0
+"512","Canada","1950","Minke whale",0
+"513","Canada","1951","Minke whale",0
+"514","Canada","1952","Minke whale",0
+"515","Canada","1953","Minke whale",0
+"516","Canada","1954","Minke whale",0
+"517","Canada","1955","Minke whale",13
+"518","Canada","1956","Minke whale",57
+"519","Canada","1957","Minke whale",37
+"520","Canada","1958","Minke whale",42
+"521","Canada","1959","Minke whale",18
+"522","Canada","1960","Minke whale",11
+"523","Canada","1961","Minke whale",22
+"524","Canada","1962","Minke whale",60
+"525","Canada","1963","Minke whale",18
+"526","Canada","1964","Minke whale",54
+"527","Canada","1965","Minke whale",41
+"528","Canada","1966","Minke whale",28
+"529","Canada","1967","Minke whale",41
+"530","Canada","1968","Minke whale",0
+"531","Canada","1969","Minke whale",50
+"532","Canada","1970","Minke whale",86
+"533","Canada","1971","Minke whale",73
+"534","Canada","1972","Minke whale",97
+"535","Canada","1973","Minke whale",0
+"536","Canada","1974","Minke whale",0
+"537","Canada","1975","Minke whale",0
+"538","Canada","1976","Minke whale",0
+"539","Canada","1977","Minke whale",0
+"540","Canada","1978","Minke whale",0
+"541","Canada","1979","Minke whale",0
+"542","Canada","1980","Minke whale",0
+"543","Canada","1981","Minke whale",0
+"544","Canada","1982","Minke whale",1
+"545","Canada","1983","Minke whale",0
+"546","Canada","1984","Minke whale",0
+"547","Canada","1985","Minke whale",0
+"548","Canada","1986","Minke whale",0
+"549","Canada","1987","Minke whale",0
+"550","Canada","1988","Minke whale",0
+"551","Canada","1989","Minke whale",0
+"552","Canada","1990","Minke whale",0
+"553","Canada","1991","Minke whale",0
+"554","Canada","1992","Minke whale",0
+"555","Canada","1993","Minke whale",0
+"556","Canada","1994","Minke whale",0
+"557","Canada","1995","Minke whale",0
+"558","Canada","1996","Minke whale",0
+"559","Canada","1997","Minke whale",0
+"560","Canada","1998","Minke whale",0
+"561","Canada","1999","Minke whale",0
+"562","Canada","2000","Minke whale",0
+"563","Canada","2001","Minke whale",0
+"564","Canada","2002","Minke whale",0
+"565","Canada","2003","Minke whale",0
+"566","Canada","2004","Minke whale",0
+"567","Canada","2005","Minke whale",0
+"568","Canada","2006","Minke whale",0
+"569","Canada","2007","Minke whale",0
+"570","Canada","2008","Minke whale",0
+"571","Canada","2009","Minke whale",0
+"572","Canada","2010","Minke whale",0
+"573","Canada","2011","Minke whale",0
+"574","Canada","2012","Minke whale",0
+"575","Canada","2013","Minke whale",0
+"576","Canada","1970","Narwhal",88
+"577","Canada","1971","Narwhal",30
+"578","Canada","1972","Narwhal",0
+"579","Canada","1973","Narwhal",341
+"580","Canada","1974","Narwhal",291
+"581","Canada","1975","Narwhal",251
+"582","Canada","1976","Narwhal",300
+"583","Canada","1977","Narwhal",263
+"584","Canada","1978","Narwhal",279
+"585","Canada","1979","Narwhal",319
+"586","Canada","1980","Narwhal",339
+"587","Canada","1981","Narwhal",406
+"588","Canada","1982","Narwhal",402
+"589","Canada","1983","Narwhal",344
+"590","Canada","1984","Narwhal",285
+"591","Canada","1985","Narwhal",314
+"592","Canada","1986","Narwhal",263
+"593","Canada","1987","Narwhal",181
+"594","Canada","1988","Narwhal",237
+"595","Canada","1989","Narwhal",342
+"596","Canada","1990","Narwhal",0
+"597","Canada","1991","Narwhal",0
+"598","Canada","1992","Narwhal",325
+"599","Canada","1993","Narwhal",0
+"600","Canada","1994","Narwhal",0
+"601","Canada","1995","Narwhal",0
+"602","Canada","1996","Narwhal",0
+"603","Canada","1997","Narwhal",0
+"604","Canada","1998","Narwhal",0
+"605","Canada","1999","Narwhal",0
+"606","Canada","2000","Narwhal",0
+"607","Canada","2001","Narwhal",559
+"608","Canada","2002","Narwhal",0
+"609","Canada","2003","Narwhal",0
+"610","Canada","2004","Narwhal",0
+"611","Canada","2005","Narwhal",0
+"612","Canada","2006","Narwhal",0
+"613","Canada","2007","Narwhal",0
+"614","Canada","2008","Narwhal",0
+"615","Canada","2009","Narwhal",0
+"616","Canada","2010","Narwhal",0
+"617","Canada","2011","Narwhal",0
+"618","Canada","2012","Narwhal",0
+"619","Canada","2013","Narwhal",0
+"620","Canada","1970","Ringed seal",0
+"621","Canada","1971","Ringed seal",0
+"622","Canada","1972","Ringed seal",0
+"623","Canada","1973","Ringed seal",0
+"624","Canada","1974","Ringed seal",0
+"625","Canada","1975","Ringed seal",0
+"626","Canada","1976","Ringed seal",0
+"627","Canada","1977","Ringed seal",0
+"628","Canada","1978","Ringed seal",0
+"629","Canada","1979","Ringed seal",0
+"630","Canada","1980","Ringed seal",0
+"631","Canada","1981","Ringed seal",0
+"632","Canada","1982","Ringed seal",0
+"633","Canada","1983","Ringed seal",0
+"634","Canada","1984","Ringed seal",0
+"635","Canada","1985","Ringed seal",0
+"636","Canada","1986","Ringed seal",0
+"637","Canada","1987","Ringed seal",0
+"638","Canada","1988","Ringed seal",0
+"639","Canada","1989","Ringed seal",0
+"640","Canada","1990","Ringed seal",0
+"641","Canada","1991","Ringed seal",0
+"642","Canada","1992","Ringed seal",0
+"643","Canada","1993","Ringed seal",0
+"644","Canada","1994","Ringed seal",0
+"645","Canada","1995","Ringed seal",0
+"646","Canada","1996","Ringed seal",670
+"647","Canada","1997","Ringed seal",0
+"648","Canada","1998","Ringed seal",1234
+"649","Canada","1999","Ringed seal",742
+"650","Canada","2000","Ringed seal",1747
+"651","Canada","2001","Ringed seal",2035
+"652","Canada","2002","Ringed seal",1340
+"653","Canada","2003","Ringed seal",850
+"654","Canada","2004","Ringed seal",290
+"655","Canada","2005","Ringed seal",306
+"656","Canada","2006","Ringed seal",77
+"657","Canada","2007","Ringed seal",113
+"658","Canada","2008","Ringed seal",49
+"659","Canada","2009","Ringed seal",21
+"660","Canada","2010","Ringed seal",6
+"661","Canada","2011","Ringed seal",4
+"662","Canada","2012","Ringed seal",7
+"663","Canada","2013","Ringed seal",16
+"664","Canada","1975","Seals nei",3332
+"665","Canada","1976","Seals nei",3761
+"666","Canada","1977","Seals nei",2491
+"667","Canada","1978","Seals nei",2879
+"668","Canada","1979","Seals nei",3362
+"669","Canada","1980","Seals nei",9773
+"670","Canada","1981","Seals nei",8993
+"671","Canada","1982","Seals nei",5204
+"672","Canada","1983","Seals nei",6492
+"673","Canada","1984","Seals nei",1993
+"674","Canada","1985","Seals nei",1994
+"675","Canada","1986","Seals nei",2874
+"676","Canada","1987","Seals nei",3236
+"677","Canada","1988","Seals nei",1036
+"678","Canada","1989","Seals nei",2561
+"679","Canada","1990","Seals nei",1821
+"680","Canada","1991","Seals nei",1771
+"681","Canada","1992","Seals nei",1127
+"682","Canada","1993","Seals nei",1125
+"683","Canada","1994","Seals nei",1798
+"684","Canada","1995","Seals nei",1799
+"685","Canada","1996","Seals nei",190
+"686","Canada","1997","Seals nei",1838
+"687","Canada","1998","Seals nei",55
+"688","Canada","1999","Seals nei",28
+"689","Canada","2000","Seals nei",7
+"690","Canada","2001","Seals nei",39
+"691","Canada","2002","Seals nei",1005
+"692","Canada","2003","Seals nei",22
+"693","Canada","2004","Seals nei",40
+"694","Canada","2005","Seals nei",7
+"695","Canada","2006","Seals nei",37
+"696","Canada","2007","Seals nei",66
+"697","Canada","2008","Seals nei",6
+"698","Canada","2009","Seals nei",4
+"699","Canada","2010","Seals nei",0
+"700","Canada","2011","Seals nei",4
+"701","Canada","2012","Seals nei",2
+"702","Canada","2013","Seals nei",1
+"703","Canada","1950","Sei whale",0
+"704","Canada","1951","Sei whale",0
+"705","Canada","1952","Sei whale",0
+"706","Canada","1953","Sei whale",0
+"707","Canada","1954","Sei whale",0
+"708","Canada","1955","Sei whale",0
+"709","Canada","1956","Sei whale",0
+"710","Canada","1957","Sei whale",0
+"711","Canada","1958","Sei whale",0
+"712","Canada","1959","Sei whale",0
+"713","Canada","1960","Sei whale",0
+"714","Canada","1961","Sei whale",0
+"715","Canada","1962","Sei whale",0
+"716","Canada","1963","Sei whale",0
+"717","Canada","1964","Sei whale",60
+"718","Canada","1965","Sei whale",135
+"719","Canada","1966","Sei whale",272
+"720","Canada","1967","Sei whale",366
+"721","Canada","1968","Sei whale",362
+"722","Canada","1969","Sei whale",306
+"723","Canada","1970","Sei whale",94
+"724","Canada","1971","Sei whale",235
+"725","Canada","1972","Sei whale",183
+"726","Canada","1973","Sei whale",0
+"727","Canada","1974","Sei whale",0
+"728","Canada","1975","Sei whale",0
+"729","Canada","1976","Sei whale",0
+"730","Canada","1977","Sei whale",0
+"731","Canada","1978","Sei whale",0
+"732","Canada","1979","Sei whale",0
+"733","Canada","1980","Sei whale",0
+"734","Canada","1981","Sei whale",0
+"735","Canada","1982","Sei whale",0
+"736","Canada","1983","Sei whale",0
+"737","Canada","1984","Sei whale",0
+"738","Canada","1985","Sei whale",0
+"739","Canada","1986","Sei whale",0
+"740","Canada","1987","Sei whale",0
+"741","Canada","1988","Sei whale",0
+"742","Canada","1989","Sei whale",0
+"743","Canada","1990","Sei whale",0
+"744","Canada","1991","Sei whale",0
+"745","Canada","1992","Sei whale",0
+"746","Canada","1993","Sei whale",0
+"747","Canada","1994","Sei whale",0
+"748","Canada","1995","Sei whale",0
+"749","Canada","1996","Sei whale",0
+"750","Canada","1997","Sei whale",0
+"751","Canada","1998","Sei whale",0
+"752","Canada","1999","Sei whale",0
+"753","Canada","2000","Sei whale",0
+"754","Canada","2001","Sei whale",0
+"755","Canada","2002","Sei whale",0
+"756","Canada","2003","Sei whale",0
+"757","Canada","2004","Sei whale",0
+"758","Canada","2005","Sei whale",0
+"759","Canada","2006","Sei whale",0
+"760","Canada","2007","Sei whale",0
+"761","Canada","2008","Sei whale",0
+"762","Canada","2009","Sei whale",0
+"763","Canada","2010","Sei whale",0
+"764","Canada","2011","Sei whale",0
+"765","Canada","2012","Sei whale",0
+"766","Canada","2013","Sei whale",0
+"767","Canada","1970","Sperm whale",27
+"768","Canada","1971","Sperm whale",37
+"769","Canada","1972","Sperm whale",43
+"770","Canada","1973","Sperm whale",0
+"771","Canada","1974","Sperm whale",0
+"772","Canada","1975","Sperm whale",0
+"773","Canada","1976","Sperm whale",0
+"774","Canada","1977","Sperm whale",0
+"775","Canada","1978","Sperm whale",0
+"776","Canada","1979","Sperm whale",0
+"777","Canada","1980","Sperm whale",0
+"778","Canada","1981","Sperm whale",0
+"779","Canada","1982","Sperm whale",0
+"780","Canada","1983","Sperm whale",0
+"781","Canada","1984","Sperm whale",0
+"782","Canada","1985","Sperm whale",0
+"783","Canada","1986","Sperm whale",0
+"784","Canada","1987","Sperm whale",0
+"785","Canada","1988","Sperm whale",0
+"786","Canada","1989","Sperm whale",0
+"787","Canada","1990","Sperm whale",0
+"788","Canada","1991","Sperm whale",0
+"789","Canada","1992","Sperm whale",0
+"790","Canada","1993","Sperm whale",0
+"791","Canada","1994","Sperm whale",0
+"792","Canada","1995","Sperm whale",0
+"793","Canada","1996","Sperm whale",0
+"794","Canada","1997","Sperm whale",0
+"795","Canada","1998","Sperm whale",0
+"796","Canada","1999","Sperm whale",0
+"797","Canada","2000","Sperm whale",0
+"798","Canada","2001","Sperm whale",0
+"799","Canada","2002","Sperm whale",0
+"800","Canada","2003","Sperm whale",0
+"801","Canada","2004","Sperm whale",0
+"802","Canada","2005","Sperm whale",0
+"803","Canada","2006","Sperm whale",0
+"804","Canada","2007","Sperm whale",0
+"805","Canada","2008","Sperm whale",0
+"806","Canada","2009","Sperm whale",0
+"807","Canada","2010","Sperm whale",0
+"808","Canada","2011","Sperm whale",0
+"809","Canada","2012","Sperm whale",0
+"810","Canada","2013","Sperm whale",0
+"811","Canada","1950","Toothed whales nei",0
+"812","Canada","1951","Toothed whales nei",0
+"813","Canada","1952","Toothed whales nei",0
+"814","Canada","1953","Toothed whales nei",0
+"815","Canada","1954","Toothed whales nei",0
+"816","Canada","1955","Toothed whales nei",3
+"817","Canada","1956","Toothed whales nei",4
+"818","Canada","1957","Toothed whales nei",4
+"819","Canada","1958","Toothed whales nei",2
+"820","Canada","1959","Toothed whales nei",0
+"821","Canada","1960","Toothed whales nei",0
+"822","Canada","1961","Toothed whales nei",0
+"823","Canada","1962","Toothed whales nei",41
+"824","Canada","1963","Toothed whales nei",25
+"825","Canada","1964","Toothed whales nei",14
+"826","Canada","1965","Toothed whales nei",6
+"827","Canada","1966","Toothed whales nei",2
+"828","Canada","1967","Toothed whales nei",5
+"829","Canada","1968","Toothed whales nei",0
+"830","Canada","1969","Toothed whales nei",0
+"831","Canada","1970","Toothed whales nei",0
+"832","Canada","1971","Toothed whales nei",0
+"833","Canada","1972","Toothed whales nei",0
+"834","Canada","1973","Toothed whales nei",0
+"835","Canada","1974","Toothed whales nei",0
+"836","Canada","1975","Toothed whales nei",0
+"837","Canada","1976","Toothed whales nei",0
+"838","Canada","1977","Toothed whales nei",0
+"839","Canada","1978","Toothed whales nei",0
+"840","Canada","1979","Toothed whales nei",0
+"841","Canada","1980","Toothed whales nei",0
+"842","Canada","1981","Toothed whales nei",0
+"843","Canada","1982","Toothed whales nei",0
+"844","Canada","1983","Toothed whales nei",1
+"845","Canada","1984","Toothed whales nei",0
+"846","Canada","1985","Toothed whales nei",0
+"847","Canada","1986","Toothed whales nei",0
+"848","Canada","1987","Toothed whales nei",0
+"849","Canada","1988","Toothed whales nei",8
+"850","Canada","1989","Toothed whales nei",1
+"851","Canada","1990","Toothed whales nei",4
+"852","Canada","1991","Toothed whales nei",2
+"853","Canada","1992","Toothed whales nei",0
+"854","Canada","1993","Toothed whales nei",0
+"855","Canada","1994","Toothed whales nei",3
+"856","Canada","1995","Toothed whales nei",1
+"857","Canada","1996","Toothed whales nei",3
+"858","Canada","1997","Toothed whales nei",0
+"859","Canada","1998","Toothed whales nei",0
+"860","Canada","1999","Toothed whales nei",0
+"861","Canada","2000","Toothed whales nei",0
+"862","Canada","2001","Toothed whales nei",0
+"863","Canada","2002","Toothed whales nei",0
+"864","Canada","2003","Toothed whales nei",0
+"865","Canada","2004","Toothed whales nei",0
+"866","Canada","2005","Toothed whales nei",0
+"867","Canada","2006","Toothed whales nei",0
+"868","Canada","2007","Toothed whales nei",0
+"869","Canada","2008","Toothed whales nei",0
+"870","Canada","2009","Toothed whales nei",0
+"871","Canada","2010","Toothed whales nei",0
+"872","Canada","2011","Toothed whales nei",0
+"873","Canada","2012","Toothed whales nei",0
+"874","Canada","2013","Toothed whales nei",0
+"875","Canada","1955","White whale",484
+"876","Canada","1956","White whale",434
+"877","Canada","1957","White whale",518
+"878","Canada","1958","White whale",710
+"879","Canada","1959","White whale",268
+"880","Canada","1960","White whale",385
+"881","Canada","1961","White whale",93
+"882","Canada","1962","White whale",271
+"883","Canada","1963","White whale",349
+"884","Canada","1964","White whale",1313
+"885","Canada","1965","White whale",639
+"886","Canada","1966","White whale",482
+"887","Canada","1967","White whale",769
+"888","Canada","1968","White whale",582
+"889","Canada","1969","White whale",178
+"890","Canada","1970","White whale",411
+"891","Canada","1971","White whale",13
+"892","Canada","1972","White whale",181
+"893","Canada","1973","White whale",538
+"894","Canada","1974","White whale",1177
+"895","Canada","1975","White whale",792
+"896","Canada","1976","White whale",1075
+"897","Canada","1977","White whale",1302
+"898","Canada","1978","White whale",703
+"899","Canada","1979","White whale",449
+"900","Canada","1980","White whale",774
+"901","Canada","1981","White whale",692
+"902","Canada","1982","White whale",475
+"903","Canada","1983","White whale",484
+"904","Canada","1984","White whale",663
+"905","Canada","1985","White whale",845
+"906","Canada","1986","White whale",700
+"907","Canada","1987","White whale",861
+"908","Canada","1988","White whale",736
+"909","Canada","1989","White whale",1043
+"910","Canada","1990","White whale",0
+"911","Canada","1991","White whale",284
+"912","Canada","1992","White whale",618
+"913","Canada","1993","White whale",0
+"914","Canada","1994","White whale",0
+"915","Canada","1995","White whale",0
+"916","Canada","1996","White whale",0
+"917","Canada","1997","White whale",0
+"918","Canada","1998","White whale",0
+"919","Canada","1999","White whale",0
+"920","Canada","2000","White whale",0
+"921","Canada","2001","White whale",375
+"922","Canada","2002","White whale",0
+"923","Canada","2003","White whale",0
+"924","Canada","2004","White whale",0
+"925","Canada","2005","White whale",0
+"926","Canada","2006","White whale",0
+"927","Canada","2007","White whale",0
+"928","Canada","2008","White whale",0
+"929","Canada","2009","White whale",0
+"930","Canada","2010","White whale",0
+"931","Canada","2011","White whale",0
+"932","Canada","2012","White whale",0
+"933","Canada","2013","White whale",0

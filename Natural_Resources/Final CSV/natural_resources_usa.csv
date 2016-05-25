@@ -1,388 +1,1280 @@
 "","Country","Year","Species","totalcatch"
 "1","United States of America","1950","Atlantic white0sided dolphin",0
-"2","United States of America","1950","Humpback whale",0
-"3","United States of America","1950","Sei whale",0
-"4","United States of America","1951","Atlantic white0sided dolphin",0
-"5","United States of America","1951","Humpback whale",0
-"6","United States of America","1951","Sei whale",0
-"7","United States of America","1952","Atlantic white0sided dolphin",0
-"8","United States of America","1952","Humpback whale",0
-"9","United States of America","1952","Sei whale",0
-"10","United States of America","1953","Atlantic white0sided dolphin",0
-"11","United States of America","1953","Humpback whale",0
-"12","United States of America","1953","Sei whale",0
-"13","United States of America","1954","Atlantic white0sided dolphin",0
-"14","United States of America","1954","Humpback whale",0
-"15","United States of America","1954","Sei whale",0
-"16","United States of America","1955","Atlantic white0sided dolphin",0
-"17","United States of America","1955","Humpback whale",0
-"18","United States of America","1955","Sei whale",0
-"19","United States of America","1956","Atlantic white0sided dolphin",0
-"20","United States of America","1956","Humpback whale",0
-"21","United States of America","1956","Sei whale",0
-"22","United States of America","1957","Atlantic white0sided dolphin",0
-"23","United States of America","1957","Humpback whale",0
-"24","United States of America","1957","Sei whale",0
-"25","United States of America","1958","Atlantic white0sided dolphin",0
-"26","United States of America","1958","Humpback whale",0
-"27","United States of America","1958","Sei whale",0
-"28","United States of America","1959","Atlantic white0sided dolphin",0
-"29","United States of America","1959","Humpback whale",0
-"30","United States of America","1959","Sei whale",0
-"31","United States of America","1960","Atlantic white0sided dolphin",0
-"32","United States of America","1960","Humpback whale",0
-"33","United States of America","1960","Sei whale",0
-"34","United States of America","1961","Atlantic white0sided dolphin",0
-"35","United States of America","1961","Humpback whale",0
-"36","United States of America","1961","Sei whale",0
-"37","United States of America","1962","Atlantic white0sided dolphin",0
-"38","United States of America","1962","Humpback whale",0
-"39","United States of America","1962","Sei whale",0
-"40","United States of America","1963","Atlantic white0sided dolphin",0
-"41","United States of America","1963","Humpback whale",0
-"42","United States of America","1963","Sei whale",0
-"43","United States of America","1964","Atlantic white0sided dolphin",0
-"44","United States of America","1964","Humpback whale",0
-"45","United States of America","1964","Sei whale",0
-"46","United States of America","1965","Atlantic white0sided dolphin",0
-"47","United States of America","1965","Humpback whale",0
-"48","United States of America","1965","Sei whale",0
-"49","United States of America","1966","Atlantic white0sided dolphin",0
-"50","United States of America","1966","Humpback whale",0
-"51","United States of America","1966","Sei whale",0
-"52","United States of America","1967","Atlantic white0sided dolphin",0
-"53","United States of America","1967","Humpback whale",0
-"54","United States of America","1967","Sei whale",0
-"55","United States of America","1968","Atlantic white0sided dolphin",0
-"56","United States of America","1968","Humpback whale",0
-"57","United States of America","1968","Sei whale",0
-"58","United States of America","1969","Atlantic white0sided dolphin",0
-"59","United States of America","1969","Humpback whale",0
-"60","United States of America","1969","Sei whale",0
-"61","United States of America","1970","Atlantic white0sided dolphin",0
-"62","United States of America","1970","Humpback whale",0
-"63","United States of America","1970","Long0finned pilot whale",0
-"64","United States of America","1970","Risso's dolphin",0
-"65","United States of America","1970","Sei whale",0
-"66","United States of America","1971","Atlantic white0sided dolphin",0
-"67","United States of America","1971","Humpback whale",0
-"68","United States of America","1971","Long0finned pilot whale",0
-"69","United States of America","1971","Risso's dolphin",0
-"70","United States of America","1971","Sei whale",0
-"71","United States of America","1972","Atlantic white0sided dolphin",0
-"72","United States of America","1972","Humpback whale",0
-"73","United States of America","1972","Long0finned pilot whale",0
-"74","United States of America","1972","Risso's dolphin",0
-"75","United States of America","1972","Sei whale",0
-"76","United States of America","1973","Atlantic white0sided dolphin",0
-"77","United States of America","1973","Humpback whale",0
-"78","United States of America","1973","Long0finned pilot whale",0
-"79","United States of America","1973","Risso's dolphin",0
-"80","United States of America","1973","Sei whale",0
-"81","United States of America","1974","Atlantic white0sided dolphin",0
-"82","United States of America","1974","Humpback whale",0
-"83","United States of America","1974","Long0finned pilot whale",0
-"84","United States of America","1974","Risso's dolphin",0
-"85","United States of America","1974","Sei whale",0
-"86","United States of America","1975","Atlantic white0sided dolphin",0
-"87","United States of America","1975","Humpback whale",0
-"88","United States of America","1975","Long0finned pilot whale",0
-"89","United States of America","1975","Risso's dolphin",0
-"90","United States of America","1975","Sei whale",0
-"91","United States of America","1976","Atlantic white0sided dolphin",0
-"92","United States of America","1976","Humpback whale",0
-"93","United States of America","1976","Long0finned pilot whale",0
-"94","United States of America","1976","Risso's dolphin",0
-"95","United States of America","1976","Sei whale",0
-"96","United States of America","1977","Atlantic white0sided dolphin",0
-"97","United States of America","1977","Humpback whale",0
-"98","United States of America","1977","Long0finned pilot whale",0
-"99","United States of America","1977","Risso's dolphin",0
-"100","United States of America","1977","Sei whale",0
-"101","United States of America","1978","Atlantic white0sided dolphin",0
-"102","United States of America","1978","Humpback whale",0
-"103","United States of America","1978","Long0finned pilot whale",0
-"104","United States of America","1978","Risso's dolphin",0
-"105","United States of America","1978","Sei whale",0
-"106","United States of America","1979","Atlantic white0sided dolphin",0
-"107","United States of America","1979","Humpback whale",0
-"108","United States of America","1979","Long0finned pilot whale",0
-"109","United States of America","1979","Risso's dolphin",0
-"110","United States of America","1979","Sei whale",0
-"111","United States of America","1980","Atlantic white0sided dolphin",0
-"112","United States of America","1980","Humpback whale",0
-"113","United States of America","1980","Long0finned pilot whale",0
-"114","United States of America","1980","Risso's dolphin",0
-"115","United States of America","1980","Sei whale",0
-"116","United States of America","1981","Atlantic white0sided dolphin",0
-"117","United States of America","1981","Humpback whale",0
-"118","United States of America","1981","Long0finned pilot whale",0
-"119","United States of America","1981","Risso's dolphin",0
-"120","United States of America","1981","Sei whale",0
-"121","United States of America","1982","Atlantic white0sided dolphin",0
-"122","United States of America","1982","Humpback whale",0
-"123","United States of America","1982","Long0finned pilot whale",0
-"124","United States of America","1982","Risso's dolphin",0
-"125","United States of America","1982","Sei whale",0
-"126","United States of America","1983","Atlantic white0sided dolphin",0
-"127","United States of America","1983","Humpback whale",0
-"128","United States of America","1983","Long0finned pilot whale",0
-"129","United States of America","1983","Risso's dolphin",0
-"130","United States of America","1983","Sei whale",0
-"131","United States of America","1984","Atlantic white0sided dolphin",0
-"132","United States of America","1984","Humpback whale",0
-"133","United States of America","1984","Long0finned pilot whale",0
-"134","United States of America","1984","Risso's dolphin",0
-"135","United States of America","1984","Sei whale",0
-"136","United States of America","1985","Atlantic white0sided dolphin",0
-"137","United States of America","1985","Humpback whale",0
-"138","United States of America","1985","Long0finned pilot whale",0
-"139","United States of America","1985","Risso's dolphin",0
-"140","United States of America","1985","Sei whale",0
-"141","United States of America","1986","Atlantic white0sided dolphin",0
-"142","United States of America","1986","Humpback whale",0
-"143","United States of America","1986","Long0finned pilot whale",0
-"144","United States of America","1986","Risso's dolphin",0
-"145","United States of America","1986","Sei whale",0
-"146","United States of America","1987","Atlantic white0sided dolphin",0
-"147","United States of America","1987","Humpback whale",0
-"148","United States of America","1987","Long0finned pilot whale",0
-"149","United States of America","1987","Risso's dolphin",0
-"150","United States of America","1987","Sei whale",0
-"151","United States of America","1988","Atlantic white0sided dolphin",0
-"152","United States of America","1988","Humpback whale",0
-"153","United States of America","1988","Long0finned pilot whale",7
-"154","United States of America","1988","Risso's dolphin",0
-"155","United States of America","1988","Sei whale",0
-"156","United States of America","1989","Atlantic white0sided dolphin",0
-"157","United States of America","1989","Humpback whale",0
-"158","United States of America","1989","Long0finned pilot whale",7
-"159","United States of America","1989","Risso's dolphin",0
-"160","United States of America","1989","Sei whale",0
-"161","United States of America","1990","Atlantic white0sided dolphin",0
-"162","United States of America","1990","Humpback whale",0
-"163","United States of America","1990","Long0finned pilot whale",11
-"164","United States of America","1990","Risso's dolphin",0
-"165","United States of America","1990","Sei whale",0
-"166","United States of America","1991","Atlantic white0sided dolphin",0
-"167","United States of America","1991","Humpback whale",0
-"168","United States of America","1991","Long0finned pilot whale",4
-"169","United States of America","1991","Risso's dolphin",0
-"170","United States of America","1991","Sei whale",0
-"171","United States of America","1992","Atlantic white0sided dolphin",0
-"172","United States of America","1992","Humpback whale",0
-"173","United States of America","1992","Long0finned pilot whale",14
-"174","United States of America","1992","Risso's dolphin",0
-"175","United States of America","1992","Sei whale",0
-"176","United States of America","1993","Atlantic white0sided dolphin",0
-"177","United States of America","1993","Humpback whale",0
-"178","United States of America","1993","Long0finned pilot whale",31
-"179","United States of America","1993","Northern right whale",1
-"180","United States of America","1993","Risso's dolphin",0
-"181","United States of America","1993","Sei whale",0
-"182","United States of America","1994","Atlantic white0sided dolphin",0
-"183","United States of America","1994","Humpback whale",0
-"184","United States of America","1994","Long0finned pilot whale",22
-"185","United States of America","1994","Northern right whale",0
-"186","United States of America","1994","Risso's dolphin",0
-"187","United States of America","1994","Sei whale",0
-"188","United States of America","1995","Atlantic white0sided dolphin",0
-"189","United States of America","1995","Humpback whale",0
-"190","United States of America","1995","Long0finned pilot whale",31
-"191","United States of America","1995","Northern right whale",0
-"192","United States of America","1995","Risso's dolphin",0
-"193","United States of America","1995","Sei whale",0
-"194","United States of America","1996","Atlantic white0sided dolphin",0
-"195","United States of America","1996","Humpback whale",0
-"196","United States of America","1996","Long0finned pilot whale",12
-"197","United States of America","1996","Northern right whale",2
-"198","United States of America","1996","Risso's dolphin",0
-"199","United States of America","1996","Sei whale",0
-"200","United States of America","1997","Atlantic white0sided dolphin",0
-"201","United States of America","1997","Humpback whale",0
-"202","United States of America","1997","Long0finned pilot whale",93
-"203","United States of America","1997","Northern right whale",0
-"204","United States of America","1997","Risso's dolphin",0
-"205","United States of America","1997","Sei whale",0
-"206","United States of America","1998","Atlantic white0sided dolphin",0
-"207","United States of America","1998","Common dolphin",272
-"208","United States of America","1998","Harbour porpoise",778
-"209","United States of America","1998","Humpback whale",0
-"210","United States of America","1998","Long0finned pilot whale",104
-"211","United States of America","1998","Northern right whale",0
-"212","United States of America","1998","Risso's dolphin",44
-"213","United States of America","1998","Sei whale",0
-"214","United States of America","1999","Atlantic white0sided dolphin",0
-"215","United States of America","1999","Common dolphin",195
-"216","United States of America","1999","Harbour porpoise",342
-"217","United States of America","1999","Humpback whale",0
-"218","United States of America","1999","Long0finned pilot whale",371
-"219","United States of America","1999","Northern right whale",2
-"220","United States of America","1999","Risso's dolphin",22
-"221","United States of America","1999","Sei whale",0
-"222","United States of America","2000","Atlantic white0sided dolphin",0
-"223","United States of America","2000","Common dolphin",273
-"224","United States of America","2000","Harbour porpoise",528
-"225","United States of America","2000","Humpback whale",0
-"226","United States of America","2000","Long0finned pilot whale",58
-"227","United States of America","2000","Northern right whale",0
-"228","United States of America","2000","Risso's dolphin",56
-"229","United States of America","2000","Sei whale",0
-"230","United States of America","2001","Atlantic white0sided dolphin",0
-"231","United States of America","2001","Common dolphin",126
-"232","United States of America","2001","Harbour porpoise",79
-"233","United States of America","2001","Humpback whale",0
-"234","United States of America","2001","Long0finned pilot whale",94
-"235","United States of America","2001","Northern right whale",3
-"236","United States of America","2001","Risso's dolphin",26
-"237","United States of America","2001","Sei whale",0
-"238","United States of America","2002","Atlantic white0sided dolphin",0
-"239","United States of America","2002","Common dolphin",1
-"240","United States of America","2002","Harbour porpoise",483
-"241","United States of America","2002","Humpback whale",0
-"242","United States of America","2002","Long0finned pilot whale",54
-"243","United States of America","2002","Minke whale",0
-"244","United States of America","2002","Northern right whale",7
-"245","United States of America","2002","Risso's dolphin",0
-"246","United States of America","2002","Sei whale",0
-"247","United States of America","2003","Atlantic white0sided dolphin",0
-"248","United States of America","2003","Bottlenose dolphin",0
-"249","United States of America","2003","Common dolphin",1
-"250","United States of America","2003","Dolphins nei",0
-"251","United States of America","2003","Harbour porpoise",0
-"252","United States of America","2003","Humpback whale",0
-"253","United States of America","2003","Long0finned pilot whale",0
-"254","United States of America","2003","Minke whale",0
-"255","United States of America","2003","Northern right whale",1
-"256","United States of America","2003","Risso's dolphin",0
-"257","United States of America","2003","Sei whale",0
-"258","United States of America","2003","Toothed whales nei",0
-"259","United States of America","2004","Atlantic white0sided dolphin",0
-"260","United States of America","2004","Bottlenose dolphin",1
-"261","United States of America","2004","Common dolphin",12
-"262","United States of America","2004","Dolphins nei",7
-"263","United States of America","2004","Harbour porpoise",29
-"264","United States of America","2004","Humpback whale",0
-"265","United States of America","2004","Long0finned pilot whale",7
-"266","United States of America","2004","Minke whale",0
-"267","United States of America","2004","Northern right whale",3
-"268","United States of America","2004","Risso's dolphin",2
-"269","United States of America","2004","Sei whale",0
-"270","United States of America","2004","Toothed whales nei",3
-"271","United States of America","2005","Atlantic white0sided dolphin",0
-"272","United States of America","2005","Bottlenose dolphin",2
-"273","United States of America","2005","Common dolphin",0
-"274","United States of America","2005","Dolphins nei",2
-"275","United States of America","2005","Harbour porpoise",40
-"276","United States of America","2005","Humpback whale",0
-"277","United States of America","2005","Long0finned pilot whale",5
-"278","United States of America","2005","Minke whale",0
-"279","United States of America","2005","Northern right whale",3
-"280","United States of America","2005","Pygmy sperm whale",0
-"281","United States of America","2005","Risso's dolphin",0
-"282","United States of America","2005","Sei whale",0
-"283","United States of America","2005","Toothed whales nei",0
-"284","United States of America","2006","Atlantic white0sided dolphin",0
-"285","United States of America","2006","Bottlenose dolphin",0
-"286","United States of America","2006","Common dolphin",15
-"287","United States of America","2006","Dolphins nei",4
-"288","United States of America","2006","Harbour porpoise",55
-"289","United States of America","2006","Humpback whale",4
-"290","United States of America","2006","Long0finned pilot whale",2
-"291","United States of America","2006","Minke whale",0
-"292","United States of America","2006","Northern right whale",1
-"293","United States of America","2006","Pygmy sperm whale",0
-"294","United States of America","2006","Risso's dolphin",0
-"295","United States of America","2006","Sei whale",0
-"296","United States of America","2006","Toothed whales nei",3
-"297","United States of America","2007","Atlantic white0sided dolphin",4
-"298","United States of America","2007","Bottlenose dolphin",0
-"299","United States of America","2007","Common dolphin",5
-"300","United States of America","2007","Dolphins nei",0
-"301","United States of America","2007","Harbour porpoise",36
-"302","United States of America","2007","Humpback whale",1
-"303","United States of America","2007","Long0finned pilot whale",4
-"304","United States of America","2007","Minke whale",1
-"305","United States of America","2007","Northern right whale",1
-"306","United States of America","2007","Pygmy sperm whale",0
-"307","United States of America","2007","Risso's dolphin",0
-"308","United States of America","2007","Sei whale",0
-"309","United States of America","2007","Toothed whales nei",0
-"310","United States of America","2008","Atlantic white0sided dolphin",10
-"311","United States of America","2008","Bottlenose dolphin",0
-"312","United States of America","2008","Common dolphin",4
-"313","United States of America","2008","Dolphins nei",0
-"314","United States of America","2008","Harbour porpoise",40
-"315","United States of America","2008","Humpback whale",2
-"316","United States of America","2008","Long0finned pilot whale",11
-"317","United States of America","2008","Minke whale",4
-"318","United States of America","2008","Northern right whale",0
-"319","United States of America","2008","Pygmy sperm whale",0
-"320","United States of America","2008","Risso's dolphin",1
-"321","United States of America","2008","Sei whale",1
-"322","United States of America","2008","Toothed whales nei",0
-"323","United States of America","2009","Atlantic white0sided dolphin",32
-"324","United States of America","2009","Bottlenose dolphin",8
-"325","United States of America","2009","Common dolphin",21
-"326","United States of America","2009","Dolphins nei",0
-"327","United States of America","2009","Harbour porpoise",42
-"328","United States of America","2009","Humpback whale",2
-"329","United States of America","2009","Long0finned pilot whale",9
-"330","United States of America","2009","Minke whale",0
-"331","United States of America","2009","Northern right whale",0
-"332","United States of America","2009","Pygmy sperm whale",0
-"333","United States of America","2009","Risso's dolphin",5
-"334","United States of America","2009","Sei whale",0
-"335","United States of America","2009","Toothed whales nei",0
-"336","United States of America","2010","Atlantic white0sided dolphin",16
-"337","United States of America","2010","Bottlenose dolphin",6
-"338","United States of America","2010","Common dolphin",46
-"339","United States of America","2010","Dolphins nei",0
-"340","United States of America","2010","Harbour porpoise",68
-"341","United States of America","2010","Humpback whale",0
-"342","United States of America","2010","Long0finned pilot whale",0
-"343","United States of America","2010","Minke whale",0
-"344","United States of America","2010","Northern right whale",3
-"345","United States of America","2010","Pygmy sperm whale",0
-"346","United States of America","2010","Risso's dolphin",16
-"347","United States of America","2010","Sei whale",0
-"348","United States of America","2010","Toothed whales nei",2
-"349","United States of America","2011","Atlantic white0sided dolphin",0
-"350","United States of America","2011","Bottlenose dolphin",7
-"351","United States of America","2011","Common dolphin",0
-"352","United States of America","2011","Dolphins nei",0
-"353","United States of America","2011","Harbour porpoise",0
-"354","United States of America","2011","Humpback whale",0
-"355","United States of America","2011","Long0finned pilot whale",0
-"356","United States of America","2011","Minke whale",0
-"357","United States of America","2011","Northern right whale",0
-"358","United States of America","2011","Pygmy sperm whale",0
-"359","United States of America","2011","Risso's dolphin",0
-"360","United States of America","2011","Sei whale",0
-"361","United States of America","2011","Toothed whales nei",0
-"362","United States of America","2012","Atlantic white0sided dolphin",0
-"363","United States of America","2012","Bottlenose dolphin",0
-"364","United States of America","2012","Common dolphin",0
-"365","United States of America","2012","Dolphins nei",0
-"366","United States of America","2012","Harbour porpoise",0
-"367","United States of America","2012","Humpback whale",0
-"368","United States of America","2012","Long0finned pilot whale",0
-"369","United States of America","2012","Minke whale",0
-"370","United States of America","2012","Northern right whale",0
-"371","United States of America","2012","Pygmy sperm whale",1
-"372","United States of America","2012","Risso's dolphin",0
-"373","United States of America","2012","Sei whale",0
-"374","United States of America","2012","Toothed whales nei",0
-"375","United States of America","2013","Atlantic white0sided dolphin",0
-"376","United States of America","2013","Bottlenose dolphin",0
-"377","United States of America","2013","Common dolphin",0
-"378","United States of America","2013","Dolphins nei",0
-"379","United States of America","2013","Harbour porpoise",0
-"380","United States of America","2013","Humpback whale",0
-"381","United States of America","2013","Long0finned pilot whale",0
-"382","United States of America","2013","Minke whale",0
-"383","United States of America","2013","Northern right whale",0
-"384","United States of America","2013","Pygmy sperm whale",0
-"385","United States of America","2013","Risso's dolphin",0
-"386","United States of America","2013","Sei whale",0
-"387","United States of America","2013","Toothed whales nei",0
+"2","United States of America","1951","Atlantic white0sided dolphin",0
+"3","United States of America","1952","Atlantic white0sided dolphin",0
+"4","United States of America","1953","Atlantic white0sided dolphin",0
+"5","United States of America","1954","Atlantic white0sided dolphin",0
+"6","United States of America","1955","Atlantic white0sided dolphin",0
+"7","United States of America","1956","Atlantic white0sided dolphin",0
+"8","United States of America","1957","Atlantic white0sided dolphin",0
+"9","United States of America","1958","Atlantic white0sided dolphin",0
+"10","United States of America","1959","Atlantic white0sided dolphin",0
+"11","United States of America","1960","Atlantic white0sided dolphin",0
+"12","United States of America","1961","Atlantic white0sided dolphin",0
+"13","United States of America","1962","Atlantic white0sided dolphin",0
+"14","United States of America","1963","Atlantic white0sided dolphin",0
+"15","United States of America","1964","Atlantic white0sided dolphin",0
+"16","United States of America","1965","Atlantic white0sided dolphin",0
+"17","United States of America","1966","Atlantic white0sided dolphin",0
+"18","United States of America","1967","Atlantic white0sided dolphin",0
+"19","United States of America","1968","Atlantic white0sided dolphin",0
+"20","United States of America","1969","Atlantic white0sided dolphin",0
+"21","United States of America","1970","Atlantic white0sided dolphin",0
+"22","United States of America","1971","Atlantic white0sided dolphin",0
+"23","United States of America","1972","Atlantic white0sided dolphin",0
+"24","United States of America","1973","Atlantic white0sided dolphin",0
+"25","United States of America","1974","Atlantic white0sided dolphin",0
+"26","United States of America","1975","Atlantic white0sided dolphin",0
+"27","United States of America","1976","Atlantic white0sided dolphin",0
+"28","United States of America","1977","Atlantic white0sided dolphin",0
+"29","United States of America","1978","Atlantic white0sided dolphin",0
+"30","United States of America","1979","Atlantic white0sided dolphin",0
+"31","United States of America","1980","Atlantic white0sided dolphin",0
+"32","United States of America","1981","Atlantic white0sided dolphin",0
+"33","United States of America","1982","Atlantic white0sided dolphin",0
+"34","United States of America","1983","Atlantic white0sided dolphin",0
+"35","United States of America","1984","Atlantic white0sided dolphin",0
+"36","United States of America","1985","Atlantic white0sided dolphin",0
+"37","United States of America","1986","Atlantic white0sided dolphin",0
+"38","United States of America","1987","Atlantic white0sided dolphin",0
+"39","United States of America","1988","Atlantic white0sided dolphin",0
+"40","United States of America","1989","Atlantic white0sided dolphin",0
+"41","United States of America","1990","Atlantic white0sided dolphin",0
+"42","United States of America","1991","Atlantic white0sided dolphin",0
+"43","United States of America","1992","Atlantic white0sided dolphin",0
+"44","United States of America","1993","Atlantic white0sided dolphin",0
+"45","United States of America","1994","Atlantic white0sided dolphin",0
+"46","United States of America","1995","Atlantic white0sided dolphin",0
+"47","United States of America","1996","Atlantic white0sided dolphin",0
+"48","United States of America","1997","Atlantic white0sided dolphin",0
+"49","United States of America","1998","Atlantic white0sided dolphin",0
+"50","United States of America","1999","Atlantic white0sided dolphin",0
+"51","United States of America","2000","Atlantic white0sided dolphin",0
+"52","United States of America","2001","Atlantic white0sided dolphin",0
+"53","United States of America","2002","Atlantic white0sided dolphin",0
+"54","United States of America","2003","Atlantic white0sided dolphin",0
+"55","United States of America","2004","Atlantic white0sided dolphin",0
+"56","United States of America","2005","Atlantic white0sided dolphin",0
+"57","United States of America","2006","Atlantic white0sided dolphin",0
+"58","United States of America","2007","Atlantic white0sided dolphin",4
+"59","United States of America","2008","Atlantic white0sided dolphin",10
+"60","United States of America","2009","Atlantic white0sided dolphin",32
+"61","United States of America","2010","Atlantic white0sided dolphin",16
+"62","United States of America","2011","Atlantic white0sided dolphin",0
+"63","United States of America","2012","Atlantic white0sided dolphin",0
+"64","United States of America","2013","Atlantic white0sided dolphin",0
+"65","United States of America","1998","Atlantic white0sided dolphin",34
+"66","United States of America","1999","Atlantic white0sided dolphin",69
+"67","United States of America","2000","Atlantic white0sided dolphin",26
+"68","United States of America","2001","Atlantic white0sided dolphin",28
+"69","United States of America","2002","Atlantic white0sided dolphin",31
+"70","United States of America","2003","Atlantic white0sided dolphin",0
+"71","United States of America","2004","Atlantic white0sided dolphin",21
+"72","United States of America","2005","Atlantic white0sided dolphin",68
+"73","United States of America","2006","Atlantic white0sided dolphin",11
+"74","United States of America","2007","Atlantic white0sided dolphin",0
+"75","United States of America","2008","Atlantic white0sided dolphin",0
+"76","United States of America","2009","Atlantic white0sided dolphin",0
+"77","United States of America","2010","Atlantic white0sided dolphin",0
+"78","United States of America","2011","Atlantic white0sided dolphin",0
+"79","United States of America","2012","Atlantic white0sided dolphin",0
+"80","United States of America","2013","Atlantic white0sided dolphin",0
+"81","United States of America","1970","Baird's beaked whale",0
+"82","United States of America","1971","Baird's beaked whale",0
+"83","United States of America","1972","Baird's beaked whale",0
+"84","United States of America","1973","Baird's beaked whale",0
+"85","United States of America","1974","Baird's beaked whale",0
+"86","United States of America","1975","Baird's beaked whale",0
+"87","United States of America","1976","Baird's beaked whale",0
+"88","United States of America","1977","Baird's beaked whale",0
+"89","United States of America","1978","Baird's beaked whale",0
+"90","United States of America","1979","Baird's beaked whale",0
+"91","United States of America","1980","Baird's beaked whale",0
+"92","United States of America","1981","Baird's beaked whale",0
+"93","United States of America","1982","Baird's beaked whale",0
+"94","United States of America","1983","Baird's beaked whale",0
+"95","United States of America","1984","Baird's beaked whale",0
+"96","United States of America","1985","Baird's beaked whale",0
+"97","United States of America","1986","Baird's beaked whale",0
+"98","United States of America","1987","Baird's beaked whale",0
+"99","United States of America","1988","Baird's beaked whale",0
+"100","United States of America","1989","Baird's beaked whale",0
+"101","United States of America","1990","Baird's beaked whale",0
+"102","United States of America","1991","Baird's beaked whale",0
+"103","United States of America","1992","Baird's beaked whale",0
+"104","United States of America","1993","Baird's beaked whale",0
+"105","United States of America","1994","Baird's beaked whale",11
+"106","United States of America","1995","Baird's beaked whale",0
+"107","United States of America","1996","Baird's beaked whale",0
+"108","United States of America","1997","Baird's beaked whale",0
+"109","United States of America","1998","Baird's beaked whale",0
+"110","United States of America","1999","Baird's beaked whale",0
+"111","United States of America","2000","Baird's beaked whale",0
+"112","United States of America","2001","Baird's beaked whale",0
+"113","United States of America","2002","Baird's beaked whale",0
+"114","United States of America","2003","Baird's beaked whale",0
+"115","United States of America","2004","Baird's beaked whale",0
+"116","United States of America","2005","Baird's beaked whale",0
+"117","United States of America","2006","Baird's beaked whale",0
+"118","United States of America","2007","Baird's beaked whale",0
+"119","United States of America","2008","Baird's beaked whale",0
+"120","United States of America","2009","Baird's beaked whale",0
+"121","United States of America","2010","Baird's beaked whale",0
+"122","United States of America","2011","Baird's beaked whale",0
+"123","United States of America","2012","Baird's beaked whale",0
+"124","United States of America","2013","Baird's beaked whale",0
+"125","United States of America","1950","Baleen whales nei",0
+"126","United States of America","1951","Baleen whales nei",40
+"127","United States of America","1952","Baleen whales nei",0
+"128","United States of America","1953","Baleen whales nei",0
+"129","United States of America","1954","Baleen whales nei",0
+"130","United States of America","1955","Baleen whales nei",0
+"131","United States of America","1956","Baleen whales nei",145
+"132","United States of America","1957","Baleen whales nei",260
+"133","United States of America","1958","Baleen whales nei",551
+"134","United States of America","1959","Baleen whales nei",533
+"135","United States of America","1960","Baleen whales nei",453
+"136","United States of America","1961","Baleen whales nei",442
+"137","United States of America","1962","Baleen whales nei",271
+"138","United States of America","1963","Baleen whales nei",259
+"139","United States of America","1964","Baleen whales nei",274
+"140","United States of America","1965","Baleen whales nei",241
+"141","United States of America","1966","Baleen whales nei",221
+"142","United States of America","1967","Baleen whales nei",246
+"143","United States of America","1968","Baleen whales nei",202
+"144","United States of America","1969","Baleen whales nei",183
+"145","United States of America","1970","Baleen whales nei",0
+"146","United States of America","1971","Baleen whales nei",0
+"147","United States of America","1972","Baleen whales nei",39
+"148","United States of America","1973","Baleen whales nei",37
+"149","United States of America","1974","Baleen whales nei",21
+"150","United States of America","1975","Baleen whales nei",15
+"151","United States of America","1976","Baleen whales nei",56
+"152","United States of America","1977","Baleen whales nei",29
+"153","United States of America","1978","Baleen whales nei",18
+"154","United States of America","1979","Baleen whales nei",31
+"155","United States of America","1980","Baleen whales nei",36
+"156","United States of America","1981","Baleen whales nei",28
+"157","United States of America","1982","Baleen whales nei",23
+"158","United States of America","1983","Baleen whales nei",11
+"159","United States of America","1984","Baleen whales nei",12
+"160","United States of America","1985","Baleen whales nei",12
+"161","United States of America","1986","Baleen whales nei",22
+"162","United States of America","1987","Baleen whales nei",22
+"163","United States of America","1988","Baleen whales nei",23
+"164","United States of America","1989","Baleen whales nei",19
+"165","United States of America","1990","Baleen whales nei",31
+"166","United States of America","1991","Baleen whales nei",27
+"167","United States of America","1992","Baleen whales nei",38
+"168","United States of America","1993","Baleen whales nei",0
+"169","United States of America","1994","Baleen whales nei",0
+"170","United States of America","1995","Baleen whales nei",0
+"171","United States of America","1996","Baleen whales nei",0
+"172","United States of America","1997","Baleen whales nei",0
+"173","United States of America","1998","Baleen whales nei",0
+"174","United States of America","1999","Baleen whales nei",0
+"175","United States of America","2000","Baleen whales nei",0
+"176","United States of America","2001","Baleen whales nei",0
+"177","United States of America","2002","Baleen whales nei",0
+"178","United States of America","2003","Baleen whales nei",0
+"179","United States of America","2004","Baleen whales nei",1
+"180","United States of America","2005","Baleen whales nei",0
+"181","United States of America","2006","Baleen whales nei",0
+"182","United States of America","2007","Baleen whales nei",0
+"183","United States of America","2008","Baleen whales nei",0
+"184","United States of America","2009","Baleen whales nei",0
+"185","United States of America","2010","Baleen whales nei",0
+"186","United States of America","2011","Baleen whales nei",0
+"187","United States of America","2012","Baleen whales nei",0
+"188","United States of America","2013","Baleen whales nei",0
+"189","United States of America","1970","Beaked whales nei",0
+"190","United States of America","1971","Beaked whales nei",0
+"191","United States of America","1972","Beaked whales nei",0
+"192","United States of America","1973","Beaked whales nei",0
+"193","United States of America","1974","Beaked whales nei",0
+"194","United States of America","1975","Beaked whales nei",0
+"195","United States of America","1976","Beaked whales nei",0
+"196","United States of America","1977","Beaked whales nei",0
+"197","United States of America","1978","Beaked whales nei",0
+"198","United States of America","1979","Beaked whales nei",0
+"199","United States of America","1980","Beaked whales nei",0
+"200","United States of America","1981","Beaked whales nei",0
+"201","United States of America","1982","Beaked whales nei",0
+"202","United States of America","1983","Beaked whales nei",0
+"203","United States of America","1984","Beaked whales nei",0
+"204","United States of America","1985","Beaked whales nei",0
+"205","United States of America","1986","Beaked whales nei",0
+"206","United States of America","1987","Beaked whales nei",0
+"207","United States of America","1988","Beaked whales nei",0
+"208","United States of America","1989","Beaked whales nei",0
+"209","United States of America","1990","Beaked whales nei",0
+"210","United States of America","1991","Beaked whales nei",0
+"211","United States of America","1992","Beaked whales nei",0
+"212","United States of America","1993","Beaked whales nei",0
+"213","United States of America","1994","Beaked whales nei",0
+"214","United States of America","1995","Beaked whales nei",0
+"215","United States of America","1996","Beaked whales nei",0
+"216","United States of America","1997","Beaked whales nei",0
+"217","United States of America","1998","Beaked whales nei",22
+"218","United States of America","1999","Beaked whales nei",0
+"219","United States of America","2000","Beaked whales nei",0
+"220","United States of America","2001","Beaked whales nei",0
+"221","United States of America","2002","Beaked whales nei",0
+"222","United States of America","2003","Beaked whales nei",0
+"223","United States of America","2004","Beaked whales nei",0
+"224","United States of America","2005","Beaked whales nei",0
+"225","United States of America","2006","Beaked whales nei",0
+"226","United States of America","2007","Beaked whales nei",0
+"227","United States of America","2008","Beaked whales nei",0
+"228","United States of America","2009","Beaked whales nei",0
+"229","United States of America","2010","Beaked whales nei",0
+"230","United States of America","2011","Beaked whales nei",0
+"231","United States of America","2012","Beaked whales nei",0
+"232","United States of America","2013","Beaked whales nei",0
+"233","United States of America","1970","Blainville's beaked whale",0
+"234","United States of America","1971","Blainville's beaked whale",0
+"235","United States of America","1972","Blainville's beaked whale",0
+"236","United States of America","1973","Blainville's beaked whale",0
+"237","United States of America","1974","Blainville's beaked whale",0
+"238","United States of America","1975","Blainville's beaked whale",0
+"239","United States of America","1976","Blainville's beaked whale",0
+"240","United States of America","1977","Blainville's beaked whale",0
+"241","United States of America","1978","Blainville's beaked whale",0
+"242","United States of America","1979","Blainville's beaked whale",0
+"243","United States of America","1980","Blainville's beaked whale",0
+"244","United States of America","1981","Blainville's beaked whale",0
+"245","United States of America","1982","Blainville's beaked whale",0
+"246","United States of America","1983","Blainville's beaked whale",0
+"247","United States of America","1984","Blainville's beaked whale",0
+"248","United States of America","1985","Blainville's beaked whale",0
+"249","United States of America","1986","Blainville's beaked whale",0
+"250","United States of America","1987","Blainville's beaked whale",0
+"251","United States of America","1988","Blainville's beaked whale",0
+"252","United States of America","1989","Blainville's beaked whale",0
+"253","United States of America","1990","Blainville's beaked whale",0
+"254","United States of America","1991","Blainville's beaked whale",0
+"255","United States of America","1992","Blainville's beaked whale",0
+"256","United States of America","1993","Blainville's beaked whale",0
+"257","United States of America","1994","Blainville's beaked whale",0
+"258","United States of America","1995","Blainville's beaked whale",0
+"259","United States of America","1996","Blainville's beaked whale",0
+"260","United States of America","1997","Blainville's beaked whale",0
+"261","United States of America","1998","Blainville's beaked whale",0
+"262","United States of America","1999","Blainville's beaked whale",0
+"263","United States of America","2000","Blainville's beaked whale",0
+"264","United States of America","2001","Blainville's beaked whale",0
+"265","United States of America","2002","Blainville's beaked whale",0
+"266","United States of America","2003","Blainville's beaked whale",0
+"267","United States of America","2004","Blainville's beaked whale",0
+"268","United States of America","2005","Blainville's beaked whale",1
+"269","United States of America","2006","Blainville's beaked whale",0
+"270","United States of America","2007","Blainville's beaked whale",0
+"271","United States of America","2008","Blainville's beaked whale",0
+"272","United States of America","2009","Blainville's beaked whale",0
+"273","United States of America","2010","Blainville's beaked whale",0
+"274","United States of America","2011","Blainville's beaked whale",0
+"275","United States of America","2012","Blainville's beaked whale",0
+"276","United States of America","2013","Blainville's beaked whale",0
+"277","United States of America","1970","Blue whale",0
+"278","United States of America","1971","Blue whale",0
+"279","United States of America","1972","Blue whale",0
+"280","United States of America","1973","Blue whale",0
+"281","United States of America","1974","Blue whale",0
+"282","United States of America","1975","Blue whale",0
+"283","United States of America","1976","Blue whale",0
+"284","United States of America","1977","Blue whale",0
+"285","United States of America","1978","Blue whale",0
+"286","United States of America","1979","Blue whale",0
+"287","United States of America","1980","Blue whale",0
+"288","United States of America","1981","Blue whale",0
+"289","United States of America","1982","Blue whale",0
+"290","United States of America","1983","Blue whale",0
+"291","United States of America","1984","Blue whale",0
+"292","United States of America","1985","Blue whale",0
+"293","United States of America","1986","Blue whale",0
+"294","United States of America","1987","Blue whale",0
+"295","United States of America","1988","Blue whale",0
+"296","United States of America","1989","Blue whale",0
+"297","United States of America","1990","Blue whale",0
+"298","United States of America","1991","Blue whale",0
+"299","United States of America","1992","Blue whale",0
+"300","United States of America","1993","Blue whale",0
+"301","United States of America","1994","Blue whale",0
+"302","United States of America","1995","Blue whale",0
+"303","United States of America","1996","Blue whale",0
+"304","United States of America","1997","Blue whale",0
+"305","United States of America","1998","Blue whale",1
+"306","United States of America","1999","Blue whale",0
+"307","United States of America","2000","Blue whale",0
+"308","United States of America","2001","Blue whale",0
+"309","United States of America","2002","Blue whale",0
+"310","United States of America","2003","Blue whale",0
+"311","United States of America","2004","Blue whale",1
+"312","United States of America","2005","Blue whale",0
+"313","United States of America","2006","Blue whale",0
+"314","United States of America","2007","Blue whale",0
+"315","United States of America","2008","Blue whale",0
+"316","United States of America","2009","Blue whale",0
+"317","United States of America","2010","Blue whale",0
+"318","United States of America","2011","Blue whale",0
+"319","United States of America","2012","Blue whale",0
+"320","United States of America","2013","Blue whale",0
+"321","United States of America","2003","Bottlenose dolphin",0
+"322","United States of America","2004","Bottlenose dolphin",1
+"323","United States of America","2005","Bottlenose dolphin",2
+"324","United States of America","2006","Bottlenose dolphin",0
+"325","United States of America","2007","Bottlenose dolphin",0
+"326","United States of America","2008","Bottlenose dolphin",0
+"327","United States of America","2009","Bottlenose dolphin",8
+"328","United States of America","2010","Bottlenose dolphin",6
+"329","United States of America","2011","Bottlenose dolphin",7
+"330","United States of America","2012","Bottlenose dolphin",0
+"331","United States of America","2013","Bottlenose dolphin",0
+"332","United States of America","1998","Bottlenose dolphin",66
+"333","United States of America","1999","Bottlenose dolphin",115
+"334","United States of America","2000","Bottlenose dolphin",338
+"335","United States of America","2001","Bottlenose dolphin",0
+"336","United States of America","2002","Bottlenose dolphin",83
+"337","United States of America","2003","Bottlenose dolphin",0
+"338","United States of America","2004","Bottlenose dolphin",0
+"339","United States of America","2005","Bottlenose dolphin",0
+"340","United States of America","2006","Bottlenose dolphin",0
+"341","United States of America","2007","Bottlenose dolphin",0
+"342","United States of America","2008","Bottlenose dolphin",0
+"343","United States of America","2009","Bottlenose dolphin",0
+"344","United States of America","2010","Bottlenose dolphin",0
+"345","United States of America","2011","Bottlenose dolphin",0
+"346","United States of America","2012","Bottlenose dolphin",0
+"347","United States of America","2013","Bottlenose dolphin",0
+"348","United States of America","1970","Bryde's whale",0
+"349","United States of America","1971","Bryde's whale",0
+"350","United States of America","1972","Bryde's whale",0
+"351","United States of America","1973","Bryde's whale",0
+"352","United States of America","1974","Bryde's whale",0
+"353","United States of America","1975","Bryde's whale",0
+"354","United States of America","1976","Bryde's whale",0
+"355","United States of America","1977","Bryde's whale",0
+"356","United States of America","1978","Bryde's whale",0
+"357","United States of America","1979","Bryde's whale",0
+"358","United States of America","1980","Bryde's whale",0
+"359","United States of America","1981","Bryde's whale",0
+"360","United States of America","1982","Bryde's whale",0
+"361","United States of America","1983","Bryde's whale",0
+"362","United States of America","1984","Bryde's whale",0
+"363","United States of America","1985","Bryde's whale",0
+"364","United States of America","1986","Bryde's whale",0
+"365","United States of America","1987","Bryde's whale",0
+"366","United States of America","1988","Bryde's whale",0
+"367","United States of America","1989","Bryde's whale",0
+"368","United States of America","1990","Bryde's whale",0
+"369","United States of America","1991","Bryde's whale",0
+"370","United States of America","1992","Bryde's whale",0
+"371","United States of America","1993","Bryde's whale",0
+"372","United States of America","1994","Bryde's whale",0
+"373","United States of America","1995","Bryde's whale",0
+"374","United States of America","1996","Bryde's whale",0
+"375","United States of America","1997","Bryde's whale",0
+"376","United States of America","1998","Bryde's whale",0
+"377","United States of America","1999","Bryde's whale",0
+"378","United States of America","2000","Bryde's whale",0
+"379","United States of America","2001","Bryde's whale",0
+"380","United States of America","2002","Bryde's whale",0
+"381","United States of America","2003","Bryde's whale",0
+"382","United States of America","2004","Bryde's whale",0
+"383","United States of America","2005","Bryde's whale",1
+"384","United States of America","2006","Bryde's whale",0
+"385","United States of America","2007","Bryde's whale",1
+"386","United States of America","2008","Bryde's whale",0
+"387","United States of America","2009","Bryde's whale",0
+"388","United States of America","2010","Bryde's whale",0
+"389","United States of America","2011","Bryde's whale",0
+"390","United States of America","2012","Bryde's whale",0
+"391","United States of America","2013","Bryde's whale",0
+"392","United States of America","1998","Common dolphin",272
+"393","United States of America","1999","Common dolphin",195
+"394","United States of America","2000","Common dolphin",273
+"395","United States of America","2001","Common dolphin",126
+"396","United States of America","2002","Common dolphin",1
+"397","United States of America","2003","Common dolphin",1
+"398","United States of America","2004","Common dolphin",12
+"399","United States of America","2005","Common dolphin",0
+"400","United States of America","2006","Common dolphin",15
+"401","United States of America","2007","Common dolphin",5
+"402","United States of America","2008","Common dolphin",4
+"403","United States of America","2009","Common dolphin",21
+"404","United States of America","2010","Common dolphin",46
+"405","United States of America","2011","Common dolphin",0
+"406","United States of America","2012","Common dolphin",0
+"407","United States of America","2013","Common dolphin",0
+"408","United States of America","1998","Dall's porpoise",14
+"409","United States of America","1999","Dall's porpoise",5
+"410","United States of America","2000","Dall's porpoise",0
+"411","United States of America","2001","Dall's porpoise",3
+"412","United States of America","2002","Dall's porpoise",1
+"413","United States of America","2003","Dall's porpoise",0
+"414","United States of America","2004","Dall's porpoise",1
+"415","United States of America","2005","Dall's porpoise",2
+"416","United States of America","2006","Dall's porpoise",0
+"417","United States of America","2007","Dall's porpoise",0
+"418","United States of America","2008","Dall's porpoise",0
+"419","United States of America","2009","Dall's porpoise",0
+"420","United States of America","2010","Dall's porpoise",0
+"421","United States of America","2011","Dall's porpoise",0
+"422","United States of America","2012","Dall's porpoise",0
+"423","United States of America","2013","Dall's porpoise",0
+"424","United States of America","2003","Dolphins nei",0
+"425","United States of America","2004","Dolphins nei",7
+"426","United States of America","2005","Dolphins nei",2
+"427","United States of America","2006","Dolphins nei",4
+"428","United States of America","2007","Dolphins nei",0
+"429","United States of America","2008","Dolphins nei",0
+"430","United States of America","2009","Dolphins nei",0
+"431","United States of America","2010","Dolphins nei",0
+"432","United States of America","2011","Dolphins nei",0
+"433","United States of America","2012","Dolphins nei",0
+"434","United States of America","2013","Dolphins nei",0
+"435","United States of America","2003","False killer whale",0
+"436","United States of America","2004","False killer whale",1
+"437","United States of America","2005","False killer whale",2
+"438","United States of America","2006","False killer whale",0
+"439","United States of America","2007","False killer whale",0
+"440","United States of America","2008","False killer whale",0
+"441","United States of America","2009","False killer whale",1
+"442","United States of America","2010","False killer whale",0
+"443","United States of America","2011","False killer whale",0
+"444","United States of America","2012","False killer whale",0
+"445","United States of America","2013","False killer whale",0
+"446","United States of America","1970","Fin whale",5
+"447","United States of America","1971","Fin whale",4
+"448","United States of America","1972","Fin whale",0
+"449","United States of America","1973","Fin whale",0
+"450","United States of America","1974","Fin whale",0
+"451","United States of America","1975","Fin whale",0
+"452","United States of America","1976","Fin whale",0
+"453","United States of America","1977","Fin whale",0
+"454","United States of America","1978","Fin whale",0
+"455","United States of America","1979","Fin whale",0
+"456","United States of America","1980","Fin whale",0
+"457","United States of America","1981","Fin whale",0
+"458","United States of America","1982","Fin whale",0
+"459","United States of America","1983","Fin whale",0
+"460","United States of America","1984","Fin whale",0
+"461","United States of America","1985","Fin whale",0
+"462","United States of America","1986","Fin whale",0
+"463","United States of America","1987","Fin whale",0
+"464","United States of America","1988","Fin whale",0
+"465","United States of America","1989","Fin whale",0
+"466","United States of America","1990","Fin whale",0
+"467","United States of America","1991","Fin whale",0
+"468","United States of America","1992","Fin whale",0
+"469","United States of America","1993","Fin whale",0
+"470","United States of America","1994","Fin whale",0
+"471","United States of America","1995","Fin whale",0
+"472","United States of America","1996","Fin whale",1
+"473","United States of America","1997","Fin whale",0
+"474","United States of America","1998","Fin whale",1
+"475","United States of America","1999","Fin whale",3
+"476","United States of America","2000","Fin whale",1
+"477","United States of America","2001","Fin whale",4
+"478","United States of America","2002","Fin whale",1
+"479","United States of America","2003","Fin whale",0
+"480","United States of America","2004","Fin whale",5
+"481","United States of America","2005","Fin whale",4
+"482","United States of America","2006","Fin whale",5
+"483","United States of America","2007","Fin whale",0
+"484","United States of America","2008","Fin whale",0
+"485","United States of America","2009","Fin whale",0
+"486","United States of America","2010","Fin whale",2
+"487","United States of America","2011","Fin whale",0
+"488","United States of America","2012","Fin whale",0
+"489","United States of America","2013","Fin whale",0
+"490","United States of America","1998","Harbour porpoise",778
+"491","United States of America","1999","Harbour porpoise",342
+"492","United States of America","2000","Harbour porpoise",528
+"493","United States of America","2001","Harbour porpoise",79
+"494","United States of America","2002","Harbour porpoise",483
+"495","United States of America","2003","Harbour porpoise",0
+"496","United States of America","2004","Harbour porpoise",29
+"497","United States of America","2005","Harbour porpoise",40
+"498","United States of America","2006","Harbour porpoise",55
+"499","United States of America","2007","Harbour porpoise",36
+"500","United States of America","2008","Harbour porpoise",40
+"501","United States of America","2009","Harbour porpoise",42
+"502","United States of America","2010","Harbour porpoise",68
+"503","United States of America","2011","Harbour porpoise",0
+"504","United States of America","2012","Harbour porpoise",0
+"505","United States of America","2013","Harbour porpoise",0
+"506","United States of America","1970","Harbour porpoise",0
+"507","United States of America","1971","Harbour porpoise",0
+"508","United States of America","1972","Harbour porpoise",0
+"509","United States of America","1973","Harbour porpoise",0
+"510","United States of America","1974","Harbour porpoise",0
+"511","United States of America","1975","Harbour porpoise",0
+"512","United States of America","1976","Harbour porpoise",0
+"513","United States of America","1977","Harbour porpoise",0
+"514","United States of America","1978","Harbour porpoise",0
+"515","United States of America","1982","Harbour porpoise",55
+"516","United States of America","1986","Harbour porpoise",4
+"517","United States of America","1987","Harbour porpoise",200
+"518","United States of America","1988","Harbour porpoise",200
+"519","United States of America","1989","Harbour porpoise",7
+"520","United States of America","1990","Harbour porpoise",2413
+"521","United States of America","1991","Harbour porpoise",1755
+"522","United States of America","1992","Harbour porpoise",922
+"523","United States of America","1993","Harbour porpoise",1414
+"524","United States of America","1994","Harbour porpoise",2129
+"525","United States of America","1995","Harbour porpoise",1537
+"526","United States of America","1996","Harbour porpoise",1540
+"527","United States of America","1997","Harbour porpoise",1430
+"528","United States of America","1998","Harbour porpoise",0
+"529","United States of America","1999","Harbour porpoise",0
+"530","United States of America","2000","Harbour porpoise",0
+"531","United States of America","2001","Harbour porpoise",0
+"532","United States of America","2002","Harbour porpoise",0
+"533","United States of America","2003","Harbour porpoise",0
+"534","United States of America","2004","Harbour porpoise",0
+"535","United States of America","2005","Harbour porpoise",0
+"536","United States of America","2006","Harbour porpoise",0
+"537","United States of America","2007","Harbour porpoise",0
+"538","United States of America","2008","Harbour porpoise",0
+"539","United States of America","2009","Harbour porpoise",0
+"540","United States of America","2010","Harbour porpoise",0
+"541","United States of America","2011","Harbour porpoise",0
+"542","United States of America","2012","Harbour porpoise",0
+"543","United States of America","2013","Harbour porpoise",0
+"544","United States of America","1950","Humpback whale",0
+"545","United States of America","1951","Humpback whale",0
+"546","United States of America","1952","Humpback whale",0
+"547","United States of America","1953","Humpback whale",0
+"548","United States of America","1954","Humpback whale",0
+"549","United States of America","1955","Humpback whale",0
+"550","United States of America","1956","Humpback whale",0
+"551","United States of America","1957","Humpback whale",0
+"552","United States of America","1958","Humpback whale",0
+"553","United States of America","1959","Humpback whale",0
+"554","United States of America","1960","Humpback whale",0
+"555","United States of America","1961","Humpback whale",0
+"556","United States of America","1962","Humpback whale",0
+"557","United States of America","1963","Humpback whale",0
+"558","United States of America","1964","Humpback whale",0
+"559","United States of America","1965","Humpback whale",0
+"560","United States of America","1966","Humpback whale",0
+"561","United States of America","1967","Humpback whale",0
+"562","United States of America","1968","Humpback whale",0
+"563","United States of America","1969","Humpback whale",0
+"564","United States of America","1970","Humpback whale",0
+"565","United States of America","1971","Humpback whale",0
+"566","United States of America","1972","Humpback whale",0
+"567","United States of America","1973","Humpback whale",0
+"568","United States of America","1974","Humpback whale",0
+"569","United States of America","1975","Humpback whale",0
+"570","United States of America","1976","Humpback whale",0
+"571","United States of America","1977","Humpback whale",0
+"572","United States of America","1978","Humpback whale",0
+"573","United States of America","1979","Humpback whale",0
+"574","United States of America","1980","Humpback whale",0
+"575","United States of America","1981","Humpback whale",0
+"576","United States of America","1982","Humpback whale",0
+"577","United States of America","1983","Humpback whale",0
+"578","United States of America","1984","Humpback whale",0
+"579","United States of America","1985","Humpback whale",0
+"580","United States of America","1986","Humpback whale",0
+"581","United States of America","1987","Humpback whale",0
+"582","United States of America","1988","Humpback whale",0
+"583","United States of America","1989","Humpback whale",0
+"584","United States of America","1990","Humpback whale",0
+"585","United States of America","1991","Humpback whale",0
+"586","United States of America","1992","Humpback whale",0
+"587","United States of America","1993","Humpback whale",0
+"588","United States of America","1994","Humpback whale",0
+"589","United States of America","1995","Humpback whale",0
+"590","United States of America","1996","Humpback whale",0
+"591","United States of America","1997","Humpback whale",0
+"592","United States of America","1998","Humpback whale",0
+"593","United States of America","1999","Humpback whale",0
+"594","United States of America","2000","Humpback whale",0
+"595","United States of America","2001","Humpback whale",0
+"596","United States of America","2002","Humpback whale",0
+"597","United States of America","2003","Humpback whale",0
+"598","United States of America","2004","Humpback whale",0
+"599","United States of America","2005","Humpback whale",0
+"600","United States of America","2006","Humpback whale",4
+"601","United States of America","2007","Humpback whale",1
+"602","United States of America","2008","Humpback whale",2
+"603","United States of America","2009","Humpback whale",2
+"604","United States of America","2010","Humpback whale",0
+"605","United States of America","2011","Humpback whale",0
+"606","United States of America","2012","Humpback whale",0
+"607","United States of America","2013","Humpback whale",0
+"608","United States of America","1970","Humpback whale",0
+"609","United States of America","1971","Humpback whale",0
+"610","United States of America","1972","Humpback whale",0
+"611","United States of America","1973","Humpback whale",0
+"612","United States of America","1974","Humpback whale",0
+"613","United States of America","1975","Humpback whale",0
+"614","United States of America","1976","Humpback whale",0
+"615","United States of America","1977","Humpback whale",0
+"616","United States of America","1978","Humpback whale",0
+"617","United States of America","1979","Humpback whale",0
+"618","United States of America","1980","Humpback whale",0
+"619","United States of America","1981","Humpback whale",0
+"620","United States of America","1982","Humpback whale",0
+"621","United States of America","1983","Humpback whale",0
+"622","United States of America","1984","Humpback whale",0
+"623","United States of America","1985","Humpback whale",0
+"624","United States of America","1986","Humpback whale",0
+"625","United States of America","1987","Humpback whale",0
+"626","United States of America","1988","Humpback whale",0
+"627","United States of America","1989","Humpback whale",0
+"628","United States of America","1990","Humpback whale",0
+"629","United States of America","1991","Humpback whale",0
+"630","United States of America","1992","Humpback whale",0
+"631","United States of America","1993","Humpback whale",0
+"632","United States of America","1994","Humpback whale",0
+"633","United States of America","1995","Humpback whale",2
+"634","United States of America","1996","Humpback whale",3
+"635","United States of America","1997","Humpback whale",1
+"636","United States of America","1998","Humpback whale",5
+"637","United States of America","1999","Humpback whale",2
+"638","United States of America","2000","Humpback whale",0
+"639","United States of America","2001","Humpback whale",6
+"640","United States of America","2002","Humpback whale",9
+"641","United States of America","2003","Humpback whale",6
+"642","United States of America","2004","Humpback whale",3
+"643","United States of America","2005","Humpback whale",4
+"644","United States of America","2006","Humpback whale",0
+"645","United States of America","2007","Humpback whale",0
+"646","United States of America","2008","Humpback whale",0
+"647","United States of America","2009","Humpback whale",0
+"648","United States of America","2010","Humpback whale",8
+"649","United States of America","2011","Humpback whale",0
+"650","United States of America","2012","Humpback whale",0
+"651","United States of America","2013","Humpback whale",0
+"652","United States of America","1950","Killer whale",0
+"653","United States of America","1951","Killer whale",0
+"654","United States of America","1952","Killer whale",0
+"655","United States of America","1953","Killer whale",0
+"656","United States of America","1954","Killer whale",0
+"657","United States of America","1955","Killer whale",0
+"658","United States of America","1956","Killer whale",0
+"659","United States of America","1957","Killer whale",0
+"660","United States of America","1958","Killer whale",0
+"661","United States of America","1959","Killer whale",0
+"662","United States of America","1960","Killer whale",0
+"663","United States of America","1961","Killer whale",0
+"664","United States of America","1962","Killer whale",0
+"665","United States of America","1963","Killer whale",1
+"666","United States of America","1964","Killer whale",0
+"667","United States of America","1965","Killer whale",0
+"668","United States of America","1966","Killer whale",1
+"669","United States of America","1967","Killer whale",1
+"670","United States of America","1968","Killer whale",0
+"671","United States of America","1969","Killer whale",0
+"672","United States of America","1970","Killer whale",0
+"673","United States of America","1971","Killer whale",0
+"674","United States of America","1972","Killer whale",0
+"675","United States of America","1973","Killer whale",0
+"676","United States of America","1974","Killer whale",0
+"677","United States of America","1975","Killer whale",0
+"678","United States of America","1976","Killer whale",0
+"679","United States of America","1977","Killer whale",0
+"680","United States of America","1978","Killer whale",0
+"681","United States of America","1979","Killer whale",0
+"682","United States of America","1980","Killer whale",0
+"683","United States of America","1981","Killer whale",0
+"684","United States of America","1982","Killer whale",0
+"685","United States of America","1983","Killer whale",0
+"686","United States of America","1984","Killer whale",0
+"687","United States of America","1985","Killer whale",0
+"688","United States of America","1986","Killer whale",0
+"689","United States of America","1987","Killer whale",0
+"690","United States of America","1988","Killer whale",1
+"691","United States of America","1989","Killer whale",0
+"692","United States of America","1990","Killer whale",0
+"693","United States of America","1991","Killer whale",2
+"694","United States of America","1992","Killer whale",0
+"695","United States of America","1993","Killer whale",1
+"696","United States of America","1994","Killer whale",0
+"697","United States of America","1995","Killer whale",6
+"698","United States of America","1996","Killer whale",0
+"699","United States of America","1997","Killer whale",4
+"700","United States of America","1998","Killer whale",0
+"701","United States of America","1999","Killer whale",4
+"702","United States of America","2000","Killer whale",0
+"703","United States of America","2001","Killer whale",2
+"704","United States of America","2002","Killer whale",1
+"705","United States of America","2003","Killer whale",0
+"706","United States of America","2004","Killer whale",1
+"707","United States of America","2005","Killer whale",0
+"708","United States of America","2006","Killer whale",0
+"709","United States of America","2007","Killer whale",0
+"710","United States of America","2008","Killer whale",1
+"711","United States of America","2009","Killer whale",2
+"712","United States of America","2010","Killer whale",1
+"713","United States of America","2011","Killer whale",0
+"714","United States of America","2012","Killer whale",0
+"715","United States of America","2013","Killer whale",0
+"716","United States of America","1970","Long0finned pilot whale",0
+"717","United States of America","1971","Long0finned pilot whale",0
+"718","United States of America","1972","Long0finned pilot whale",0
+"719","United States of America","1973","Long0finned pilot whale",0
+"720","United States of America","1974","Long0finned pilot whale",0
+"721","United States of America","1975","Long0finned pilot whale",0
+"722","United States of America","1976","Long0finned pilot whale",0
+"723","United States of America","1977","Long0finned pilot whale",0
+"724","United States of America","1978","Long0finned pilot whale",0
+"725","United States of America","1979","Long0finned pilot whale",0
+"726","United States of America","1980","Long0finned pilot whale",0
+"727","United States of America","1981","Long0finned pilot whale",0
+"728","United States of America","1982","Long0finned pilot whale",0
+"729","United States of America","1983","Long0finned pilot whale",0
+"730","United States of America","1984","Long0finned pilot whale",0
+"731","United States of America","1985","Long0finned pilot whale",0
+"732","United States of America","1986","Long0finned pilot whale",0
+"733","United States of America","1987","Long0finned pilot whale",0
+"734","United States of America","1988","Long0finned pilot whale",7
+"735","United States of America","1989","Long0finned pilot whale",7
+"736","United States of America","1990","Long0finned pilot whale",11
+"737","United States of America","1991","Long0finned pilot whale",4
+"738","United States of America","1992","Long0finned pilot whale",14
+"739","United States of America","1993","Long0finned pilot whale",31
+"740","United States of America","1994","Long0finned pilot whale",22
+"741","United States of America","1995","Long0finned pilot whale",31
+"742","United States of America","1996","Long0finned pilot whale",12
+"743","United States of America","1997","Long0finned pilot whale",93
+"744","United States of America","1998","Long0finned pilot whale",104
+"745","United States of America","1999","Long0finned pilot whale",371
+"746","United States of America","2000","Long0finned pilot whale",58
+"747","United States of America","2001","Long0finned pilot whale",94
+"748","United States of America","2002","Long0finned pilot whale",54
+"749","United States of America","2003","Long0finned pilot whale",0
+"750","United States of America","2004","Long0finned pilot whale",7
+"751","United States of America","2005","Long0finned pilot whale",5
+"752","United States of America","2006","Long0finned pilot whale",2
+"753","United States of America","2007","Long0finned pilot whale",4
+"754","United States of America","2008","Long0finned pilot whale",11
+"755","United States of America","2009","Long0finned pilot whale",9
+"756","United States of America","2010","Long0finned pilot whale",0
+"757","United States of America","2011","Long0finned pilot whale",0
+"758","United States of America","2012","Long0finned pilot whale",0
+"759","United States of America","2013","Long0finned pilot whale",0
+"760","United States of America","2002","Minke whale",0
+"761","United States of America","2003","Minke whale",0
+"762","United States of America","2004","Minke whale",0
+"763","United States of America","2005","Minke whale",0
+"764","United States of America","2006","Minke whale",0
+"765","United States of America","2007","Minke whale",1
+"766","United States of America","2008","Minke whale",4
+"767","United States of America","2009","Minke whale",0
+"768","United States of America","2010","Minke whale",0
+"769","United States of America","2011","Minke whale",0
+"770","United States of America","2012","Minke whale",0
+"771","United States of America","2013","Minke whale",0
+"772","United States of America","1970","Minke whale",0
+"773","United States of America","1971","Minke whale",0
+"774","United States of America","1972","Minke whale",0
+"775","United States of America","1973","Minke whale",0
+"776","United States of America","1974","Minke whale",0
+"777","United States of America","1975","Minke whale",0
+"778","United States of America","1976","Minke whale",0
+"779","United States of America","1977","Minke whale",0
+"780","United States of America","1978","Minke whale",0
+"781","United States of America","1979","Minke whale",2
+"782","United States of America","1980","Minke whale",1
+"783","United States of America","1981","Minke whale",1
+"784","United States of America","1982","Minke whale",3
+"785","United States of America","1983","Minke whale",0
+"786","United States of America","1984","Minke whale",0
+"787","United States of America","1985","Minke whale",0
+"788","United States of America","1986","Minke whale",0
+"789","United States of America","1987","Minke whale",0
+"790","United States of America","1988","Minke whale",0
+"791","United States of America","1989","Minke whale",2
+"792","United States of America","1990","Minke whale",0
+"793","United States of America","1991","Minke whale",1
+"794","United States of America","1992","Minke whale",0
+"795","United States of America","1993","Minke whale",0
+"796","United States of America","1994","Minke whale",0
+"797","United States of America","1995","Minke whale",0
+"798","United States of America","1996","Minke whale",12
+"799","United States of America","1997","Minke whale",4
+"800","United States of America","1998","Minke whale",2
+"801","United States of America","1999","Minke whale",5
+"802","United States of America","2000","Minke whale",2
+"803","United States of America","2001","Minke whale",3
+"804","United States of America","2002","Minke whale",4
+"805","United States of America","2003","Minke whale",5
+"806","United States of America","2004","Minke whale",3
+"807","United States of America","2005","Minke whale",6
+"808","United States of America","2006","Minke whale",1
+"809","United States of America","2007","Minke whale",0
+"810","United States of America","2008","Minke whale",0
+"811","United States of America","2009","Minke whale",0
+"812","United States of America","2010","Minke whale",1
+"813","United States of America","2011","Minke whale",0
+"814","United States of America","2012","Minke whale",0
+"815","United States of America","2013","Minke whale",0
+"816","United States of America","1993","Northern right whale",1
+"817","United States of America","1994","Northern right whale",0
+"818","United States of America","1995","Northern right whale",0
+"819","United States of America","1996","Northern right whale",2
+"820","United States of America","1997","Northern right whale",0
+"821","United States of America","1998","Northern right whale",0
+"822","United States of America","1999","Northern right whale",2
+"823","United States of America","2000","Northern right whale",0
+"824","United States of America","2001","Northern right whale",3
+"825","United States of America","2002","Northern right whale",7
+"826","United States of America","2003","Northern right whale",1
+"827","United States of America","2004","Northern right whale",3
+"828","United States of America","2005","Northern right whale",3
+"829","United States of America","2006","Northern right whale",1
+"830","United States of America","2007","Northern right whale",1
+"831","United States of America","2008","Northern right whale",0
+"832","United States of America","2009","Northern right whale",0
+"833","United States of America","2010","Northern right whale",3
+"834","United States of America","2011","Northern right whale",0
+"835","United States of America","2012","Northern right whale",0
+"836","United States of America","2013","Northern right whale",0
+"837","United States of America","1998","Northern right whale dolphin",0
+"838","United States of America","1999","Northern right whale dolphin",17
+"839","United States of America","2000","Northern right whale dolphin",47
+"840","United States of America","2001","Northern right whale dolphin",9
+"841","United States of America","2002","Northern right whale dolphin",15
+"842","United States of America","2003","Northern right whale dolphin",5
+"843","United States of America","2004","Northern right whale dolphin",0
+"844","United States of America","2005","Northern right whale dolphin",0
+"845","United States of America","2006","Northern right whale dolphin",0
+"846","United States of America","2007","Northern right whale dolphin",0
+"847","United States of America","2008","Northern right whale dolphin",0
+"848","United States of America","2009","Northern right whale dolphin",0
+"849","United States of America","2010","Northern right whale dolphin",0
+"850","United States of America","2011","Northern right whale dolphin",0
+"851","United States of America","2012","Northern right whale dolphin",0
+"852","United States of America","2013","Northern right whale dolphin",0
+"853","United States of America","1998","Pacific white0sided dolphin",1
+"854","United States of America","2000","Pacific white0sided dolphin",5
+"855","United States of America","2001","Pacific white0sided dolphin",6
+"856","United States of America","2002","Pacific white0sided dolphin",5
+"857","United States of America","2003","Pacific white0sided dolphin",0
+"858","United States of America","2004","Pacific white0sided dolphin",1
+"859","United States of America","2005","Pacific white0sided dolphin",0
+"860","United States of America","2006","Pacific white0sided dolphin",0
+"861","United States of America","2007","Pacific white0sided dolphin",0
+"862","United States of America","2008","Pacific white0sided dolphin",0
+"863","United States of America","2009","Pacific white0sided dolphin",0
+"864","United States of America","2010","Pacific white0sided dolphin",0
+"865","United States of America","2011","Pacific white0sided dolphin",0
+"866","United States of America","2012","Pacific white0sided dolphin",0
+"867","United States of America","2013","Pacific white0sided dolphin",0
+"868","United States of America","2005","Pygmy sperm whale",0
+"869","United States of America","2006","Pygmy sperm whale",0
+"870","United States of America","2007","Pygmy sperm whale",0
+"871","United States of America","2008","Pygmy sperm whale",0
+"872","United States of America","2009","Pygmy sperm whale",0
+"873","United States of America","2010","Pygmy sperm whale",0
+"874","United States of America","2011","Pygmy sperm whale",0
+"875","United States of America","2012","Pygmy sperm whale",1
+"876","United States of America","2013","Pygmy sperm whale",0
+"877","United States of America","1970","Risso's dolphin",0
+"878","United States of America","1971","Risso's dolphin",0
+"879","United States of America","1972","Risso's dolphin",0
+"880","United States of America","1973","Risso's dolphin",0
+"881","United States of America","1974","Risso's dolphin",0
+"882","United States of America","1975","Risso's dolphin",0
+"883","United States of America","1976","Risso's dolphin",0
+"884","United States of America","1977","Risso's dolphin",0
+"885","United States of America","1978","Risso's dolphin",0
+"886","United States of America","1979","Risso's dolphin",0
+"887","United States of America","1980","Risso's dolphin",0
+"888","United States of America","1981","Risso's dolphin",0
+"889","United States of America","1982","Risso's dolphin",0
+"890","United States of America","1983","Risso's dolphin",0
+"891","United States of America","1984","Risso's dolphin",0
+"892","United States of America","1985","Risso's dolphin",0
+"893","United States of America","1986","Risso's dolphin",0
+"894","United States of America","1987","Risso's dolphin",0
+"895","United States of America","1988","Risso's dolphin",0
+"896","United States of America","1989","Risso's dolphin",0
+"897","United States of America","1990","Risso's dolphin",0
+"898","United States of America","1991","Risso's dolphin",0
+"899","United States of America","1992","Risso's dolphin",0
+"900","United States of America","1993","Risso's dolphin",0
+"901","United States of America","1994","Risso's dolphin",0
+"902","United States of America","1995","Risso's dolphin",0
+"903","United States of America","1996","Risso's dolphin",0
+"904","United States of America","1997","Risso's dolphin",0
+"905","United States of America","1998","Risso's dolphin",44
+"906","United States of America","1999","Risso's dolphin",22
+"907","United States of America","2000","Risso's dolphin",56
+"908","United States of America","2001","Risso's dolphin",26
+"909","United States of America","2002","Risso's dolphin",0
+"910","United States of America","2003","Risso's dolphin",0
+"911","United States of America","2004","Risso's dolphin",2
+"912","United States of America","2005","Risso's dolphin",0
+"913","United States of America","2006","Risso's dolphin",0
+"914","United States of America","2007","Risso's dolphin",0
+"915","United States of America","2008","Risso's dolphin",1
+"916","United States of America","2009","Risso's dolphin",5
+"917","United States of America","2010","Risso's dolphin",16
+"918","United States of America","2011","Risso's dolphin",0
+"919","United States of America","2012","Risso's dolphin",0
+"920","United States of America","2013","Risso's dolphin",0
+"921","United States of America","1950","Sei whale",0
+"922","United States of America","1951","Sei whale",0
+"923","United States of America","1952","Sei whale",0
+"924","United States of America","1953","Sei whale",0
+"925","United States of America","1954","Sei whale",0
+"926","United States of America","1955","Sei whale",0
+"927","United States of America","1956","Sei whale",0
+"928","United States of America","1957","Sei whale",0
+"929","United States of America","1958","Sei whale",0
+"930","United States of America","1959","Sei whale",0
+"931","United States of America","1960","Sei whale",0
+"932","United States of America","1961","Sei whale",0
+"933","United States of America","1962","Sei whale",0
+"934","United States of America","1963","Sei whale",0
+"935","United States of America","1964","Sei whale",0
+"936","United States of America","1965","Sei whale",0
+"937","United States of America","1966","Sei whale",0
+"938","United States of America","1967","Sei whale",0
+"939","United States of America","1968","Sei whale",0
+"940","United States of America","1969","Sei whale",0
+"941","United States of America","1970","Sei whale",0
+"942","United States of America","1971","Sei whale",0
+"943","United States of America","1972","Sei whale",0
+"944","United States of America","1973","Sei whale",0
+"945","United States of America","1974","Sei whale",0
+"946","United States of America","1975","Sei whale",0
+"947","United States of America","1976","Sei whale",0
+"948","United States of America","1977","Sei whale",0
+"949","United States of America","1978","Sei whale",0
+"950","United States of America","1979","Sei whale",0
+"951","United States of America","1980","Sei whale",0
+"952","United States of America","1981","Sei whale",0
+"953","United States of America","1982","Sei whale",0
+"954","United States of America","1983","Sei whale",0
+"955","United States of America","1984","Sei whale",0
+"956","United States of America","1985","Sei whale",0
+"957","United States of America","1986","Sei whale",0
+"958","United States of America","1987","Sei whale",0
+"959","United States of America","1988","Sei whale",0
+"960","United States of America","1989","Sei whale",0
+"961","United States of America","1990","Sei whale",0
+"962","United States of America","1991","Sei whale",0
+"963","United States of America","1992","Sei whale",0
+"964","United States of America","1993","Sei whale",0
+"965","United States of America","1994","Sei whale",0
+"966","United States of America","1995","Sei whale",0
+"967","United States of America","1996","Sei whale",0
+"968","United States of America","1997","Sei whale",0
+"969","United States of America","1998","Sei whale",0
+"970","United States of America","1999","Sei whale",0
+"971","United States of America","2000","Sei whale",0
+"972","United States of America","2001","Sei whale",0
+"973","United States of America","2002","Sei whale",0
+"974","United States of America","2003","Sei whale",0
+"975","United States of America","2004","Sei whale",0
+"976","United States of America","2005","Sei whale",0
+"977","United States of America","2006","Sei whale",0
+"978","United States of America","2007","Sei whale",0
+"979","United States of America","2008","Sei whale",1
+"980","United States of America","2009","Sei whale",0
+"981","United States of America","2010","Sei whale",0
+"982","United States of America","2011","Sei whale",0
+"983","United States of America","2012","Sei whale",0
+"984","United States of America","2013","Sei whale",0
+"985","United States of America","1970","Sei whale",4
+"986","United States of America","1971","Sei whale",2
+"987","United States of America","1972","Sei whale",0
+"988","United States of America","1973","Sei whale",0
+"989","United States of America","1974","Sei whale",0
+"990","United States of America","1975","Sei whale",0
+"991","United States of America","1976","Sei whale",0
+"992","United States of America","1977","Sei whale",0
+"993","United States of America","1978","Sei whale",0
+"994","United States of America","1979","Sei whale",0
+"995","United States of America","1980","Sei whale",0
+"996","United States of America","1981","Sei whale",0
+"997","United States of America","1982","Sei whale",0
+"998","United States of America","1983","Sei whale",0
+"999","United States of America","1984","Sei whale",0
+"1000","United States of America","1985","Sei whale",0
+"1001","United States of America","1986","Sei whale",0
+"1002","United States of America","1987","Sei whale",0
+"1003","United States of America","1988","Sei whale",0
+"1004","United States of America","1989","Sei whale",0
+"1005","United States of America","1990","Sei whale",0
+"1006","United States of America","1991","Sei whale",0
+"1007","United States of America","1992","Sei whale",0
+"1008","United States of America","1993","Sei whale",0
+"1009","United States of America","1994","Sei whale",0
+"1010","United States of America","1995","Sei whale",0
+"1011","United States of America","1996","Sei whale",0
+"1012","United States of America","1997","Sei whale",0
+"1013","United States of America","1998","Sei whale",0
+"1014","United States of America","1999","Sei whale",0
+"1015","United States of America","2000","Sei whale",0
+"1016","United States of America","2001","Sei whale",1
+"1017","United States of America","2002","Sei whale",0
+"1018","United States of America","2003","Sei whale",1
+"1019","United States of America","2004","Sei whale",0
+"1020","United States of America","2005","Sei whale",1
+"1021","United States of America","2006","Sei whale",0
+"1022","United States of America","2007","Sei whale",0
+"1023","United States of America","2008","Sei whale",0
+"1024","United States of America","2009","Sei whale",0
+"1025","United States of America","2010","Sei whale",0
+"1026","United States of America","2011","Sei whale",0
+"1027","United States of America","2012","Sei whale",0
+"1028","United States of America","2013","Sei whale",0
+"1029","United States of America","1970","Short0finned pilot whale",0
+"1030","United States of America","1971","Short0finned pilot whale",0
+"1031","United States of America","1972","Short0finned pilot whale",0
+"1032","United States of America","1973","Short0finned pilot whale",0
+"1033","United States of America","1974","Short0finned pilot whale",0
+"1034","United States of America","1975","Short0finned pilot whale",0
+"1035","United States of America","1976","Short0finned pilot whale",0
+"1036","United States of America","1977","Short0finned pilot whale",0
+"1037","United States of America","1978","Short0finned pilot whale",0
+"1038","United States of America","1979","Short0finned pilot whale",0
+"1039","United States of America","1980","Short0finned pilot whale",0
+"1040","United States of America","1981","Short0finned pilot whale",0
+"1041","United States of America","1982","Short0finned pilot whale",0
+"1042","United States of America","1983","Short0finned pilot whale",0
+"1043","United States of America","1984","Short0finned pilot whale",0
+"1044","United States of America","1985","Short0finned pilot whale",0
+"1045","United States of America","1986","Short0finned pilot whale",0
+"1046","United States of America","1987","Short0finned pilot whale",0
+"1047","United States of America","1988","Short0finned pilot whale",0
+"1048","United States of America","1989","Short0finned pilot whale",1
+"1049","United States of America","1990","Short0finned pilot whale",0
+"1050","United States of America","1991","Short0finned pilot whale",0
+"1051","United States of America","1992","Short0finned pilot whale",8
+"1052","United States of America","1993","Short0finned pilot whale",81
+"1053","United States of America","1994","Short0finned pilot whale",0
+"1054","United States of America","1995","Short0finned pilot whale",0
+"1055","United States of America","1996","Short0finned pilot whale",0
+"1056","United States of America","1997","Short0finned pilot whale",6
+"1057","United States of America","1998","Short0finned pilot whale",0
+"1058","United States of America","1999","Short0finned pilot whale",0
+"1059","United States of America","2000","Short0finned pilot whale",0
+"1060","United States of America","2001","Short0finned pilot whale",0
+"1061","United States of America","2002","Short0finned pilot whale",0
+"1062","United States of America","2003","Short0finned pilot whale",5
+"1063","United States of America","2004","Short0finned pilot whale",0
+"1064","United States of America","2005","Short0finned pilot whale",0
+"1065","United States of America","2006","Short0finned pilot whale",0
+"1066","United States of America","2007","Short0finned pilot whale",0
+"1067","United States of America","2008","Short0finned pilot whale",0
+"1068","United States of America","2009","Short0finned pilot whale",9
+"1069","United States of America","2010","Short0finned pilot whale",0
+"1070","United States of America","2011","Short0finned pilot whale",0
+"1071","United States of America","2012","Short0finned pilot whale",0
+"1072","United States of America","2013","Short0finned pilot whale",0
+"1073","United States of America","1970","Sperm whale",64
+"1074","United States of America","1971","Sperm whale",47
+"1075","United States of America","1972","Sperm whale",0
+"1076","United States of America","1973","Sperm whale",0
+"1077","United States of America","1974","Sperm whale",0
+"1078","United States of America","1975","Sperm whale",0
+"1079","United States of America","1976","Sperm whale",0
+"1080","United States of America","1977","Sperm whale",0
+"1081","United States of America","1978","Sperm whale",0
+"1082","United States of America","1979","Sperm whale",0
+"1083","United States of America","1980","Sperm whale",0
+"1084","United States of America","1981","Sperm whale",0
+"1085","United States of America","1982","Sperm whale",0
+"1086","United States of America","1983","Sperm whale",0
+"1087","United States of America","1984","Sperm whale",0
+"1088","United States of America","1985","Sperm whale",0
+"1089","United States of America","1986","Sperm whale",0
+"1090","United States of America","1987","Sperm whale",0
+"1091","United States of America","1988","Sperm whale",0
+"1092","United States of America","1989","Sperm whale",0
+"1093","United States of America","1990","Sperm whale",0
+"1094","United States of America","1991","Sperm whale",0
+"1095","United States of America","1992","Sperm whale",8
+"1096","United States of America","1993","Sperm whale",22
+"1097","United States of America","1994","Sperm whale",0
+"1098","United States of America","1995","Sperm whale",0
+"1099","United States of America","1996","Sperm whale",1
+"1100","United States of America","1997","Sperm whale",0
+"1101","United States of America","1998","Sperm whale",5
+"1102","United States of America","1999","Sperm whale",1
+"1103","United States of America","2000","Sperm whale",0
+"1104","United States of America","2001","Sperm whale",0
+"1105","United States of America","2002","Sperm whale",0
+"1106","United States of America","2003","Sperm whale",0
+"1107","United States of America","2004","Sperm whale",1
+"1108","United States of America","2005","Sperm whale",0
+"1109","United States of America","2006","Sperm whale",0
+"1110","United States of America","2007","Sperm whale",0
+"1111","United States of America","2008","Sperm whale",0
+"1112","United States of America","2009","Sperm whale",0
+"1113","United States of America","2010","Sperm whale",0
+"1114","United States of America","2011","Sperm whale",0
+"1115","United States of America","2012","Sperm whale",0
+"1116","United States of America","2013","Sperm whale",0
+"1117","United States of America","1970","Striped dolphin",0
+"1118","United States of America","1971","Striped dolphin",0
+"1119","United States of America","1972","Striped dolphin",0
+"1120","United States of America","1973","Striped dolphin",0
+"1121","United States of America","1974","Striped dolphin",0
+"1122","United States of America","1975","Striped dolphin",0
+"1123","United States of America","1976","Striped dolphin",0
+"1124","United States of America","1977","Striped dolphin",0
+"1125","United States of America","1978","Striped dolphin",0
+"1126","United States of America","1979","Striped dolphin",0
+"1127","United States of America","1980","Striped dolphin",0
+"1128","United States of America","1981","Striped dolphin",0
+"1129","United States of America","1982","Striped dolphin",0
+"1130","United States of America","1983","Striped dolphin",0
+"1131","United States of America","1984","Striped dolphin",0
+"1132","United States of America","1985","Striped dolphin",0
+"1133","United States of America","1986","Striped dolphin",0
+"1134","United States of America","1987","Striped dolphin",0
+"1135","United States of America","1988","Striped dolphin",0
+"1136","United States of America","1989","Striped dolphin",0
+"1137","United States of America","1990","Striped dolphin",0
+"1138","United States of America","1991","Striped dolphin",0
+"1139","United States of America","1992","Striped dolphin",0
+"1140","United States of America","1993","Striped dolphin",0
+"1141","United States of America","1994","Striped dolphin",0
+"1142","United States of America","1995","Striped dolphin",0
+"1143","United States of America","1996","Striped dolphin",0
+"1144","United States of America","1997","Striped dolphin",0
+"1145","United States of America","1998","Striped dolphin",4
+"1146","United States of America","1999","Striped dolphin",0
+"1147","United States of America","2000","Striped dolphin",0
+"1148","United States of America","2001","Striped dolphin",0
+"1149","United States of America","2002","Striped dolphin",0
+"1150","United States of America","2003","Striped dolphin",0
+"1151","United States of America","2004","Striped dolphin",0
+"1152","United States of America","2005","Striped dolphin",0
+"1153","United States of America","2006","Striped dolphin",0
+"1154","United States of America","2007","Striped dolphin",0
+"1155","United States of America","2008","Striped dolphin",0
+"1156","United States of America","2009","Striped dolphin",0
+"1157","United States of America","2010","Striped dolphin",0
+"1158","United States of America","2011","Striped dolphin",0
+"1159","United States of America","2012","Striped dolphin",0
+"1160","United States of America","2013","Striped dolphin",0
+"1161","United States of America","2003","Toothed whales nei",0
+"1162","United States of America","2004","Toothed whales nei",3
+"1163","United States of America","2005","Toothed whales nei",0
+"1164","United States of America","2006","Toothed whales nei",3
+"1165","United States of America","2007","Toothed whales nei",0
+"1166","United States of America","2008","Toothed whales nei",0
+"1167","United States of America","2009","Toothed whales nei",0
+"1168","United States of America","2010","Toothed whales nei",2
+"1169","United States of America","2011","Toothed whales nei",0
+"1170","United States of America","2012","Toothed whales nei",0
+"1171","United States of America","2013","Toothed whales nei",0
+"1172","United States of America","1950","Toothed whales nei",0
+"1173","United States of America","1951","Toothed whales nei",247
+"1174","United States of America","1952","Toothed whales nei",0
+"1175","United States of America","1953","Toothed whales nei",0
+"1176","United States of America","1954","Toothed whales nei",0
+"1177","United States of America","1955","Toothed whales nei",0
+"1178","United States of America","1956","Toothed whales nei",1350
+"1179","United States of America","1957","Toothed whales nei",0
+"1180","United States of America","1958","Toothed whales nei",0
+"1181","United States of America","1959","Toothed whales nei",0
+"1182","United States of America","1960","Toothed whales nei",0
+"1183","United States of America","1961","Toothed whales nei",0
+"1184","United States of America","1962","Toothed whales nei",0
+"1185","United States of America","1963","Toothed whales nei",0
+"1186","United States of America","1964","Toothed whales nei",3
+"1187","United States of America","1965","Toothed whales nei",7
+"1188","United States of America","1966","Toothed whales nei",1
+"1189","United States of America","1967","Toothed whales nei",0
+"1190","United States of America","1968","Toothed whales nei",0
+"1191","United States of America","1969","Toothed whales nei",0
+"1192","United States of America","1970","Toothed whales nei",0
+"1193","United States of America","1971","Toothed whales nei",0
+"1194","United States of America","1972","Toothed whales nei",0
+"1195","United States of America","1973","Toothed whales nei",0
+"1196","United States of America","1974","Toothed whales nei",0
+"1197","United States of America","1975","Toothed whales nei",0
+"1198","United States of America","1976","Toothed whales nei",0
+"1199","United States of America","1977","Toothed whales nei",0
+"1200","United States of America","1978","Toothed whales nei",0
+"1201","United States of America","1979","Toothed whales nei",0
+"1202","United States of America","1980","Toothed whales nei",0
+"1203","United States of America","1981","Toothed whales nei",0
+"1204","United States of America","1982","Toothed whales nei",0
+"1205","United States of America","1983","Toothed whales nei",7878
+"1206","United States of America","1984","Toothed whales nei",0
+"1207","United States of America","1985","Toothed whales nei",0
+"1208","United States of America","1986","Toothed whales nei",155
+"1209","United States of America","1987","Toothed whales nei",14206
+"1210","United States of America","1988","Toothed whales nei",19717
+"1211","United States of America","1989","Toothed whales nei",12606
+"1212","United States of America","1990","Toothed whales nei",5151
+"1213","United States of America","1991","Toothed whales nei",1629
+"1214","United States of America","1992","Toothed whales nei",1162
+"1215","United States of America","1993","Toothed whales nei",1170
+"1216","United States of America","1994","Toothed whales nei",1041
+"1217","United States of America","1995","Toothed whales nei",947
+"1218","United States of America","1996","Toothed whales nei",1723
+"1219","United States of America","1997","Toothed whales nei",895
+"1220","United States of America","1998","Toothed whales nei",467
+"1221","United States of America","1999","Toothed whales nei",0
+"1222","United States of America","2000","Toothed whales nei",0
+"1223","United States of America","2001","Toothed whales nei",2
+"1224","United States of America","2002","Toothed whales nei",0
+"1225","United States of America","2003","Toothed whales nei",0
+"1226","United States of America","2004","Toothed whales nei",0
+"1227","United States of America","2005","Toothed whales nei",0
+"1228","United States of America","2006","Toothed whales nei",0
+"1229","United States of America","2007","Toothed whales nei",0
+"1230","United States of America","2008","Toothed whales nei",0
+"1231","United States of America","2009","Toothed whales nei",0
+"1232","United States of America","2010","Toothed whales nei",0
+"1233","United States of America","2011","Toothed whales nei",0
+"1234","United States of America","2012","Toothed whales nei",0
+"1235","United States of America","2013","Toothed whales nei",0
+"1236","United States of America","1970","White whale",0
+"1237","United States of America","1971","White whale",0
+"1238","United States of America","1972","White whale",185
+"1239","United States of America","1973","White whale",0
+"1240","United States of America","1974","White whale",0
+"1241","United States of America","1975","White whale",0
+"1242","United States of America","1976","White whale",0
+"1243","United States of America","1977","White whale",0
+"1244","United States of America","1978","White whale",2
+"1245","United States of America","1979","White whale",138
+"1246","United States of America","1980","White whale",10
+"1247","United States of America","1981","White whale",182
+"1248","United States of America","1982","White whale",298
+"1249","United States of America","1983","White whale",0
+"1250","United States of America","1984","White whale",107
+"1251","United States of America","1985","White whale",0
+"1252","United States of America","1986","White whale",1
+"1253","United States of America","1987","White whale",186
+"1254","United States of America","1988","White whale",366
+"1255","United States of America","1989","White whale",236
+"1256","United States of America","1990","White whale",239
+"1257","United States of America","1991","White whale",228
+"1258","United States of America","1992","White whale",325
+"1259","United States of America","1993","White whale",312
+"1260","United States of America","1994","White whale",276
+"1261","United States of America","1995","White whale",229
+"1262","United States of America","1996","White whale",304
+"1263","United States of America","1997","White whale",232
+"1264","United States of America","1998","White whale",327
+"1265","United States of America","1999","White whale",238
+"1266","United States of America","2000","White whale",212
+"1267","United States of America","2001","White whale",412
+"1268","United States of America","2002","White whale",364
+"1269","United States of America","2003","White whale",271
+"1270","United States of America","2004","White whale",262
+"1271","United States of America","2005","White whale",216
+"1272","United States of America","2006","White whale",234
+"1273","United States of America","2007","White whale",562
+"1274","United States of America","2008","White whale",263
+"1275","United States of America","2009","White whale",262
+"1276","United States of America","2010","White whale",325
+"1277","United States of America","2011","White whale",0
+"1278","United States of America","2012","White whale",345
+"1279","United States of America","2013","White whale",1
