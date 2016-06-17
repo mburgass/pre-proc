@@ -158,7 +158,7 @@ NWT_jobs_final$value<- round(NWT_jobs_final$value, digits=0)
 # Nunavut -----------------------------------------------------------------
 
 Nunavut_Employment = read_excel("Livelihoods/Employment_Figures/Canada/Nunavut_Employment_2008_2014.xlsx", sheet = 1, col_names = TRUE, col_types = NULL, na = "", skip = 0)
-Nunavut_Employment<-data.frame(Nunavut_Employment)%>%  rename(c("Job.Type"="sector"))
+Nunavut_Employment<-data.frame(Nunavut_Employment)%>% rename(c("Job.Type"="sector"))
 
 Nunavut_Employment2 = dplyr::filter(Nunavut_Employment, (sector %in% c("Fishing, Hunting, Trapping, Mining and Quarrying", "Transportation and Warehousing", "Accommodation and Food Services")))
 ## Job types quite general - taken ones with most likely marine connections.
@@ -178,24 +178,23 @@ Nunavut_jobs_final[Nunavut_jobs_final=="Accommodation and Food Services"]<-"hosp
 # Canada Join -------------------------------------------------------------
 
 canada_jobs = rbind(NWT_jobs_final, Nunavut_jobs_final)
-canada_jobs
+canada_jobs<- rename(canada_jobs, c("Region"="rgn_id"))
 
 
 # Greenland ---------------------------------------------------------------
 
 ## Only figures for whole country
 Greenland_Employment = read_excel("Livelihoods/Employment_Figures/Greenland/Greenland_Employment_2008_2014.xlsx", sheet = 1, col_names = TRUE, col_types = NULL, na = "", skip = 0)
-Greenland_Employment<-data.frame(Greenland_Employment)
-Greenland_Employment2 = dplyr::filter(Greenland_Employment, (Job.Type %in% c("Fishing, hunting & agriculture", "Transportation", "Hotels and restaurants")))
+Greenland_Employment<-data.frame(Greenland_Employment)%>% rename(c("Job.Type"="sector"))
+Greenland_Employment2 = dplyr::filter(Greenland_Employment, (sector %in% c("Fishing, hunting & agriculture", "Transportation", "Hotels and restaurants")))
 ##Jobs quite general - kept with theme of fishing/ship transport and tourism
-Greenland_Employment2<-select(Greenland_Employment2, -Job.Type)
-Greenland_Jobs = Greenland_Employment2 %>% select(Year, Jobs)%>%
-  group_by(Year)%>%
-  dplyr::summarize(Marine.Jobs = sum(Jobs, na.rm=T))%>%
-  ungroup()
-Greenland_Jobs$Region <- "Greenland"
-Greenland_jobs_final=Greenland_Jobs[c(3,1,2)]
-Greenland_jobs_final
+Greenland_Employment2=rename(Greenland_Employment2, c("Jobs"="value"))
+
+Greenland_Employment2$rgn_id <- "Greenland"
+Greenland_jobs_final=Greenland_Employment2[c(4,2,1,3)]
+Greenland_jobs_final[Greenland_jobs_final=="Transportation"]<- "transport"
+Greenland_jobs_final[Greenland_jobs_final=="Fishing, hunting & agriculture"]<-"fishing"
+Greenland_jobs_final[Greenland_jobs_final=="Hotels and restaurants"]<-"hospitality"
 
 ##Check how best to separate out between east and west Greenland? Roughly 80% of people live in West Greenland
 
@@ -336,15 +335,15 @@ Alaska_Group = rbind(Alaska_Employment04, Alaska_Employment05, Alaska_Employment
 Alaska_Group<- select(Alaska_Group, Year, AREANAME, NA., AVERAGE.EMPLOYMENT)
 Alaska_Group<-filter(Alaska_Group, !(NA. %in% c('NATURAL RESOURCE & MINING', 'NATURAL RESOURCES & MINING', 'NATURAL RESOURCES AND MINING')))
 ##Dropped natural resource and mining as detailed check of data shows that it is all related to oil/gas/mining - not fishing or trapping
-Alaska_Group<-select(Alaska_Group, Year, AVERAGE.EMPLOYMENT)
-Alaska_Group<-plyr::rename(Alaska_Group, c("AVERAGE.EMPLOYMENT"="Marine.Jobs"))
-Alaska_Jobs = Alaska_Group%>% group_by(Year)%>%
-  dplyr::summarize(Marine.Jobs = sum(Marine.Jobs, na.rm=T))%>%
-  ungroup()
-Alaska_Jobs$Region <- "Alaska"
-Alaska_Jobs<-Alaska_Jobs[c(3,1,2)]
+Alaska_Group<-select(Alaska_Group, Year, AVERAGE.EMPLOYMENT, NA.)
+Alaska_Group<-plyr::rename(Alaska_Group, c("AVERAGE.EMPLOYMENT"="value", "NA."="sector"))
+Alaska_Jobs=Alaska_Group
+Alaska_Jobs$rgn_id<- "Alaska"
+Alaska_Jobs<-Alaska_Jobs[c(4,3,1,2)]
 Alaska_Jobs
-
+Alaska_Jobs[Alaska_Jobs=="TRADE, TRANS. & UTILITIES"]<- "transport"
+Alaska_Jobs[Alaska_Jobs=="MANUFACTURING"]<-"manufacturing"
+Alaska_Jobs[Alaska_Jobs=="LEISURE & HOSPITALITY"]<-"hospitality"
 
 # Russia ------------------------------------------------------------------
 
@@ -361,9 +360,7 @@ Russia_Employment14$Year <- "2014"
 Russia_Employment14$Transport<-Russia_Employment14$Transport*1000
 Russia_Employment14$Agriculture..hunting.and.forestry..fishing..fish.farming<-Russia_Employment14$Agriculture..hunting.and.forestry..fishing..fish.farming*1000
 Russia_Employment14$Hotels.and...restaurants<-Russia_Employment14$Hotels.and...restaurants*1000
-Russia_Employment14<-dplyr::mutate(Russia_Employment14, "Marine.Jobs" = Agriculture..hunting.and.forestry..fishing..fish.farming%>%
-                                     + Transport + Hotels.and...restaurants)
-Russia_Employment14<-select(Russia_Employment14, District, Year, Marine.Jobs)
+
 
 
 # #2013 -------------------------------------------------------------------
@@ -378,9 +375,7 @@ Russia_Employment13$Year <- "2013"
 Russia_Employment13$Transport<-Russia_Employment13$Transport*1000
 Russia_Employment13$Agriculture..hunting.and.forestry..fishing..fish.farming<-Russia_Employment13$Agriculture..hunting.and.forestry..fishing..fish.farming*1000
 Russia_Employment13$Hotels.and...restaurants<-Russia_Employment13$Hotels.and...restaurants*1000
-Russia_Employment13<-dplyr::mutate(Russia_Employment13, "Marine.Jobs" = Agriculture..hunting.and.forestry..fishing..fish.farming%>%
-                                     + Transport + Hotels.and...restaurants)
-Russia_Employment13<-select(Russia_Employment13, District, Year, Marine.Jobs)
+
 
 
 # #2012 -------------------------------------------------------------------
@@ -394,9 +389,7 @@ Russia_Employment12$Year <- "2012"
 Russia_Employment12$Transport<-Russia_Employment12$Transport*1000
 Russia_Employment12$Agriculture..hunting.and.forestry..fishing..fish.farming<-Russia_Employment12$Agriculture..hunting.and.forestry..fishing..fish.farming*1000
 Russia_Employment12$Hotels.and...restaurants<-Russia_Employment12$Hotels.and...restaurants*1000
-Russia_Employment12<-dplyr::mutate(Russia_Employment12, "Marine.Jobs" = Agriculture..hunting.and.forestry..fishing..fish.farming%>%
-                                     + Transport + Hotels.and...restaurants)
-Russia_Employment12<-select(Russia_Employment12, District, Year, Marine.Jobs)
+
 
 
 # #2011 -------------------------------------------------------------------
@@ -410,9 +403,7 @@ Russia_Employment11$Year <- "2011"
 Russia_Employment11$Transport<-Russia_Employment11$Transport*1000
 Russia_Employment11$Agriculture..hunting.and.forestry..fishing..fish.farming<-Russia_Employment11$Agriculture..hunting.and.forestry..fishing..fish.farming*1000
 Russia_Employment11$Hotels.and...restaurants<-Russia_Employment11$Hotels.and...restaurants*1000
-Russia_Employment11<-dplyr::mutate(Russia_Employment11, "Marine.Jobs" = Agriculture..hunting.and.forestry..fishing..fish.farming%>%
-                                     + Transport + Hotels.and...restaurants)
-Russia_Employment11<-select(Russia_Employment11, District, Year, Marine.Jobs)
+
 
 # 2010 --------------------------------------------------------------------
 Russia_Employment10 = read_excel("Livelihoods/Employment_Figures/Russia/Russia_Employment_2010_2014.xlsx", sheet = 5, col_names = TRUE, col_types = NULL, na = "", skip = 0)
@@ -425,41 +416,32 @@ Russia_Employment10$Year <- "2010"
 Russia_Employment10$Transport<-Russia_Employment10$Transport*1000
 Russia_Employment10$Agriculture..hunting.and.forestry..fishing..fish.farming<-Russia_Employment10$Agriculture..hunting.and.forestry..fishing..fish.farming*1000
 Russia_Employment10$Hotels.and...restaurants<-Russia_Employment10$Hotels.and...restaurants*1000
-Russia_Employment10<-dplyr::mutate(Russia_Employment10, "Marine.Jobs" = Agriculture..hunting.and.forestry..fishing..fish.farming%>%
-                                     + Transport + Hotels.and...restaurants)
-Russia_Employment10<-select(Russia_Employment10, District, Year, Marine.Jobs)
+
 
 
 # # bind ------------------------------------------------------------------
 
 Russia_Group = rbind(Russia_Employment10, Russia_Employment11, Russia_Employment12, Russia_Employment13, Russia_Employment14)
-Russia_Group_Wide = spread(Russia_Group, District, Marine.Jobs)
-Russia_Group_Wide<-plyr::rename(Russia_Group_Wide, c("Chukotka Autonomous Okrug"="Chukotka"))
-Russia_Group_Wide<-dplyr::mutate(Russia_Group_Wide, Chukotka = (Russia_Group_Wide$`Chukotka`/100)*43.94)
-Russia_Group_Wide$Chukotka<- round(Russia_Group_Wide$Chukotka, digits=0)
-
-Russia_Group_Wide<-plyr::rename(Russia_Group_Wide, c("Krasnoyarsk region"="Krasnoyarsk"))
-Russia_Group_Wide<-dplyr::mutate(Russia_Group_Wide, Krasnoyarsk = (Russia_Group_Wide$`Krasnoyarsk`/100)*1.2)
-Russia_Group_Wide$Krasnoyarsk<- round(Russia_Group_Wide$Krasnoyarsk, digits=0)
-
-Russia_Group_Wide<-plyr::rename(Russia_Group_Wide, c("The Republic of Sakha (Yakutia)"="Sakha"))
-Russia_Group_Wide<-dplyr::mutate(Russia_Group_Wide, Sakha = (Russia_Group_Wide$`Sakha`/100)*1.2)
-Russia_Group_Wide$Sakha<- round(Russia_Group_Wide$Sakha, digits=0)
+Russia_Group<-plyr::rename(Russia_Group, c("Agriculture..hunting.and.forestry..fishing..fish.farming"="fishing", "Hotels.and...restaurants"="hospitality", "Transport"="transport"))
+Russia_Group<- gather(Russia_Group, sector, value, 2:4)
+Russia_Group$value<-as.numeric(Russia_Group$value)
+Russia_Group$value[Russia_Group$District =="Chukotka Autonomous Okrug"] <-Russia_Group$value[Russia_Group$District =="Chukotka Autonomous Okrug"]/2.2758
+Russia_Group$value[Russia_Group$District =="Krasnoyarsk region"] <-Russia_Group$value[Russia_Group$District =="Krasnoyarsk region"]/83.33333
+Russia_Group$value[Russia_Group$District =="The Republic of Sakha (Yakutia)"] <-Russia_Group$value[Russia_Group$District =="The Republic of Sakha (Yakutia)"]/33.7838
+Russia_Group$value<- round(Russia_Group$value, digits=0)
 ##Work out % employment in each region so can amend jobs - Krasnoyarsk region is huge.
 
 ##Taymyrsky Dolgano-Nenetsky District in Krasnoyarsk krai = population 34,432. KK population = 2,828,187. 1.2% of the data below
 ## Chukotsky, Iulintsky, Chaunsky and Bilibinksy districts in Chukotka = poppulation = 22,201. Chukotka pop = 50,526. 43.94%
 ##Sakha coastal districts = population 28,325. sakha pop = 958, 528. 2.96%
 
-Russia_Jobs<- gather(Russia_Group_Wide, District, Marine.Jobs, 2:7)
-Russia_Jobs<-Russia_Jobs[c(2,1,3)]
-Russia_Jobs<-Russia_Jobs%>% group_by(Year)%>%
-  dplyr::summarize(Marine.Jobs = sum(Marine.Jobs, na.rm=T))%>%
+Russia_Jobs=Russia_Group%>%group_by(Year, sector)%>%
+  dplyr::summarize(value = sum(value, na.rm=T))%>%
   ungroup()
-Russia_Jobs$Region<-"Russia"
-Russia_Jobs<-Russia_Jobs[c(3,1,2)]
+Russia_Jobs$rgn_id <- "Russia"
+Russia_Jobs<-Russia_Jobs[c(4,2,1,3)]
 Russia_Jobs
 
-le_jobs_year= rbind(Russia_Jobs, Alaska_Jobs, canada_jobs, norway_jobs, Greenland_jobs_final)
-le_jobs_year
-write.csv(le_jobs_year, "le_jobs_year.csv")
+le_jobs_sector_year= rbind(Russia_Jobs, Alaska_Jobs, canada_jobs, norway_jobs, Greenland_jobs_final)
+le_jobs_sector_year
+write.csv(le_jobs_sector_year, "le_jobs_sector_year.csv")
