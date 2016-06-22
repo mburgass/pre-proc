@@ -1,0 +1,694 @@
+"","Country","Year","Species","totalcatch"
+"1","Norway","1964","Bearded seal",4765
+"2","Norway","1965","Bearded seal",905
+"3","Norway","1966","Bearded seal",8
+"4","Norway","1967","Bearded seal",48
+"5","Norway","1968","Bearded seal",225
+"6","Norway","1969","Bearded seal",11
+"7","Norway","1970","Bearded seal",596
+"8","Norway","1971","Bearded seal",0
+"9","Norway","1972","Bearded seal",122
+"10","Norway","1973","Bearded seal",747
+"11","Norway","1974","Bearded seal",50
+"12","Norway","1975","Bearded seal",2
+"13","Norway","1976","Bearded seal",8
+"14","Norway","1977","Bearded seal",15
+"15","Norway","1978","Bearded seal",1
+"16","Norway","1979","Bearded seal",0
+"17","Norway","1980","Bearded seal",1
+"18","Norway","1981","Bearded seal",1
+"19","Norway","1982","Bearded seal",0
+"20","Norway","1983","Bearded seal",0
+"21","Norway","1984","Bearded seal",0
+"22","Norway","1985","Bearded seal",0
+"23","Norway","1986","Bearded seal",0
+"24","Norway","1987","Bearded seal",0
+"25","Norway","1988","Bearded seal",0
+"26","Norway","1989","Bearded seal",0
+"27","Norway","1990","Bearded seal",0
+"28","Norway","1991","Bearded seal",0
+"29","Norway","1992","Bearded seal",0
+"30","Norway","1993","Bearded seal",0
+"31","Norway","1994","Bearded seal",0
+"32","Norway","1995","Bearded seal",0
+"33","Norway","1996","Bearded seal",0
+"34","Norway","1997","Bearded seal",0
+"35","Norway","1998","Bearded seal",0
+"36","Norway","1999","Bearded seal",0
+"37","Norway","2000","Bearded seal",0
+"38","Norway","2001","Bearded seal",0
+"39","Norway","2002","Bearded seal",0
+"40","Norway","2003","Bearded seal",0
+"41","Norway","2004","Bearded seal",0
+"42","Norway","2005","Bearded seal",0
+"43","Norway","2006","Bearded seal",0
+"44","Norway","2007","Bearded seal",0
+"45","Norway","2008","Bearded seal",0
+"46","Norway","2009","Bearded seal",0
+"47","Norway","2010","Bearded seal",0
+"48","Norway","2011","Bearded seal",0
+"49","Norway","2012","Bearded seal",0
+"50","Norway","2013","Bearded seal",0
+"51","Norway","1950","Fin whale",435
+"52","Norway","1951","Fin whale",417
+"53","Norway","1952","Fin whale",452
+"54","Norway","1953","Fin whale",380
+"55","Norway","1954","Fin whale",392
+"56","Norway","1955","Fin whale",305
+"57","Norway","1956","Fin whale",206
+"58","Norway","1957","Fin whale",170
+"59","Norway","1958","Fin whale",222
+"60","Norway","1959","Fin whale",215
+"61","Norway","1960","Fin whale",214
+"62","Norway","1961","Fin whale",256
+"63","Norway","1962","Fin whale",306
+"64","Norway","1963","Fin whale",0
+"65","Norway","1964","Fin whale",88
+"66","Norway","1965","Fin whale",133
+"67","Norway","1966","Fin whale",91
+"68","Norway","1967","Fin whale",56
+"69","Norway","1968","Fin whale",77
+"70","Norway","1969","Fin whale",128
+"71","Norway","1970","Fin whale",63
+"72","Norway","1971","Fin whale",37
+"73","Norway","1972","Fin whale",0
+"74","Norway","1973","Fin whale",0
+"75","Norway","1974","Fin whale",0
+"76","Norway","1975","Fin whale",0
+"77","Norway","1976","Fin whale",0
+"78","Norway","1977","Fin whale",0
+"79","Norway","1978","Fin whale",0
+"80","Norway","1979","Fin whale",0
+"81","Norway","1980","Fin whale",0
+"82","Norway","1981","Fin whale",0
+"83","Norway","1982","Fin whale",0
+"84","Norway","1983","Fin whale",0
+"85","Norway","1984","Fin whale",0
+"86","Norway","1985","Fin whale",0
+"87","Norway","1986","Fin whale",0
+"88","Norway","1987","Fin whale",0
+"89","Norway","1988","Fin whale",0
+"90","Norway","1989","Fin whale",0
+"91","Norway","1990","Fin whale",0
+"92","Norway","1991","Fin whale",0
+"93","Norway","1992","Fin whale",0
+"94","Norway","1993","Fin whale",0
+"95","Norway","1994","Fin whale",0
+"96","Norway","1995","Fin whale",0
+"97","Norway","1996","Fin whale",0
+"98","Norway","1997","Fin whale",0
+"99","Norway","1998","Fin whale",0
+"100","Norway","1999","Fin whale",0
+"101","Norway","2000","Fin whale",0
+"102","Norway","2001","Fin whale",0
+"103","Norway","2002","Fin whale",0
+"104","Norway","2003","Fin whale",0
+"105","Norway","2004","Fin whale",0
+"106","Norway","2005","Fin whale",0
+"107","Norway","2006","Fin whale",0
+"108","Norway","2007","Fin whale",0
+"109","Norway","2008","Fin whale",0
+"110","Norway","2009","Fin whale",0
+"111","Norway","2010","Fin whale",0
+"112","Norway","2011","Fin whale",0
+"113","Norway","2012","Fin whale",0
+"114","Norway","2013","Fin whale",0
+"115","Norway","1970","Harbour porpoise",0
+"116","Norway","1971","Harbour porpoise",0
+"117","Norway","1972","Harbour porpoise",0
+"118","Norway","1973","Harbour porpoise",0
+"119","Norway","1974","Harbour porpoise",0
+"120","Norway","1975","Harbour porpoise",0
+"121","Norway","1976","Harbour porpoise",0
+"122","Norway","1977","Harbour porpoise",0
+"123","Norway","1978","Harbour porpoise",0
+"124","Norway","1979","Harbour porpoise",0
+"125","Norway","1980","Harbour porpoise",0
+"126","Norway","1981","Harbour porpoise",0
+"127","Norway","1982","Harbour porpoise",0
+"128","Norway","1983","Harbour porpoise",0
+"129","Norway","1984","Harbour porpoise",0
+"130","Norway","1985","Harbour porpoise",0
+"131","Norway","1986","Harbour porpoise",0
+"132","Norway","1987","Harbour porpoise",3
+"133","Norway","1988","Harbour porpoise",96
+"134","Norway","1989","Harbour porpoise",30
+"135","Norway","1990","Harbour porpoise",39
+"136","Norway","1991","Harbour porpoise",0
+"137","Norway","1992","Harbour porpoise",0
+"138","Norway","1993","Harbour porpoise",0
+"139","Norway","1994","Harbour porpoise",0
+"140","Norway","1995","Harbour porpoise",0
+"141","Norway","1996","Harbour porpoise",0
+"142","Norway","1997","Harbour porpoise",0
+"143","Norway","1998","Harbour porpoise",0
+"144","Norway","1999","Harbour porpoise",0
+"145","Norway","2000","Harbour porpoise",0
+"146","Norway","2001","Harbour porpoise",0
+"147","Norway","2002","Harbour porpoise",0
+"148","Norway","2003","Harbour porpoise",0
+"149","Norway","2004","Harbour porpoise",0
+"150","Norway","2005","Harbour porpoise",0
+"151","Norway","2006","Harbour porpoise",149
+"152","Norway","2007","Harbour porpoise",0
+"153","Norway","2008","Harbour porpoise",0
+"154","Norway","2009","Harbour porpoise",0
+"155","Norway","2010","Harbour porpoise",0
+"156","Norway","2011","Harbour porpoise",0
+"157","Norway","2012","Harbour porpoise",0
+"158","Norway","2013","Harbour porpoise",0
+"159","Norway","1950","Harp seal",161442
+"160","Norway","1951","Harp seal",222148
+"161","Norway","1952","Harp seal",194191
+"162","Norway","1953","Harp seal",160260
+"163","Norway","1954","Harp seal",168460
+"164","Norway","1955","Harp seal",221588
+"165","Norway","1956","Harp seal",228003
+"166","Norway","1957","Harp seal",162039
+"167","Norway","1958","Harp seal",179105
+"168","Norway","1959","Harp seal",256971
+"169","Norway","1960","Harp seal",170016
+"170","Norway","1961","Harp seal",142339
+"171","Norway","1962","Harp seal",191677
+"172","Norway","1963","Harp seal",166361
+"173","Norway","1964","Harp seal",215159
+"174","Norway","1965","Harp seal",97765
+"175","Norway","1966","Harp seal",188952
+"176","Norway","1967","Harp seal",220122
+"177","Norway","1968","Harp seal",124700
+"178","Norway","1969","Harp seal",135038
+"179","Norway","1970","Harp seal",146260
+"180","Norway","1971","Harp seal",118412
+"181","Norway","1972","Harp seal",80920
+"182","Norway","1973","Harp seal",82466
+"183","Norway","1974","Harp seal",77664
+"184","Norway","1975","Harp seal",75930
+"185","Norway","1976","Harp seal",70868
+"186","Norway","1977","Harp seal",56682
+"187","Norway","1978","Harp seal",35537
+"188","Norway","1979","Harp seal",46655
+"189","Norway","1980","Harp seal",45398
+"190","Norway","1981","Harp seal",51629
+"191","Norway","1982","Harp seal",51386
+"192","Norway","1983","Harp seal",13407
+"193","Norway","1984","Harp seal",10854
+"194","Norway","1985","Harp seal",19564
+"195","Norway","1986","Harp seal",19038
+"196","Norway","1987","Harp seal",30444
+"197","Norway","1988","Harp seal",26261
+"198","Norway","1989","Harp seal",13842
+"199","Norway","1990","Harp seal",15030
+"200","Norway","1991","Harp seal",14367
+"201","Norway","1992","Harp seal",13321
+"202","Norway","1993","Harp seal",12278
+"203","Norway","1994","Harp seal",17621
+"204","Norway","1995","Harp seal",15048
+"205","Norway","1996","Harp seal",15948
+"206","Norway","1997","Harp seal",7163
+"207","Norway","1998","Harp seal",2716
+"208","Norway","1999","Harp seal",1953
+"209","Norway","2000","Harp seal",18700
+"210","Norway","2001","Harp seal",8192
+"211","Norway","2002","Harp seal",3580
+"212","Norway","2003","Harp seal",7575
+"213","Norway","2004","Harp seal",9895
+"214","Norway","2005","Harp seal",17771
+"215","Norway","2006","Harp seal",13390
+"216","Norway","2007","Harp seal",13981
+"217","Norway","2008","Harp seal",1263
+"218","Norway","2009","Harp seal",8035
+"219","Norway","2010","Harp seal",4793
+"220","Norway","2011","Harp seal",10334
+"221","Norway","2012","Harp seal",5593
+"222","Norway","2013","Harp seal",15939
+"223","Norway","1950","Hooded seal",68095
+"224","Norway","1951","Hooded seal",91607
+"225","Norway","1952","Hooded seal",40730
+"226","Norway","1953","Hooded seal",29455
+"227","Norway","1954","Hooded seal",68450
+"228","Norway","1955","Hooded seal",59894
+"229","Norway","1956","Hooded seal",52930
+"230","Norway","1957","Hooded seal",22297
+"231","Norway","1958","Hooded seal",66489
+"232","Norway","1959","Hooded seal",30648
+"233","Norway","1960","Hooded seal",37497
+"234","Norway","1961","Hooded seal",73386
+"235","Norway","1962","Hooded seal",46384
+"236","Norway","1963","Hooded seal",27965
+"237","Norway","1964","Hooded seal",38349
+"238","Norway","1965","Hooded seal",41109
+"239","Norway","1966","Hooded seal",59746
+"240","Norway","1967","Hooded seal",55200
+"241","Norway","1968","Hooded seal",15681
+"242","Norway","1969","Hooded seal",40370
+"243","Norway","1970","Hooded seal",42036
+"244","Norway","1971","Hooded seal",44993
+"245","Norway","1972","Hooded seal",32304
+"246","Norway","1973","Hooded seal",32704
+"247","Norway","1974","Hooded seal",36191
+"248","Norway","1975","Hooded seal",36182
+"249","Norway","1976","Hooded seal",15421
+"250","Norway","1977","Hooded seal",21420
+"251","Norway","1978","Hooded seal",22358
+"252","Norway","1979","Hooded seal",28568
+"253","Norway","1980","Hooded seal",15475
+"254","Norway","1981","Hooded seal",17105
+"255","Norway","1982","Hooded seal",18013
+"256","Norway","1983","Hooded seal",86
+"257","Norway","1984","Hooded seal",582
+"258","Norway","1985","Hooded seal",338
+"259","Norway","1986","Hooded seal",2899
+"260","Norway","1987","Hooded seal",7794
+"261","Norway","1988","Hooded seal",6149
+"262","Norway","1989","Hooded seal",181
+"263","Norway","1990","Hooded seal",423
+"264","Norway","1991","Hooded seal",352
+"265","Norway","1992","Hooded seal",755
+"266","Norway","1993","Hooded seal",384
+"267","Norway","1994","Hooded seal",492
+"268","Norway","1995","Hooded seal",933
+"269","Norway","1996","Hooded seal",811
+"270","Norway","1997","Hooded seal",2934
+"271","Norway","1998","Hooded seal",6351
+"272","Norway","1999","Hooded seal",4446
+"273","Norway","2000","Hooded seal",1936
+"274","Norway","2001","Hooded seal",3820
+"275","Norway","2002","Hooded seal",7116
+"276","Norway","2003","Hooded seal",5295
+"277","Norway","2004","Hooded seal",4851
+"278","Norway","2005","Hooded seal",3826
+"279","Norway","2006","Hooded seal",3647
+"280","Norway","2007","Hooded seal",62
+"281","Norway","2008","Hooded seal",0
+"282","Norway","2009","Hooded seal",402
+"283","Norway","2010","Hooded seal",178
+"284","Norway","2011","Hooded seal",21
+"285","Norway","2012","Hooded seal",21
+"286","Norway","2013","Hooded seal",22
+"287","Norway","1955","Killer whale",26
+"288","Norway","1956","Killer whale",40
+"289","Norway","1957","Killer whale",48
+"290","Norway","1958","Killer whale",39
+"291","Norway","1959","Killer whale",69
+"292","Norway","1960","Killer whale",82
+"293","Norway","1961","Killer whale",111
+"294","Norway","1962","Killer whale",124
+"295","Norway","1963","Killer whale",90
+"296","Norway","1964","Killer whale",77
+"297","Norway","1965","Killer whale",104
+"298","Norway","1966","Killer whale",163
+"299","Norway","1967","Killer whale",36
+"300","Norway","1968","Killer whale",86
+"301","Norway","1969","Killer whale",231
+"302","Norway","1970","Killer whale",246
+"303","Norway","1971","Killer whale",56
+"304","Norway","1972","Killer whale",28
+"305","Norway","1973","Killer whale",1
+"306","Norway","1974","Killer whale",6
+"307","Norway","1975","Killer whale",2
+"308","Norway","1976","Killer whale",0
+"309","Norway","1977","Killer whale",7
+"310","Norway","1978","Killer whale",63
+"311","Norway","1979","Killer whale",221
+"312","Norway","1980","Killer whale",52
+"313","Norway","1981","Killer whale",13
+"314","Norway","1982","Killer whale",0
+"315","Norway","1983","Killer whale",0
+"316","Norway","1984","Killer whale",0
+"317","Norway","1985","Killer whale",0
+"318","Norway","1986","Killer whale",0
+"319","Norway","1987","Killer whale",0
+"320","Norway","1988","Killer whale",0
+"321","Norway","1989","Killer whale",0
+"322","Norway","1990","Killer whale",0
+"323","Norway","1991","Killer whale",0
+"324","Norway","1992","Killer whale",0
+"325","Norway","1993","Killer whale",0
+"326","Norway","1994","Killer whale",0
+"327","Norway","1995","Killer whale",0
+"328","Norway","1996","Killer whale",0
+"329","Norway","1997","Killer whale",0
+"330","Norway","1998","Killer whale",0
+"331","Norway","1999","Killer whale",0
+"332","Norway","2000","Killer whale",0
+"333","Norway","2001","Killer whale",0
+"334","Norway","2002","Killer whale",0
+"335","Norway","2003","Killer whale",0
+"336","Norway","2004","Killer whale",0
+"337","Norway","2005","Killer whale",0
+"338","Norway","2006","Killer whale",0
+"339","Norway","2007","Killer whale",0
+"340","Norway","2008","Killer whale",0
+"341","Norway","2009","Killer whale",0
+"342","Norway","2010","Killer whale",0
+"343","Norway","2011","Killer whale",0
+"344","Norway","2012","Killer whale",0
+"345","Norway","2013","Killer whale",0
+"346","Norway","1955","Long0finned pilot whale",13
+"347","Norway","1956","Long0finned pilot whale",1
+"348","Norway","1957","Long0finned pilot whale",80
+"349","Norway","1958","Long0finned pilot whale",216
+"350","Norway","1959","Long0finned pilot whale",224
+"351","Norway","1960","Long0finned pilot whale",331
+"352","Norway","1961","Long0finned pilot whale",295
+"353","Norway","1962","Long0finned pilot whale",43
+"354","Norway","1963","Long0finned pilot whale",71
+"355","Norway","1964","Long0finned pilot whale",54
+"356","Norway","1965","Long0finned pilot whale",32
+"357","Norway","1966","Long0finned pilot whale",339
+"358","Norway","1967","Long0finned pilot whale",117
+"359","Norway","1968","Long0finned pilot whale",31
+"360","Norway","1969","Long0finned pilot whale",27
+"361","Norway","1970","Long0finned pilot whale",43
+"362","Norway","1971","Long0finned pilot whale",0
+"363","Norway","1972","Long0finned pilot whale",0
+"364","Norway","1973","Long0finned pilot whale",0
+"365","Norway","1974","Long0finned pilot whale",1
+"366","Norway","1975","Long0finned pilot whale",0
+"367","Norway","1976","Long0finned pilot whale",0
+"368","Norway","1977","Long0finned pilot whale",0
+"369","Norway","1978","Long0finned pilot whale",0
+"370","Norway","1979","Long0finned pilot whale",0
+"371","Norway","1980","Long0finned pilot whale",0
+"372","Norway","1981","Long0finned pilot whale",0
+"373","Norway","1982","Long0finned pilot whale",0
+"374","Norway","1983","Long0finned pilot whale",0
+"375","Norway","1984","Long0finned pilot whale",0
+"376","Norway","1985","Long0finned pilot whale",0
+"377","Norway","1986","Long0finned pilot whale",0
+"378","Norway","1987","Long0finned pilot whale",0
+"379","Norway","1988","Long0finned pilot whale",0
+"380","Norway","1989","Long0finned pilot whale",0
+"381","Norway","1990","Long0finned pilot whale",0
+"382","Norway","1991","Long0finned pilot whale",0
+"383","Norway","1992","Long0finned pilot whale",0
+"384","Norway","1993","Long0finned pilot whale",0
+"385","Norway","1994","Long0finned pilot whale",0
+"386","Norway","1995","Long0finned pilot whale",0
+"387","Norway","1996","Long0finned pilot whale",0
+"388","Norway","1997","Long0finned pilot whale",0
+"389","Norway","1998","Long0finned pilot whale",0
+"390","Norway","1999","Long0finned pilot whale",0
+"391","Norway","2000","Long0finned pilot whale",0
+"392","Norway","2001","Long0finned pilot whale",0
+"393","Norway","2002","Long0finned pilot whale",0
+"394","Norway","2003","Long0finned pilot whale",0
+"395","Norway","2004","Long0finned pilot whale",0
+"396","Norway","2005","Long0finned pilot whale",0
+"397","Norway","2006","Long0finned pilot whale",0
+"398","Norway","2007","Long0finned pilot whale",0
+"399","Norway","2008","Long0finned pilot whale",0
+"400","Norway","2009","Long0finned pilot whale",0
+"401","Norway","2010","Long0finned pilot whale",0
+"402","Norway","2011","Long0finned pilot whale",0
+"403","Norway","2012","Long0finned pilot whale",0
+"404","Norway","2013","Long0finned pilot whale",0
+"405","Norway","1955","Minke whale",4328
+"406","Norway","1956","Minke whale",3658
+"407","Norway","1957","Minke whale",3644
+"408","Norway","1958","Minke whale",4341
+"409","Norway","1959","Minke whale",3271
+"410","Norway","1960","Minke whale",3429
+"411","Norway","1961","Minke whale",3219
+"412","Norway","1962","Minke whale",3286
+"413","Norway","1963","Minke whale",3233
+"414","Norway","1964","Minke whale",2732
+"415","Norway","1965","Minke whale",2467
+"416","Norway","1966","Minke whale",2155
+"417","Norway","1967","Minke whale",2178
+"418","Norway","1968","Minke whale",2733
+"419","Norway","1969","Minke whale",2391
+"420","Norway","1970","Minke whale",2307
+"421","Norway","1971","Minke whale",2330
+"422","Norway","1972","Minke whale",2650
+"423","Norway","1973","Minke whale",2055
+"424","Norway","1974","Minke whale",1820
+"425","Norway","1975","Minke whale",1788
+"426","Norway","1976","Minke whale",2146
+"427","Norway","1977","Minke whale",1772
+"428","Norway","1978","Minke whale",1592
+"429","Norway","1979","Minke whale",1980
+"430","Norway","1980","Minke whale",2002
+"431","Norway","1981","Minke whale",1877
+"432","Norway","1982","Minke whale",1963
+"433","Norway","1983","Minke whale",1860
+"434","Norway","1984","Minke whale",804
+"435","Norway","1985","Minke whale",771
+"436","Norway","1986","Minke whale",379
+"437","Norway","1987","Minke whale",373
+"438","Norway","1988","Minke whale",29
+"439","Norway","1989","Minke whale",17
+"440","Norway","1990","Minke whale",5
+"441","Norway","1991","Minke whale",2
+"442","Norway","1992","Minke whale",95
+"443","Norway","1993","Minke whale",226
+"444","Norway","1994","Minke whale",273
+"445","Norway","1995","Minke whale",218
+"446","Norway","1996","Minke whale",388
+"447","Norway","1997","Minke whale",503
+"448","Norway","1998","Minke whale",625
+"449","Norway","1999","Minke whale",591
+"450","Norway","2000","Minke whale",487
+"451","Norway","2001","Minke whale",552
+"452","Norway","2002","Minke whale",634
+"453","Norway","2003","Minke whale",647
+"454","Norway","2004","Minke whale",544
+"455","Norway","2005","Minke whale",639
+"456","Norway","2006","Minke whale",545
+"457","Norway","2007","Minke whale",597
+"458","Norway","2008","Minke whale",535
+"459","Norway","2009","Minke whale",484
+"460","Norway","2010","Minke whale",468
+"461","Norway","2011","Minke whale",533
+"462","Norway","2012","Minke whale",464
+"463","Norway","2013","Minke whale",594
+"464","Norway","1955","Northern bottlenose whale",124
+"465","Norway","1956","Northern bottlenose whale",267
+"466","Norway","1957","Northern bottlenose whale",163
+"467","Norway","1958","Northern bottlenose whale",145
+"468","Norway","1959","Northern bottlenose whale",94
+"469","Norway","1960","Northern bottlenose whale",193
+"470","Norway","1961","Northern bottlenose whale",87
+"471","Norway","1962","Northern bottlenose whale",321
+"472","Norway","1963","Northern bottlenose whale",267
+"473","Norway","1964","Northern bottlenose whale",307
+"474","Norway","1965","Northern bottlenose whale",692
+"475","Norway","1966","Northern bottlenose whale",340
+"476","Norway","1967","Northern bottlenose whale",264
+"477","Norway","1968","Northern bottlenose whale",384
+"478","Norway","1969","Northern bottlenose whale",485
+"479","Norway","1970","Northern bottlenose whale",535
+"480","Norway","1971","Northern bottlenose whale",213
+"481","Norway","1972","Northern bottlenose whale",17
+"482","Norway","1973","Northern bottlenose whale",3
+"483","Norway","1974","Northern bottlenose whale",0
+"484","Norway","1975","Northern bottlenose whale",0
+"485","Norway","1976","Northern bottlenose whale",0
+"486","Norway","1977","Northern bottlenose whale",0
+"487","Norway","1978","Northern bottlenose whale",0
+"488","Norway","1979","Northern bottlenose whale",0
+"489","Norway","1980","Northern bottlenose whale",0
+"490","Norway","1981","Northern bottlenose whale",0
+"491","Norway","1982","Northern bottlenose whale",0
+"492","Norway","1983","Northern bottlenose whale",0
+"493","Norway","1984","Northern bottlenose whale",0
+"494","Norway","1985","Northern bottlenose whale",0
+"495","Norway","1986","Northern bottlenose whale",0
+"496","Norway","1987","Northern bottlenose whale",0
+"497","Norway","1988","Northern bottlenose whale",0
+"498","Norway","1989","Northern bottlenose whale",0
+"499","Norway","1990","Northern bottlenose whale",0
+"500","Norway","1991","Northern bottlenose whale",0
+"501","Norway","1992","Northern bottlenose whale",0
+"502","Norway","1993","Northern bottlenose whale",0
+"503","Norway","1994","Northern bottlenose whale",0
+"504","Norway","1995","Northern bottlenose whale",0
+"505","Norway","1996","Northern bottlenose whale",0
+"506","Norway","1997","Northern bottlenose whale",0
+"507","Norway","1998","Northern bottlenose whale",0
+"508","Norway","1999","Northern bottlenose whale",0
+"509","Norway","2000","Northern bottlenose whale",0
+"510","Norway","2001","Northern bottlenose whale",0
+"511","Norway","2002","Northern bottlenose whale",0
+"512","Norway","2003","Northern bottlenose whale",0
+"513","Norway","2004","Northern bottlenose whale",0
+"514","Norway","2005","Northern bottlenose whale",0
+"515","Norway","2006","Northern bottlenose whale",0
+"516","Norway","2007","Northern bottlenose whale",0
+"517","Norway","2008","Northern bottlenose whale",0
+"518","Norway","2009","Northern bottlenose whale",0
+"519","Norway","2010","Northern bottlenose whale",0
+"520","Norway","2011","Northern bottlenose whale",0
+"521","Norway","2012","Northern bottlenose whale",0
+"522","Norway","2013","Northern bottlenose whale",0
+"523","Norway","1964","Ringed seal",1040
+"524","Norway","1965","Ringed seal",278
+"525","Norway","1966","Ringed seal",30
+"526","Norway","1967","Ringed seal",23
+"527","Norway","1968","Ringed seal",28
+"528","Norway","1969","Ringed seal",7
+"529","Norway","1970","Ringed seal",16
+"530","Norway","1971","Ringed seal",0
+"531","Norway","1972","Ringed seal",2
+"532","Norway","1973","Ringed seal",1
+"533","Norway","1974","Ringed seal",0
+"534","Norway","1975","Ringed seal",5
+"535","Norway","1976","Ringed seal",8
+"536","Norway","1977","Ringed seal",19
+"537","Norway","1978","Ringed seal",3
+"538","Norway","1979","Ringed seal",2
+"539","Norway","1980","Ringed seal",0
+"540","Norway","1981","Ringed seal",10
+"541","Norway","1982","Ringed seal",0
+"542","Norway","1983","Ringed seal",0
+"543","Norway","1984","Ringed seal",0
+"544","Norway","1985","Ringed seal",0
+"545","Norway","1986","Ringed seal",0
+"546","Norway","1987","Ringed seal",0
+"547","Norway","1988","Ringed seal",0
+"548","Norway","1989","Ringed seal",0
+"549","Norway","1990","Ringed seal",0
+"550","Norway","1991","Ringed seal",0
+"551","Norway","1992","Ringed seal",0
+"552","Norway","1993","Ringed seal",0
+"553","Norway","1994","Ringed seal",0
+"554","Norway","1995","Ringed seal",0
+"555","Norway","1996","Ringed seal",0
+"556","Norway","1997","Ringed seal",0
+"557","Norway","1998","Ringed seal",0
+"558","Norway","1999","Ringed seal",0
+"559","Norway","2000","Ringed seal",0
+"560","Norway","2001","Ringed seal",0
+"561","Norway","2002","Ringed seal",0
+"562","Norway","2003","Ringed seal",0
+"563","Norway","2004","Ringed seal",0
+"564","Norway","2005","Ringed seal",0
+"565","Norway","2006","Ringed seal",0
+"566","Norway","2007","Ringed seal",0
+"567","Norway","2008","Ringed seal",0
+"568","Norway","2009","Ringed seal",0
+"569","Norway","2010","Ringed seal",0
+"570","Norway","2011","Ringed seal",0
+"571","Norway","2012","Ringed seal",0
+"572","Norway","2013","Ringed seal",0
+"573","Norway","1957","Sperm whale",28
+"574","Norway","1958","Sperm whale",16
+"575","Norway","1959","Sperm whale",10
+"576","Norway","1960","Sperm whale",34
+"577","Norway","1961","Sperm whale",121
+"578","Norway","1962","Sperm whale",358
+"579","Norway","1963","Sperm whale",0
+"580","Norway","1964","Sperm whale",442
+"581","Norway","1965","Sperm whale",51
+"582","Norway","1966","Sperm whale",334
+"583","Norway","1967","Sperm whale",420
+"584","Norway","1968","Sperm whale",655
+"585","Norway","1969","Sperm whale",955
+"586","Norway","1970","Sperm whale",133
+"587","Norway","1971","Sperm whale",159
+"588","Norway","1972","Sperm whale",30
+"589","Norway","1973","Sperm whale",0
+"590","Norway","1974","Sperm whale",0
+"591","Norway","1975","Sperm whale",0
+"592","Norway","1976","Sperm whale",0
+"593","Norway","1977","Sperm whale",0
+"594","Norway","1978","Sperm whale",0
+"595","Norway","1979","Sperm whale",0
+"596","Norway","1980","Sperm whale",0
+"597","Norway","1981","Sperm whale",0
+"598","Norway","1982","Sperm whale",0
+"599","Norway","1983","Sperm whale",0
+"600","Norway","1984","Sperm whale",0
+"601","Norway","1985","Sperm whale",0
+"602","Norway","1986","Sperm whale",0
+"603","Norway","1987","Sperm whale",0
+"604","Norway","1988","Sperm whale",0
+"605","Norway","1989","Sperm whale",0
+"606","Norway","1990","Sperm whale",0
+"607","Norway","1991","Sperm whale",0
+"608","Norway","1992","Sperm whale",0
+"609","Norway","1993","Sperm whale",0
+"610","Norway","1994","Sperm whale",0
+"611","Norway","1995","Sperm whale",0
+"612","Norway","1996","Sperm whale",0
+"613","Norway","1997","Sperm whale",0
+"614","Norway","1998","Sperm whale",0
+"615","Norway","1999","Sperm whale",0
+"616","Norway","2000","Sperm whale",0
+"617","Norway","2001","Sperm whale",0
+"618","Norway","2002","Sperm whale",0
+"619","Norway","2003","Sperm whale",0
+"620","Norway","2004","Sperm whale",0
+"621","Norway","2005","Sperm whale",0
+"622","Norway","2006","Sperm whale",0
+"623","Norway","2007","Sperm whale",0
+"624","Norway","2008","Sperm whale",0
+"625","Norway","2009","Sperm whale",0
+"626","Norway","2010","Sperm whale",0
+"627","Norway","2011","Sperm whale",0
+"628","Norway","2012","Sperm whale",0
+"629","Norway","2013","Sperm whale",0
+"630","Norway","1950","White whale",0
+"631","Norway","1951","White whale",0
+"632","Norway","1952","White whale",0
+"633","Norway","1953","White whale",0
+"634","Norway","1954","White whale",0
+"635","Norway","1955","White whale",97
+"636","Norway","1956","White whale",446
+"637","Norway","1957","White whale",294
+"638","Norway","1958","White whale",50
+"639","Norway","1959","White whale",0
+"640","Norway","1960","White whale",0
+"641","Norway","1961","White whale",0
+"642","Norway","1962","White whale",0
+"643","Norway","1963","White whale",0
+"644","Norway","1964","White whale",0
+"645","Norway","1965","White whale",0
+"646","Norway","1966","White whale",0
+"647","Norway","1967","White whale",0
+"648","Norway","1968","White whale",0
+"649","Norway","1969","White whale",0
+"650","Norway","1970","White whale",0
+"651","Norway","1971","White whale",0
+"652","Norway","1972","White whale",0
+"653","Norway","1973","White whale",0
+"654","Norway","1974","White whale",0
+"655","Norway","1975","White whale",0
+"656","Norway","1976","White whale",0
+"657","Norway","1977","White whale",0
+"658","Norway","1978","White whale",0
+"659","Norway","1979","White whale",0
+"660","Norway","1980","White whale",0
+"661","Norway","1981","White whale",0
+"662","Norway","1982","White whale",0
+"663","Norway","1983","White whale",0
+"664","Norway","1984","White whale",0
+"665","Norway","1985","White whale",0
+"666","Norway","1986","White whale",0
+"667","Norway","1987","White whale",0
+"668","Norway","1988","White whale",0
+"669","Norway","1989","White whale",0
+"670","Norway","1990","White whale",0
+"671","Norway","1991","White whale",0
+"672","Norway","1992","White whale",0
+"673","Norway","1993","White whale",0
+"674","Norway","1994","White whale",0
+"675","Norway","1995","White whale",0
+"676","Norway","1996","White whale",0
+"677","Norway","1997","White whale",0
+"678","Norway","1998","White whale",0
+"679","Norway","1999","White whale",0
+"680","Norway","2000","White whale",0
+"681","Norway","2001","White whale",0
+"682","Norway","2002","White whale",0
+"683","Norway","2003","White whale",0
+"684","Norway","2004","White whale",0
+"685","Norway","2005","White whale",0
+"686","Norway","2006","White whale",0
+"687","Norway","2007","White whale",0
+"688","Norway","2008","White whale",0
+"689","Norway","2009","White whale",0
+"690","Norway","2010","White whale",0
+"691","Norway","2011","White whale",0
+"692","Norway","2012","White whale",0
+"693","Norway","2013","White whale",0
