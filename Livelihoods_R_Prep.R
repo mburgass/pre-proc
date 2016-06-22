@@ -1,5 +1,5 @@
 library(tidyr)
-library(dplyr)
+instlibrary(dplyr)
 Troms_Employment = read_excel("Livelihoods/Employment_Figures/Norway/Troms_Employment_2009_2014.xlsx", sheet = 1, col_names = TRUE, col_types = NULL, na = "", skip = 0)
 Troms_Employment2 = data.frame(Troms_Employment)
 Troms_Fish = Troms_Employment2 %>% filter(Job.Type == "03 Fishing and aquaculture")
@@ -155,6 +155,24 @@ NWT_jobs_final[NWT_jobs_final=="Accommodation and food services"]<-"hospitality"
 NWT_jobs_final=dplyr::mutate(NWT_jobs_final, value = (NWT_jobs_final$value/100)*14.2)
 NWT_jobs_final$value<- round(NWT_jobs_final$value, digits=0)
 
+###### Total Workforce
+NWT_Employment = read.csv('Livelihoods/Employment_Figures/Canada/NWT_Employment_2001_2015.csv')
+NWT_workforce = data.frame(NWT_Employment)%>%
+  rename(c("Job.Type"="sector"))
+NWT_workforce<- gather(NWT_workforce, "Year", "value", 2:16)
+NWT_workforce<- NWT_workforce %>% separate(Year,c("X","Year"),remove=T,sep="X")%>%  #(1) First strip away the X from the years (this creates a new column called "X" that is empty)
+  select(Year,sector,value)
+NWT_workforce<- NWT_workforce%>%group_by(Year)%>%
+  dplyr::summarize(value = sum(value, na.rm=T))%>%
+  ungroup()
+NWT_workforce$Region <- "Beaufort"
+NWT_workforce<- dplyr::mutate(NWT_workforce, value = (NWT_workforce$value/100)*14.2)
+NWT_workforce$value<- round(NWT_workforce$value, digits=0)
+
+#Need to add on unemployed
+
+
+
 # Nunavut -----------------------------------------------------------------
 
 Nunavut_Employment = read_excel("Livelihoods/Employment_Figures/Canada/Nunavut_Employment_2008_2014.xlsx", sheet = 1, col_names = TRUE, col_types = NULL, na = "", skip = 0)
@@ -174,6 +192,21 @@ Nunavut_jobs_final[Nunavut_jobs_final=="Transportation and Warehousing"]<- "tran
 Nunavut_jobs_final[Nunavut_jobs_final=="Fishing, Hunting, Trapping, Mining and Quarrying"]<-"fishing"
 Nunavut_jobs_final[Nunavut_jobs_final=="Accommodation and Food Services"]<-"hospitality"
 
+##Total Workforce
+Nunavut_workforce=Nunavut_Employment
+Nunavut_workforce<- gather(Nunavut_workforce, "Year", "value", 2:8)
+Nunavut_workforce<- Nunavut_workforce %>% separate(Year,c("X","Year"),remove=T,sep="X")%>%  #(1) First strip away the X from the years (this creates a new column called "X" that is empty)
+  select(Year,sector,value)
+Nunavut_workforce<- Nunavut_workforce%>%group_by(Year)%>%
+  dplyr::summarize(value = sum(value, na.rm=T))%>%
+  ungroup()
+Nunavut_workforce$Region <- "Nunavut"
+
+## Join with beaufort
+canada_workforce = rbind(NWT_workforce, Nunavut_workforce)
+canada_workforce<- rename(canada_workforce, c("Region"="rgn_id"))
+
+##Manaully added in excel to increase to total workforce based on the unemployment rate
 
 # Canada Join -------------------------------------------------------------
 
