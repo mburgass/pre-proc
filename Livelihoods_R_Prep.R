@@ -508,7 +508,15 @@ Russia_Employment14$Transport<-Russia_Employment14$Transport*1000
 Russia_Employment14$Agriculture..hunting.and.forestry..fishing..fish.farming<-Russia_Employment14$Agriculture..hunting.and.forestry..fishing..fish.farming*1000
 Russia_Employment14$Hotels.and...restaurants<-Russia_Employment14$Hotels.and...restaurants*1000
 
-
+##Total Workforce
+Russia_workforce14 = read_excel("Livelihoods/Employment_Figures/Russia/Russia_Employment_2010_2014.xlsx", sheet = 1, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Russia_workforce14<-data.frame(Russia_workforce14)
+Russia_workforce14 <- dplyr::filter(Russia_workforce14, !(District %in% c("North-western Federal District", "Including Nenets Autonomous Okrug", "Without Nenets", "Ural Federal District", "Siberian Federal District", "Far Eastern Federal District", "Republic of Kaerlia")))
+Russia_workforce14<- select(Russia_workforce14, -of.them...communication)
+Russia_workforce14$Year <- "2014"
+Russia_workforce14$value<- rowSums(Russia_workforce14 [,2:14])
+Russia_workforce14<- select(Russia_workforce14, District, Year, value)
+Russia_workforce14$value<- Russia_workforce14$value*1000
 
 # #2013 -------------------------------------------------------------------
 
@@ -523,7 +531,14 @@ Russia_Employment13$Transport<-Russia_Employment13$Transport*1000
 Russia_Employment13$Agriculture..hunting.and.forestry..fishing..fish.farming<-Russia_Employment13$Agriculture..hunting.and.forestry..fishing..fish.farming*1000
 Russia_Employment13$Hotels.and...restaurants<-Russia_Employment13$Hotels.and...restaurants*1000
 
-
+Russia_workforce13 = read_excel("Livelihoods/Employment_Figures/Russia/Russia_Employment_2010_2014.xlsx", sheet = 2, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Russia_workforce13<-data.frame(Russia_workforce13)
+Russia_workforce13 <- dplyr::filter(Russia_workforce13, !(District %in% c("North-western Federal District", "Including Nenets Autonomous Okrug", "Without Nenets", "Ural Federal District", "Siberian Federal District", "Far Eastern Federal District", "Republic of Kaerlia")))
+Russia_workforce13<- select(Russia_workforce13, -of.them...communication)
+Russia_workforce13$Year <- "2013"
+Russia_workforce13$value<- rowSums(Russia_workforce13 [,2:14])
+Russia_workforce13<- select(Russia_workforce13, District, Year, value)
+Russia_workforce13$value<- Russia_workforce13$value*1000
 
 # #2012 -------------------------------------------------------------------
 Russia_Employment12 = read_excel("Livelihoods/Employment_Figures/Russia/Russia_Employment_2010_2014.xlsx", sheet = 3, col_names = TRUE, col_types = NULL, na = "", skip = 0)
@@ -537,6 +552,14 @@ Russia_Employment12$Transport<-Russia_Employment12$Transport*1000
 Russia_Employment12$Agriculture..hunting.and.forestry..fishing..fish.farming<-Russia_Employment12$Agriculture..hunting.and.forestry..fishing..fish.farming*1000
 Russia_Employment12$Hotels.and...restaurants<-Russia_Employment12$Hotels.and...restaurants*1000
 
+Russia_workforce12 = read_excel("Livelihoods/Employment_Figures/Russia/Russia_Employment_2010_2014.xlsx", sheet = 3, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Russia_workforce12<-data.frame(Russia_workforce12)
+Russia_workforce12 <- dplyr::filter(Russia_workforce12, !(District %in% c("North-western Federal District", "Including Nenets Autonomous Okrug", "Without Nenets", "Ural Federal District", "Siberian Federal District", "Far Eastern Federal District", "Republic of Kaerlia")))
+Russia_workforce12<- select(Russia_workforce12, -of.them...communication)
+Russia_workforce12$Year <- "2012"
+Russia_workforce12$value<- rowSums(Russia_workforce12 [,2:14])
+Russia_workforce12<- select(Russia_workforce12, District, Year, value)
+Russia_workforce12$value<- Russia_workforce12$value*1000
 
 
 # #2011 -------------------------------------------------------------------
@@ -551,7 +574,14 @@ Russia_Employment11$Transport<-Russia_Employment11$Transport*1000
 Russia_Employment11$Agriculture..hunting.and.forestry..fishing..fish.farming<-Russia_Employment11$Agriculture..hunting.and.forestry..fishing..fish.farming*1000
 Russia_Employment11$Hotels.and...restaurants<-Russia_Employment11$Hotels.and...restaurants*1000
 
-
+Russia_workforce11 = read_excel("Livelihoods/Employment_Figures/Russia/Russia_Employment_2010_2014.xlsx", sheet = 4, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Russia_workforce11<-data.frame(Russia_workforce11)
+Russia_workforce11 <- dplyr::filter(Russia_workforce11, !(District %in% c("North-western Federal District", "Including Nenets Autonomous Okrug", "Without Nenets", "Ural Federal District", "Siberian Federal District", "Far Eastern Federal District", "Republic of Kaerlia")))
+Russia_workforce11<- select(Russia_workforce11, -of.them...communication)
+Russia_workforce11$Year <- "2011"
+Russia_workforce11$value<- rowSums(Russia_workforce11 [,2:14])
+Russia_workforce11<- select(Russia_workforce11, District, Year, value)
+Russia_workforce11$value<- Russia_workforce11$value*1000
 # 2010 --------------------------------------------------------------------
 Russia_Employment10 = read_excel("Livelihoods/Employment_Figures/Russia/Russia_Employment_2010_2014.xlsx", sheet = 5, col_names = TRUE, col_types = NULL, na = "", skip = 0)
 Russia_Employment10<-data.frame(Russia_Employment10)
@@ -564,7 +594,14 @@ Russia_Employment10$Transport<-Russia_Employment10$Transport*1000
 Russia_Employment10$Agriculture..hunting.and.forestry..fishing..fish.farming<-Russia_Employment10$Agriculture..hunting.and.forestry..fishing..fish.farming*1000
 Russia_Employment10$Hotels.and...restaurants<-Russia_Employment10$Hotels.and...restaurants*1000
 
-
+Russia_workforce10 = read_excel("Livelihoods/Employment_Figures/Russia/Russia_Employment_2010_2014.xlsx", sheet = 5, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Russia_workforce10<-data.frame(Russia_workforce10)
+Russia_workforce10 <- dplyr::filter(Russia_workforce10, !(District %in% c("North-western Federal District", "Including Nenets Autonomous Okrug", "Without Nenets", "Ural Federal District", "Siberian Federal District", "Far Eastern Federal District", "Republic of Kaerlia")))
+Russia_workforce10<- select(Russia_workforce10, -of.them...communication)
+Russia_workforce10$Year <- "2010"
+Russia_workforce10$value<- rowSums(Russia_workforce10 [,2:14])
+Russia_workforce10<- select(Russia_workforce10, District, Year, value)
+Russia_workforce10$value<- Russia_workforce10$value*1000
 
 # # bind ------------------------------------------------------------------
 
@@ -588,6 +625,12 @@ Russia_Jobs=Russia_Group%>%group_by(Year, sector)%>%
 Russia_Jobs$rgn_id <- "Russia"
 Russia_Jobs<-Russia_Jobs[c(4,2,1,3)]
 Russia_Jobs
+
+##BIND RUSSIA WORKFORCE
+Russia_workforce = rbind(Russia_workforce10, Russia_workforce11, Russia_workforce12, Russia_workforce13, Russia_workforce14)
+
+
+
 
 le_jobs_sector_year= rbind(Russia_Jobs, Alaska_Jobs, canada_jobs, norway_jobs, Greenland_jobs_final)
 le_jobs_sector_year
