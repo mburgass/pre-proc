@@ -126,7 +126,8 @@ norway_jobs = rbind(sval_jobs_final, norway_mainland_jobs)
 norway_jobs$value<- round(norway_jobs$value, digits=0)
 norway_jobs
 
-
+##Norway workforce done manually in excel - summed together statistics on number of unemployed in each municipality with total employment from data above
+##Unemployment rate then worked out as a % of unemployed in workforce.
 # Canada ------------------------------------------------------------------
 
 
@@ -628,9 +629,22 @@ Russia_Jobs
 
 ##BIND RUSSIA WORKFORCE
 Russia_workforce = rbind(Russia_workforce10, Russia_workforce11, Russia_workforce12, Russia_workforce13, Russia_workforce14)
+Russia_workforce$value<-as.numeric(Russia_workforce$value)
+Russia_workforce$value[Russia_workforce$District =="Chukotka Autonomous Okrug"] <-Russia_workforce$value[Russia_workforce$District =="Chukotka Autonomous Okrug"]/2.2758
+Russia_workforce$value[Russia_workforce$District =="Krasnoyarsk region"] <-Russia_workforce$value[Russia_workforce$District =="Krasnoyarsk region"]/83.33333
+Russia_workforce$value[Russia_workforce$District =="The Republic of Sakha (Yakutia)"] <-Russia_workforce$value[Russia_workforce$District =="The Republic of Sakha (Yakutia)"]/33.7838
+Russia_workforce$value<- round(Russia_workforce$value, digits=0)
+
+write.csv(Russia_workforce, "russia_workforce.csv")
+
+##Total workforce calculated in excel with unemployment rate. ((100-unemployment rate)/100) = % employed. value/%employed = total workforce
+## total workforce * unemployment rate/100 = unemployed people for each region for each year. Sum employed and unemployed per year to work out average employment rate for Russia study site. Added to unemployment rate file.
+##sum regions to give russian workforce / year
 
 
 
+
+##Reduce workforce size for large regions by % of Arctic regions
 
 le_jobs_sector_year= rbind(Russia_Jobs, Alaska_Jobs, canada_jobs, norway_jobs, Greenland_jobs_final)
 le_jobs_sector_year
