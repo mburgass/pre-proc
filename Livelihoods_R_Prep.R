@@ -128,6 +128,39 @@ norway_jobs
 
 ##Norway workforce done manually in excel - summed together statistics on number of unemployed in each municipality with total employment from data above
 ##Unemployment rate then worked out as a % of unemployed in workforce.
+
+##Norway and Svalbard Wages
+
+norway_wages = read_excel("Livelihoods/Employment_Figures/Norway/norway_wages_2009_2015.xlsx", sheet = 1, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+norway_wages2 = data.frame(norway_wages)%>%
+  rename(c("Sector"="sector"))
+norway_wages2<-filter(norway_wages2, !(sector %in% c('B Mining and quarrying', 'C Manufacturing', 'D Electricity, gas, steam and air conditioning supply', 'E Water supply, sewerage, waste', 'F Construction',
+                                                           'G Wholesale and retail trade: repair of motor vehicles and motorcycles',
+                                                           'J Information and communication', 'K Financial and insurance activities', 'L Real estate activities',
+                                                           'M Professional, scientific and technical activities', 'N Administrative and support service activities',
+                                                           'O Public administration and defence', 'Q Human health and social work activities',
+                                                           'S Other service activities')))
+
+##Sectors to match those on mainland and svalbard
+
+norway_wages2<-gather(norway_wages2, "Year", "value", 2:8)
+
+
+norway_wages3 = norway_wages2 %>% separate(Year,c("X","Year"),remove=T,sep="X")%>%  #(1) First strip away the X from the years (this creates a new column called "X" that is empty)
+  select(Year,sector,value)
+
+
+norway_wages3$sector<-as.character(norway_wages3$sector) ## change to character
+norway_wages3[norway_wages3=="A Agriculture, forestry and fishing"]<- "fishing"
+norway_wages3[norway_wages3=="P Education"]<- "education"
+norway_wages3[norway_wages3=="H Transportation and storage"]<-"transport"
+norway_wages3[norway_wages3=="I Accommodation and food service activities"]<-"hospitality"
+norway_wages3[norway_wages3=="R Arts, entertainment and recreation"]<-"tourism"
+
+write.csv(norway_wages3, "le_wages_sector_year_arc2016.csv")
+
+##Multiplied values in excel by 12 to give annual values in NOK - need to convert to USD.
+
 # Canada ------------------------------------------------------------------
 
 
@@ -232,7 +265,7 @@ Greenland_jobs_final[Greenland_jobs_final=="Transportation"]<- "transport"
 Greenland_jobs_final[Greenland_jobs_final=="Fishing, hunting & agriculture"]<-"fishing"
 Greenland_jobs_final[Greenland_jobs_final=="Hotels and restaurants"]<-"hospitality"
 
-##Check how best to separate out between east and west Greenland? Roughly 80% of people live in West Greenland
+##Split in excel into West and East Greenland based on 80% population in West Greenland.
 
 ##Total Workforce
 Greenland_workforce = Greenland_Employment
