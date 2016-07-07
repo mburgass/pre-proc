@@ -1,16 +1,12 @@
 rgn_id,sector,Year,value
-1,manufacturing,2004,12
 1,transport,2004,519
 1,hospitality,2004,465
 1,transport,2004,304
 1,hospitality,2004,133
-1,manufacturing,2005,13
 1,transport,2005,383
 1,hospitality,2005,481
-1,manufacturing,2005,5
 1,transport,2005,273
 1,hospitality,2005,264
-1,manufacturing,2006,3
 1,transport,2006,423
 1,hospitality,2006,504
 1,transport,2006,265

@@ -205,7 +205,7 @@ NWT_workforce$Region <- "Beaufort"
 NWT_workforce<- dplyr::mutate(NWT_workforce, value = (NWT_workforce$value/100)*14.2)
 NWT_workforce$value<- round(NWT_workforce$value, digits=0)
 
-#Need to add on unemployed
+
 
 NWT_workforce
 
@@ -244,6 +244,8 @@ canada_workforce<- rename(canada_workforce, c("Region"="rgn_id"))
 
 ##Manaully added in excel to increase to total workforce based on the unemployment rate
 
+##Added Canada wages in excel
+
 # Canada Join -------------------------------------------------------------
 
 canada_jobs = rbind(NWT_jobs_final, Nunavut_jobs_final)
@@ -275,6 +277,7 @@ Greenland_workforce<- Greenland_workforce%>%group_by(Year)%>%
 write.csv(Greenland_workforce, "Greenland_workforce.csv")
 ##Added in unemployment figures to file to calculate total workforce. Unemployment rate then calculated and added to unemployment rate file
 
+##Wages added manaully in excel from files
 
 # USA/Alaska --------------------------------------------------------------
 
@@ -299,6 +302,14 @@ Alaska_workforce14 <- dplyr::select(Alaska_workforce14, AREANAME, NAICS.DESCRIPT
 Alaska_workforce14 <- dplyr::filter(Alaska_workforce14, (NAICS.DESCRIPTION %in% c("TOTAL INDUSTRIES")))
 Alaska_workforce14$Year <- "2014"
 
+Alaska_wages14 = read_excel("Livelihoods/Employment_Figures/USA/Alaska_Employment_2002_2014.xlsx", sheet = 3, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Alaska_wages14<-data.frame(Alaska_wages14)
+Alaska_wages14 = dplyr::filter(Alaska_wages14, (AREA.CODE %in% c("000185", "000188")))
+Alaska_wages14 <- dplyr::select(Alaska_wages14, AREANAME, NA.,  MONTHLY.AVG.WAGES)
+Alaska_wages14<- dplyr::filter(Alaska_wages14, (NA. %in% c("MANUFACTURING", "TRADE, TRANSPORTATION AND UTILITIES", "LEISURE AND HOSPITALITY" )))
+Alaska_wages14$Year <- "2014"
+
+
 ##Not really any marine jobs listed in these areas. National figures don't seem to be matched by the regional figures though..?
 
 
@@ -321,6 +332,13 @@ Alaska_workforce13<- dplyr::select(Alaska_workforce13, AREANAME, NAICS.DESCRIPTI
 Alaska_workforce13 <- dplyr::filter(Alaska_workforce13, (NAICS.DESCRIPTION %in% c("TOTAL INDUSTRIES")))
 Alaska_workforce13$Year <- "2013"
 
+Alaska_wages13 = read_excel("Livelihoods/Employment_Figures/USA/Alaska_Employment_2002_2014.xlsx", sheet = 4, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Alaska_wages13<-data.frame(Alaska_wages13)
+Alaska_wages13 = dplyr::filter(Alaska_wages13, (AREA.CODE %in% c("000185", "000188")))
+Alaska_wages13 <- dplyr::select(Alaska_wages13, AREANAME, NA.,  MONTHLY.AVG.WAGES)
+Alaska_wages13<- dplyr::filter(Alaska_wages13, (NA. %in% c("MANUFACTURING", "TRADE, TRANSPORTATION AND UTILITIES", "LEISURE AND HOSPITALITY" )))
+Alaska_wages13$Year <- "2013"
+
 # 2012 --------------------------------------------------------------------
 Alaska_Employment12 = read_excel("Livelihoods/Employment_Figures/USA/Alaska_Employment_2002_2014.xlsx", sheet = 5, col_names = TRUE, col_types = NULL, na = "", skip = 0)
 Alaska_Employment12<-data.frame(Alaska_Employment12)
@@ -339,6 +357,13 @@ Alaska_workforce12 <- dplyr::tbl_df(Alaska_workforce12)
 Alaska_workforce12<- dplyr::select(Alaska_workforce12, AREANAME, NAICS.DESCRIPTION, AVERAGE.EMPLOYMENT)
 Alaska_workforce12 <- dplyr::filter(Alaska_workforce12, (NAICS.DESCRIPTION %in% c("TOTAL INDUSTRIES")))
 Alaska_workforce12$Year <- "2012"
+
+Alaska_wages12 = read_excel("Livelihoods/Employment_Figures/USA/Alaska_Employment_2002_2014.xlsx", sheet = 5, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Alaska_wages12<-data.frame(Alaska_wages12)
+Alaska_wages12 = dplyr::filter(Alaska_wages12, (AREA.CODE %in% c("000185", "000188")))
+Alaska_wages12 <- dplyr::select(Alaska_wages12, AREANAME, NA.,  MONTHLY.AVG.WAGES)
+Alaska_wages12<- dplyr::filter(Alaska_wages12, (NA. %in% c("MANUFACTURING", "TRADE, TRANSPORTATION AND UTILITIES", "LEISURE AND HOSPITALITY" )))
+Alaska_wages12$Year <- "2012"
 
 # 2011 --------------------------------------------------------------------
 Alaska_Employment11 = read_excel("Livelihoods/Employment_Figures/USA/Alaska_Employment_2002_2014.xlsx", sheet = 6, col_names = TRUE, col_types = NULL, na = "", skip = 0)
@@ -360,6 +385,12 @@ Alaska_workforce11<- dplyr::select(Alaska_workforce11, AREANAME, NAICS.DESCRIPTI
 Alaska_workforce11 <- dplyr::filter(Alaska_workforce11, (NAICS.DESCRIPTION %in% c("TOTAL INDUSTRIES")))
 Alaska_workforce11$Year <- "2011"
 
+Alaska_wages11 = read_excel("Livelihoods/Employment_Figures/USA/Alaska_Employment_2002_2014.xlsx", sheet = 6, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Alaska_wages11<-data.frame(Alaska_wages11)
+Alaska_wages11 = dplyr::filter(Alaska_wages11, (AREA.CODE %in% c("000185", "000188")))
+Alaska_wages11 <- dplyr::select(Alaska_wages11, AREANAME, NA.,  MONTHLY.AVG.WAGES)
+Alaska_wages11<- dplyr::filter(Alaska_wages11, (NA. %in% c("MANUFACTURING", "TRADE, TRANS. & UTILITIES", "LEISURE & HOSPITALITY" )))
+Alaska_wages11$Year <- "2011"
 
 # 2010 --------------------------------------------------------------------
 Alaska_Employment10 = read_excel("Livelihoods/Employment_Figures/USA/Alaska_Employment_2002_2014.xlsx", sheet = 7, col_names = TRUE, col_types = NULL, na = "", skip = 0)
@@ -380,6 +411,12 @@ Alaska_workforce10<- dplyr::select(Alaska_workforce10, AREANAME, NAICS.DESCRIPTI
 Alaska_workforce10 <- dplyr::filter(Alaska_workforce10, (NAICS.DESCRIPTION %in% c("TOTAL INDUSTRIES")))
 Alaska_workforce10$Year <- "2010"
 
+Alaska_wages10 = read_excel("Livelihoods/Employment_Figures/USA/Alaska_Employment_2002_2014.xlsx", sheet = 7, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Alaska_wages10<-data.frame(Alaska_wages10)
+Alaska_wages10 = dplyr::filter(Alaska_wages10, (AREA.CODE %in% c("000185", "000188")))
+Alaska_wages10 <- dplyr::select(Alaska_wages10, AREANAME, NA.,  MONTHLY.AVG.WAGES)
+Alaska_wages10<- dplyr::filter(Alaska_wages10, (NA. %in% c("MANUFACTURING", "TRADE, TRANS. & UTILITIES", "LEISURE & HOSPITALITY" )))
+Alaska_wages10$Year <- "2010"
 
 # 2009 --------------------------------------------------------------------
 Alaska_Employment09 = read_excel("Livelihoods/Employment_Figures/USA/Alaska_Employment_2002_2014.xlsx", sheet = 8, col_names = TRUE, col_types = NULL, na = "", skip = 0)
@@ -400,6 +437,12 @@ Alaska_workforce09<- dplyr::select(Alaska_workforce09, AREANAME, NAICS.DESCRIPTI
 Alaska_workforce09 <- dplyr::filter(Alaska_workforce09, (NAICS.DESCRIPTION %in% c("TOTAL INDUSTRIES")))
 Alaska_workforce09$Year <- "2009"
 
+Alaska_wages09 = read_excel("Livelihoods/Employment_Figures/USA/Alaska_Employment_2002_2014.xlsx", sheet = 8, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Alaska_wages09<-data.frame(Alaska_wages09)
+Alaska_wages09 = dplyr::filter(Alaska_wages09, (AREA.CODE %in% c("000185", "000188")))
+Alaska_wages09 <- dplyr::select(Alaska_wages09, AREANAME, NA.,  MONTHLY.AVG.WAGES)
+Alaska_wages09<- dplyr::filter(Alaska_wages09, (NA. %in% c("MANUFACTURING", "TRADE, TRANS. & UTILITIES", "LEISURE & HOSPITALITY" )))
+Alaska_wages09$Year <- "2009"
 
 # 2008 --------------------------------------------------------------------
 Alaska_Employment08 = read_excel("Livelihoods/Employment_Figures/USA/Alaska_Employment_2002_2014.xlsx", sheet = 9, col_names = TRUE, col_types = NULL, na = "", skip = 0)
@@ -420,6 +463,12 @@ Alaska_workforce08<- dplyr::select(Alaska_workforce08, AREANAME, NAICS.DESCRIPTI
 Alaska_workforce08 <- dplyr::filter(Alaska_workforce08, (NAICS.DESCRIPTION %in% c("TOTAL INDUSTRIES")))
 Alaska_workforce08$Year <- "2008"
 
+Alaska_wages08 = read_excel("Livelihoods/Employment_Figures/USA/Alaska_Employment_2002_2014.xlsx", sheet = 9, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Alaska_wages08<-data.frame(Alaska_wages08)
+Alaska_wages08 = dplyr::filter(Alaska_wages08, (AREA.CODE %in% c("000185", "000188")))
+Alaska_wages08 <- dplyr::select(Alaska_wages08, AREANAME, NA.,  MONTHLY.AVG.WAGES)
+Alaska_wages08<- dplyr::filter(Alaska_wages08, (NA. %in% c("MANUFACTURING", "TRADE, TRANS. & UTILITIES", "LEISURE & HOSPITALITY" )))
+Alaska_wages08$Year <- "2008"
 
 
 
@@ -442,6 +491,13 @@ Alaska_workforce07<- dplyr::select(Alaska_workforce07, AREANAME, NAICS.DESCRIPTI
 Alaska_workforce07 <- dplyr::filter(Alaska_workforce07, (NAICS.DESCRIPTION %in% c("TOTAL INDUSTRIES")))
 Alaska_workforce07$Year <- "2007"
 
+Alaska_wages07 = read_excel("Livelihoods/Employment_Figures/USA/Alaska_Employment_2002_2014.xlsx", sheet = 10, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Alaska_wages07<-data.frame(Alaska_wages07)
+Alaska_wages07 = dplyr::filter(Alaska_wages07, (AREA.CODE %in% c("000185", "000188")))
+Alaska_wages07 <- dplyr::select(Alaska_wages07, AREANAME, NA.,  MONTHLY.AVG.WAGES)
+Alaska_wages07<- dplyr::filter(Alaska_wages07, (NA. %in% c("MANUFACTURING", "TRADE, TRANS. & UTILITIES", "LEISURE & HOSPITALITY" )))
+Alaska_wages07$Year <- "2007"
+
 
 # 2006 --------------------------------------------------------------------
 Alaska_Employment06 = read_excel("Livelihoods/Employment_Figures/USA/Alaska_Employment_2002_2014.xlsx", sheet = 11, col_names = TRUE, col_types = NULL, na = "", skip = 0)
@@ -461,6 +517,14 @@ Alaska_workforce06<- dplyr::tbl_df(Alaska_workforce06)
 Alaska_workforce06<- dplyr::select(Alaska_workforce06, AREANAME, NAICS.DESCRIPTION, AVERAGE.EMPLOYMENT)
 Alaska_workforce06 <- dplyr::filter(Alaska_workforce06, (NAICS.DESCRIPTION %in% c("TOTAL INDUSTRIES")))
 Alaska_workforce06$Year <- "2006"
+
+Alaska_wages06 = read_excel("Livelihoods/Employment_Figures/USA/Alaska_Employment_2002_2014.xlsx", sheet = 11, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Alaska_wages06<-data.frame(Alaska_wages06)
+Alaska_wages06 = dplyr::filter(Alaska_wages06, (AREA.CODE %in% c("000185", "000188")))
+Alaska_wages06 <- dplyr::select(Alaska_wages06, AREANAME, NA.,  MONTHLY.AVG.WAGES)
+Alaska_wages06<- dplyr::filter(Alaska_wages06, (NA. %in% c("MANUFACTURING", "TRADE, TRANS. & UTILITIES", "LEISURE & HOSPITALITY" )))
+Alaska_wages06$Year <- "2006"
+
 
 
 # 2005 --------------------------------------------------------------------
@@ -482,6 +546,12 @@ Alaska_workforce05<- dplyr::select(Alaska_workforce05, AREANAME, NAICS.DESCRIPTI
 Alaska_workforce05 <- dplyr::filter(Alaska_workforce05, (NAICS.DESCRIPTION %in% c("TOTAL INDUSTRIES")))
 Alaska_workforce05$Year <- "2005"
 
+Alaska_wages05 = read_excel("Livelihoods/Employment_Figures/USA/Alaska_Employment_2002_2014.xlsx", sheet = 12, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Alaska_wages05<-data.frame(Alaska_wages05)
+Alaska_wages05 = dplyr::filter(Alaska_wages05, (AREA.CODE %in% c("000185", "000188")))
+Alaska_wages05 <- dplyr::select(Alaska_wages05, AREANAME, NA.,  MONTHLY.AVG.WAGES)
+Alaska_wages05<- dplyr::filter(Alaska_wages05, (NA. %in% c("MANUFACTURING", "TRADE, TRANS. & UTILITIES", "LEISURE & HOSPITALITY" )))
+Alaska_wages05$Year <- "2005"
 
 ##Slight name change in Resource rather than Resources
 
@@ -504,27 +574,46 @@ Alaska_workforce04<- dplyr::select(Alaska_workforce04, AREANAME, NAICS.DESCRIPTI
 Alaska_workforce04 <- dplyr::filter(Alaska_workforce04, (NAICS.DESCRIPTION %in% c("TOTAL INDUSTRIES")))
 Alaska_workforce04$Year <- "2004"
 
+Alaska_wages04 = read_excel("Livelihoods/Employment_Figures/USA/Alaska_Employment_2002_2014.xlsx", sheet = 13, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Alaska_wages04<-data.frame(Alaska_wages04)
+Alaska_wages04 = dplyr::filter(Alaska_wages04, (AREA.CODE %in% c("000185", "000188")))
+Alaska_wages04 <- dplyr::select(Alaska_wages04, AREANAME, NA.,  MONTHLY.AVG.WAGES)
+Alaska_wages04<- dplyr::filter(Alaska_wages04, (NA. %in% c("MANUFACTURING", "TRADE, TRANS. & UTILITIES", "LEISURE & HOSPITALITY" )))
+Alaska_wages04$Year <- "2004"
+
 
 # Alaska join and sort ----------------------------------------------------
 Alaska_Group = rbind(Alaska_Employment04, Alaska_Employment05, Alaska_Employment06, Alaska_Employment07, Alaska_Employment08, Alaska_Employment09, Alaska_Employment10, Alaska_Employment11, Alaska_Employment12, Alaska_Employment13, Alaska_Employment14)
 Alaska_Group<- select(Alaska_Group, Year, AREANAME, NA., AVERAGE.EMPLOYMENT)
-Alaska_Group<-filter(Alaska_Group, !(NA. %in% c('NATURAL RESOURCE & MINING', 'NATURAL RESOURCES & MINING', 'NATURAL RESOURCES AND MINING')))
-##Dropped natural resource and mining as detailed check of data shows that it is all related to oil/gas/mining - not fishing or trapping
+Alaska_Group<-filter(Alaska_Group, !(NA. %in% c('NATURAL RESOURCE & MINING', 'NATURAL RESOURCES & MINING', 'NATURAL RESOURCES AND MINING', 'MANUFACTURING')))
+##Dropped natural resource and mining and manufacturing as detailed check of data shows that it is all related to oil/gas/mining - not fishing or trapping
 Alaska_Group<-select(Alaska_Group, Year, AVERAGE.EMPLOYMENT, NA.)
 Alaska_Group<-plyr::rename(Alaska_Group, c("AVERAGE.EMPLOYMENT"="value", "NA."="sector"))
 Alaska_Jobs=Alaska_Group
 Alaska_Jobs$rgn_id<- "Alaska"
 Alaska_Jobs<-Alaska_Jobs[c(4,3,1,2)]
-Alaska_Jobs
+Alaska_Jobs[Alaska_Jobs=="TRADE, TRANSPORTATION AND UTILITIES"]<- "transport" 
 Alaska_Jobs[Alaska_Jobs=="TRADE, TRANS. & UTILITIES"]<- "transport"
 Alaska_Jobs[Alaska_Jobs=="MANUFACTURING"]<-"manufacturing"
 Alaska_Jobs[Alaska_Jobs=="LEISURE & HOSPITALITY"]<-"hospitality"
+Alaska_Jobs[Alaska_Jobs=="LEISURE AND HOSPITALITY"]<-"hospitality"
 
 Alaska_workforce = rbind(Alaska_workforce04, Alaska_workforce05, Alaska_workforce06, Alaska_workforce07, Alaska_workforce08, Alaska_workforce09, Alaska_workforce10, Alaska_workforce11, Alaska_workforce12, Alaska_workforce13, Alaska_workforce14)
 Alaska_workforce$rgn_id<- "Alaska"
 write.csv(Alaska_workforce, "Alaska_workforce.csv")
 ##Total workforce worked out in excel by using unemployment rate for the two boroughs. Average unemployment for Alaska worked out by finding out number
 ##of unemployed in each borough using the unemployment rates and then working out % unemployed compared to total workforce across both boroughs.
+
+Alaska_wages= rbind(Alaska_wages04, Alaska_wages05, Alaska_wages06, Alaska_wages07, Alaska_wages08, Alaska_wages09, Alaska_wages10, Alaska_wages11, Alaska_wages12, Alaska_wages13, Alaska_wages14)
+Alaska_wages$rgn_id<- "1"
+Alaska_wages<-filter(Alaska_wages, !(NA. %in% c('MANUFACTURING')))
+Alaska_wages[Alaska_wages=="TRADE, TRANSPORTATION AND UTILITIES"]<- "transport"
+Alaska_wages[Alaska_wages=="TRADE, TRANS. & UTILITIES"]<- "transport"
+Alaska_wages[Alaska_wages=="MANUFACTURING"]<-"manufacturing"
+Alaska_wages[Alaska_wages=="LEISURE & HOSPITALITY"]<-"hospitality"
+Alaska_wages[Alaska_wages=="LEISURE AND HOSPITALITY"]<-"hospitality"
+write.csv(Alaska_wages, "Alaska_wages.csv")
+##In excel work out a weighted average for monthly wage between the boroughs based on how many employed in that sector in that borough. Then multiply monthly values by 12 to give annual
 
 # Russia ------------------------------------------------------------------
 
