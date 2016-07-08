@@ -763,7 +763,7 @@ write.csv(Russia_workforce, "russia_workforce.csv")
 ## total workforce * unemployment rate/100 = unemployed people for each region for each year. Sum employed and unemployed per year to work out average employment rate for Russia study site. Added to unemployment rate file.
 ##sum regions to give russian workforce / year
 
-
+##Russia wages worked out in excel from a weighted average of regional wage data. all sectors receive same wage.
 
 
 ##Reduce workforce size for large regions by % of Arctic regions
