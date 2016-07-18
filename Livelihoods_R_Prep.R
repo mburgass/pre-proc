@@ -606,14 +606,35 @@ write.csv(Alaska_workforce, "Alaska_workforce.csv")
 
 Alaska_wages= rbind(Alaska_wages04, Alaska_wages05, Alaska_wages06, Alaska_wages07, Alaska_wages08, Alaska_wages09, Alaska_wages10, Alaska_wages11, Alaska_wages12, Alaska_wages13, Alaska_wages14)
 Alaska_wages$rgn_id<- "1"
-Alaska_wages<-filter(Alaska_wages, !(NA. %in% c('MANUFACTURING')))
+Alaska_wages<-filter(Alaska_wages, !(NA. %in% c('MANUFACTURING'))) #remove manufacturing
 Alaska_wages[Alaska_wages=="TRADE, TRANSPORTATION AND UTILITIES"]<- "transport"
 Alaska_wages[Alaska_wages=="TRADE, TRANS. & UTILITIES"]<- "transport"
-Alaska_wages[Alaska_wages=="MANUFACTURING"]<-"manufacturing"
 Alaska_wages[Alaska_wages=="LEISURE & HOSPITALITY"]<-"hospitality"
 Alaska_wages[Alaska_wages=="LEISURE AND HOSPITALITY"]<-"hospitality"
 write.csv(Alaska_wages, "Alaska_wages.csv")
 ##In excel work out a weighted average for monthly wage between the boroughs based on how many employed in that sector in that borough. Then multiply monthly values by 12 to give annual
+
+### ---- Alaska Economies ----
+
+Alaska_gdp = read_excel("Livelihoods/Economies/Raw/Alaska_GDP_1997_2014.xlsx", sheet = 1, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Alaska_gdp<- tbl_df(Alaska_gdp) %>%
+  select(-Area, -IndCode) %>%
+  filter(Industry %in% c("Trade", "Transportation and utilities", "    Arts, entertainment, recreation, accommodation, and food services")) %>%
+  gather("year", "value", 2:19)
+Alaska_gdp[Alaska_gdp == "Trade"]<- "trade"
+Alaska_gdp[Alaska_gdp == "Transportation and utilities"]<- "trade"
+Alaska_gdp[Alaska_gdp == "    Arts, entertainment, recreation, accommodation, and food services"] <- "hospitality"
+Alaska_gdp$value<-as.numeric(Alaska_gdp$value)
+Alaska_gdp$value<- Alaska_gdp$value * 1000000
+Alaska_gdp<- Alaska_gdp %>%
+  group_by(Industry, year) %>%
+  dplyr::summarize(value = sum(value, na.rm=T))%>%
+  ungroup()
+Alaska_gdp$rgn_id<- "1"
+## need to reduce based on population size of north slope (9,687) and northwest arctic borough (7,752) = 17,439 compared to Alaska (738,432)
+## 17, 439/738,432 * 100 = 2.36 %
+Alaska_gdp$value<- Alaska_gdp$value * 0.236
+write.csv(Alaska_gdp, "Alaska_gdp.csv")
 
 # Russia ------------------------------------------------------------------
 
