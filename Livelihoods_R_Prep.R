@@ -756,6 +756,11 @@ Russia_GRP_total<- mutate(Russia_GRP_total, value = (Russia_GRP_total$value.y/10
 Russia_GRP_total$value[Russia_GRP_total$region =="Chukotka Autonomous Okrug"] <-Russia_GRP_total$value[Russia_GRP_total$region =="Chukotka Autonomous Okrug"]/2.2758
 Russia_GRP_total$value[Russia_GRP_total$region =="Krasnoyarsk region"] <-Russia_GRP_total$value[Russia_GRP_total$region =="Krasnoyarsk region"]/83.33333
 Russia_GRP_total$value[Russia_GRP_total$region =="The Republic of Sakha (Yakutia)"] <-Russia_GRP_total$value[Russia_GRP_total$region =="The Republic of Sakha (Yakutia)"]/33.7838
+Russia_GRP_total<- Russia_GRP_total%>%group_by(year, sector)%>%
+  dplyr::summarize(value = sum(value, na.rm=T))%>%
+  ungroup()
+Russia_GRP_total$rgn_id<- "4"
+Russia_GRP_total<-Russia_GRP_total[c(4,1,2,3)]
 
 ##Work out % employment in each region so can amend jobs - Krasnoyarsk region is huge.
 
