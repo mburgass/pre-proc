@@ -1,6 +1,5 @@
 library(tidyr)
 library(dplyr)
-library(plyr)
 library(readxl)
 Troms_Employment = read_excel("Livelihoods/Employment_Figures/Norway/Troms_Employment_2009_2014.xlsx", sheet = 1, col_names = TRUE, col_types = NULL, na = "", skip = 0)
 Troms_Employment2 = data.frame(Troms_Employment)
@@ -18,7 +17,7 @@ Troms_Travel$Job.Type<- "tourism"
 
 
 Troms_Group = rbind(Troms_Fish, Troms_Food, Troms_Water, Troms_Travel)
-Troms_Group<-plyr::rename(Troms_Group, c("Job.Type"="sector"))
+Troms_Group<-dplyr::rename(Troms_Group, c("Job.Type"="sector"))
 Troms_Group2 = gather(Troms_Group, "Year", "value", 3:8)
 
 Troms_Jobs = Troms_Group2 %>% separate(Year,c("X","Year"),remove=T,sep="X")%>%  #(1) First strip away the X from the years (this creates a new column called "X" that is empty)
@@ -44,7 +43,7 @@ Nord_Travel$Job.Type<- "tourism"
 
 # Join together
 Nord_Group = rbind(Nord_Fish, Nord_Food, Nord_Water, Nord_Travel)
-Nord_Group<-plyr::rename(Nord_Group, c("Job.Type"="sector"))
+Nord_Group<-dplyr::rename(Nord_Group, c("Job.Type"="sector"))
 Nord_Group2 = gather(Nord_Group, "Year", "value", 3:8)
 
 Nord_Jobs = Nord_Group2 %>% separate(Year,c("X","Year"),remove=T,sep="X")%>%  #(1) First strip away the X from the years (this creates a new column called "X" that is empty)
@@ -71,7 +70,7 @@ Finn_Travel$Job.Type<- "tourism"
 
 # Join together
 Finn_Group = rbind(Finn_Fish, Finn_Food, Finn_Water, Finn_Travel)
-Finn_Group<-plyr::rename(Finn_Group, c("Job.Type"="sector"))
+Finn_Group<-dplyr::rename(Finn_Group, c("Job.Type"="sector"))
 Finn_Group2 = gather(Finn_Group, "Year", "value", 3:8)
 
 Finn_Jobs = Finn_Group2 %>% separate(Year,c("X","Year"),remove=T,sep="X")%>%  #(1) First strip away the X from the years (this creates a new column called "X" that is empty)
@@ -246,6 +245,33 @@ canada_workforce<- rename(canada_workforce, c("Region"="rgn_id"))
 
 ##Added Canada wages in excel
 
+### ---- Canada GDP ----
+Nunavut_gdp = read_excel("Livelihoods/Economies/Raw/Nunavut_2004_2013.xlsx", sheet = 1, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Nunavut_gdp<- tbl_df(Nunavut_gdp) %>%
+  select(-Value) %>%
+  gather("year", "value", 2:11)
+Nunavut_gdp<- filter(Nunavut_gdp, sector %in% c("Fishing, hunting and trapping [114] ", "Accommodation and food services [72] ", "Transportation and warehousing [48-49] "))
+Nunavut_gdp[Nunavut_gdp == "Fishing, hunting and trapping [114] "]<- "fishing"
+Nunavut_gdp[Nunavut_gdp == "Transportation and warehousing [48-49] "]<- "transport"
+Nunavut_gdp[Nunavut_gdp == "Accommodation and food services [72] "] <- "hospitality"
+Nunavut_gdp$value<-as.numeric(Nunavut_gdp$value)
+Nunavut_gdp$rgn_id<- "2"
+
+NWT_gdp = read_excel("Livelihoods/Economies/Raw/NWT_2004_2013.xlsx", sheet = 1, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+NWT_gdp<- tbl_df(NWT_gdp) %>%
+  select(-Value) %>%
+  gather("year", "value", 2:11)
+NWT_gdp<- filter(NWT_gdp, sector %in% c("Arts, entertainment and recreation [71] ", "Accommodation and food services [72] ", "Transportation and warehousing [48-49] "))
+NWT_gdp[NWT_gdp == "Arts, entertainment and recreation [71] "]<- "tourism"
+NWT_gdp[NWT_gdp == "Transportation and warehousing [48-49] "]<- "transport"
+NWT_gdp[NWT_gdp == "Accommodation and food services [72] "] <- "hospitality"
+NWT_gdp$value<-as.numeric(NWT_gdp$value)
+NWT_gdp$rgn_id<- "3"
+
+canada_gdp = rbind(NWT_gdp, Nunavut_gdp)
+canada_gdp$value<- canada_gdp$value *1000000
+write.csv(canada_gdp, "canada_gdp.csv")
+
 # Canada Join -------------------------------------------------------------
 
 canada_jobs = rbind(NWT_jobs_final, Nunavut_jobs_final)
@@ -278,6 +304,17 @@ write.csv(Greenland_workforce, "Greenland_workforce.csv")
 ##Added in unemployment figures to file to calculate total workforce. Unemployment rate then calculated and added to unemployment rate file
 
 ##Wages added manaully in excel from files
+
+### ---- Greenland GDP ----
+
+Greenland_gdp = read_excel("Livelihoods/Economies/Raw/Greenland_2003_2014.xlsx", sheet = 1, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Greenland_gdp<-tbl_df(Greenland_gdp)%>%
+  gather(year, value, 2:13)
+Greenland_gdp[Greenland_gdp =="Shipping"]<- "transport"
+Greenland_gdp[Greenland_gdp =="Agriculture, fishing, hunting, etc."]<-"fishing"
+Greenland_gdp[Greenland_gdp =="Hotels and restaurants"]<-"hospitality"
+Greenland_gdp$value<- Greenland_gdp$value *1000000
+write.csv(Greenland_gdp, "Greenland_gdp.csv")
 
 # USA/Alaska --------------------------------------------------------------
 
@@ -588,7 +625,7 @@ Alaska_Group<- select(Alaska_Group, Year, AREANAME, NA., AVERAGE.EMPLOYMENT)
 Alaska_Group<-filter(Alaska_Group, !(NA. %in% c('NATURAL RESOURCE & MINING', 'NATURAL RESOURCES & MINING', 'NATURAL RESOURCES AND MINING', 'MANUFACTURING')))
 ##Dropped natural resource and mining and manufacturing as detailed check of data shows that it is all related to oil/gas/mining - not fishing or trapping
 Alaska_Group<-select(Alaska_Group, Year, AVERAGE.EMPLOYMENT, NA.)
-Alaska_Group<-plyr::rename(Alaska_Group, c("AVERAGE.EMPLOYMENT"="value", "NA."="sector"))
+Alaska_Group<-dplyr::rename(Alaska_Group, c("AVERAGE.EMPLOYMENT"="value", "NA."="sector"))
 Alaska_Jobs=Alaska_Group
 Alaska_Jobs$rgn_id<- "Alaska"
 Alaska_Jobs<-Alaska_Jobs[c(4,3,1,2)]
@@ -638,6 +675,93 @@ write.csv(Alaska_gdp, "Alaska_gdp.csv")
 
 # Russia ------------------------------------------------------------------
 
+###----Russian GRP----###
+
+Russia_GRP = read_excel("Livelihoods/Economies/Raw/Russia/Russia GRP.xlsx", sheet = 1, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Russia_GRP = tbl_df(Russia_GRP)
+Russia_GRP<- filter(Russia_GRP, Region %in% c("Arhangelsk region", "Murmansk region", "Yamalo-Nenets Autonomous Okrug", "Krasnoyarsk region", "The Republic of Sakha (Yakutia)", "Chukotka Autonomous Okrug"))%>%
+  gather("year", "value", 2:18)
+Russia_GRP$value<- as.numeric(Russia_GRP$value)
+Russia_GRP$value<- Russia_GRP$value * 1000000
+Russia_GRP<- filter(Russia_GRP, year %in% c ("2008", "2009", "2010", "2011", "2012", "2013", "2014"))
+Russia_GRP<- rename(Russia_GRP, region = Region)
+
+Russia_GRP_14 = read_excel("Livelihoods/Economies/Raw/Russia/GRP per sector Russia.xlsx", sheet = 1, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Russia_GRP_14 = tbl_df(Russia_GRP_14)
+Russia_GRP_14<- filter(Russia_GRP_14, Region %in% c("Arhangelsk region", "Murmansk region", "Yamalo-Nenets Autonomous Okrug", "Krasnoyarsk region", "The Republic of Sakha (Yakutia)", "Chukotka Autonomous Okrug"))
+Russia_GRP_14<- select(Russia_GRP_14, Region, Fishing, `Hotels and restaurants`, `Transport and communications`)
+Russia_GRP_14$year<- "2014"
+Russia_GRP_14<-Russia_GRP_14[c(5,1,2,3,4)]
+Russia_GRP_14<- gather(Russia_GRP_14, "sector", "value", 3:5)
+
+Russia_GRP_13 = read_excel("Livelihoods/Economies/Raw/Russia/GRP per sector Russia.xlsx", sheet = 2, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Russia_GRP_13 = tbl_df(Russia_GRP_13)
+Russia_GRP_13<- filter(Russia_GRP_13, Region %in% c("Arhangelsk region", "Murmansk region", "Yamalo-Nenets Autonomous Okrug", "Krasnoyarsk region", "The Republic of Sakha (Yakutia)", "Chukotka Autonomous Okrug"))
+Russia_GRP_13<- select(Russia_GRP_13, Region, Fishing, `Hotels and restaurants`, `Transport and communications`)
+Russia_GRP_13$year<- "2013"
+Russia_GRP_13<-Russia_GRP_13[c(5,1,2,3,4)]
+Russia_GRP_13<- gather(Russia_GRP_13, "sector", "value", 3:5)
+
+Russia_GRP_12 = read_excel("Livelihoods/Economies/Raw/Russia/GRP per sector Russia.xlsx", sheet = 3, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Russia_GRP_12 = tbl_df(Russia_GRP_12)
+Russia_GRP_12<- filter(Russia_GRP_12, Region %in% c("Arhangelsk region", "Murmansk region", "Yamalo-Nenets Autonomous Okrug", "Krasnoyarsk region", "The Republic of Sakha (Yakutia)", "Chukotka Autonomous Okrug"))
+Russia_GRP_12<- select(Russia_GRP_12, Region, Fishing, `Hotels and restaurants`, `Transport and communications`)
+Russia_GRP_12$year<- "2012"
+Russia_GRP_12<-Russia_GRP_12[c(5,1,2,3,4)]
+Russia_GRP_12<- gather(Russia_GRP_12, "sector", "value", 3:5)
+
+Russia_GRP_11 = read_excel("Livelihoods/Economies/Raw/Russia/GRP per sector Russia.xlsx", sheet = 4, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Russia_GRP_11 = tbl_df(Russia_GRP_11)
+Russia_GRP_11<- filter(Russia_GRP_11, Region %in% c("Arhangelsk region", "Murmansk region", "Yamalo-Nenets Autonomous Okrug", "Krasnoyarsk region", "The Republic of Sakha (Yakutia)", "Chukotka Autonomous Okrug"))
+Russia_GRP_11<- select(Russia_GRP_11, Region, Fishing, `Hotels and restaurants`, `Transport and communications`)
+Russia_GRP_11$year<- "2011"
+Russia_GRP_11<-Russia_GRP_11[c(5,1,2,3,4)]
+Russia_GRP_11<- gather(Russia_GRP_11, "sector", "value", 3:5)
+
+Russia_GRP_10 = read_excel("Livelihoods/Economies/Raw/Russia/GRP per sector Russia.xlsx", sheet = 5, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Russia_GRP_10 = tbl_df(Russia_GRP_10)
+Russia_GRP_10<- filter(Russia_GRP_10, Region %in% c("Arhangelsk region", "Murmansk region", "Yamalo-Nenets Autonomous Okrug", "Krasnoyarsk region", "The Republic of Sakha (Yakutia)", "Chukotka Autonomous Okrug"))
+Russia_GRP_10<- select(Russia_GRP_10, Region, Fishing, `Hotels and restaurants`, `Transport and communications`)
+Russia_GRP_10$year<- "2010"
+Russia_GRP_10<-Russia_GRP_10[c(5,1,2,3,4)]
+Russia_GRP_10<- gather(Russia_GRP_10, "sector", "value", 3:5)
+
+Russia_GRP_09 = read_excel("Livelihoods/Economies/Raw/Russia/GRP per sector Russia.xlsx", sheet = 6, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Russia_GRP_09 = tbl_df(Russia_GRP_09)
+Russia_GRP_09<- filter(Russia_GRP_09, Region %in% c("Arhangelsk region", "Murmansk region", "Yamalo-Nenets Autonomous Okrug", "Krasnoyarsk region", "The Republic of Sakha (Yakutia)", "Chukotka Autonomous Okrug"))
+Russia_GRP_09<- select(Russia_GRP_09, Region, Fishing, `Hotels and restaurants`, `Transport and communications`)
+Russia_GRP_09$year<- "2009"
+Russia_GRP_09<-Russia_GRP_09[c(5,1,2,3,4)]
+Russia_GRP_09<- gather(Russia_GRP_09, "sector", "value", 3:5)
+
+Russia_GRP_08 = read_excel("Livelihoods/Economies/Raw/Russia/GRP per sector Russia.xlsx", sheet = 7, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Russia_GRP_08 = tbl_df(Russia_GRP_08)
+Russia_GRP_08<- filter(Russia_GRP_08, Region %in% c("Arhangelsk region", "Murmansk region", "Yamalo-Nenets Autonomous Okrug", "Krasnoyarsk region", "The Republic of Sakha (Yakutia)", "Chukotka Autonomous Okrug"))
+Russia_GRP_08<- select(Russia_GRP_08, Region, Fishing, `Hotels and restaurants`, `Transport and communications`)
+Russia_GRP_08$year<- "2008"
+Russia_GRP_08<-Russia_GRP_08[c(5,1,2,3,4)]
+Russia_GRP_08<- gather(Russia_GRP_08, "sector", "value", 3:5)
+
+Russia_GRP_Sector = rbind(Russia_GRP_08, Russia_GRP_09, Russia_GRP_10, Russia_GRP_11, Russia_GRP_12, Russia_GRP_13, Russia_GRP_14)
+Russia_GRP_Sector$sector[Russia_GRP_Sector$sector =="Fishing"]<- "fishing"
+Russia_GRP_Sector$sector[Russia_GRP_Sector$sector =="Hotels and restaurants"]<- "hospitality"
+Russia_GRP_Sector$sector[Russia_GRP_Sector$sector =="Transport and communications"]<- "transport"
+Russia_GRP_Sector<- rename(Russia_GRP_Sector, region = Region)
+
+## Take GRP for each region and % contribution from each sector to work out GRP per sector per region
+
+Russia_GRP_total= right_join(Russia_GRP, Russia_GRP_Sector, by = c("region", "year"))
+Russia_GRP_total<- mutate(Russia_GRP_total, value = (Russia_GRP_total$value.y/100)*Russia_GRP_total$value.x)%>%
+  select(-value.x, -value.y)
+Russia_GRP_total$value[Russia_GRP_total$region =="Chukotka Autonomous Okrug"] <-Russia_GRP_total$value[Russia_GRP_total$region =="Chukotka Autonomous Okrug"]/2.2758
+Russia_GRP_total$value[Russia_GRP_total$region =="Krasnoyarsk region"] <-Russia_GRP_total$value[Russia_GRP_total$region =="Krasnoyarsk region"]/83.33333
+Russia_GRP_total$value[Russia_GRP_total$region =="The Republic of Sakha (Yakutia)"] <-Russia_GRP_total$value[Russia_GRP_total$region =="The Republic of Sakha (Yakutia)"]/33.7838
+
+##Work out % employment in each region so can amend jobs - Krasnoyarsk region is huge.
+
+##Taymyrsky Dolgano-Nenetsky District in Krasnoyarsk krai = population 34,432. KK population = 2,828,187. 1.2% of the data below
+## Chukotsky, Iulintsky, Chaunsky and Bilibinksy districts in Chukotka = poppulation = 22,201. Chukotka pop = 50,526. 43.94%
+##Sakha coastal districts = population 28,325. sakha pop = 958, 528. 2.96%
 
 # 2014 --------------------------------------------------------------------
 
@@ -750,7 +874,7 @@ Russia_workforce10$value<- Russia_workforce10$value*1000
 # # bind ------------------------------------------------------------------
 
 Russia_Group = rbind(Russia_Employment10, Russia_Employment11, Russia_Employment12, Russia_Employment13, Russia_Employment14)
-Russia_Group<-plyr::rename(Russia_Group, c("Agriculture..hunting.and.forestry..fishing..fish.farming"="fishing", "Hotels.and...restaurants"="hospitality", "Transport"="transport"))
+Russia_Group<-dplyr::rename(Russia_Group, c("Agriculture..hunting.and.forestry..fishing..fish.farming"="fishing", "Hotels.and...restaurants"="hospitality", "Transport"="transport"))
 Russia_Group<- gather(Russia_Group, sector, value, 2:4)
 Russia_Group$value<-as.numeric(Russia_Group$value)
 Russia_Group$value[Russia_Group$District =="Chukotka Autonomous Okrug"] <-Russia_Group$value[Russia_Group$District =="Chukotka Autonomous Okrug"]/2.2758
