@@ -160,6 +160,35 @@ write.csv(norway_wages3, "le_wages_sector_year_arc2016.csv")
 
 ##Multiplied values in excel by 12 to give annual values in NOK - need to convert to USD.
 
+
+# Norway GRP --------------------------------------------------------------
+
+Norway_gdp = read_excel("Livelihoods/Economies/Raw/Norway GDP.xlsx", sheet = 1, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+Norway_gdp<- tbl_df(Norway_gdp)%>%
+  gather("year", "value", 3:8)
+Norway_gdp[Norway_gdp=="Fishing and aquaculture"]<- "fishing"
+Norway_gdp[Norway_gdp=="Ocean transport"]<-"transport"
+Norway_gdp[Norway_gdp=="Accommodation and food service activities"]<-"hospitality"
+Norway_gdp[Norway_gdp=="Arts, entertainment and other service activities"]<-"tourism"
+Norway_gdp[Norway_gdp=="Education"]<-"education"
+Norway_gdp[Norway_gdp=="Transport activities excl. ocean transport"]<-"transport"
+Svalbard_gdp = filter(Norway_gdp, region %in% c("Svalbard"))
+Norway_gdp<- filter(Norway_gdp, !(region %in% c("Svalbard")))
+Norway_gdp<- filter(Norway_gdp, !(sector %in% c("education"))) #remove education
+Norway_gdp<- Norway_gdp %>% group_by(sector, year)%>%
+  dplyr::summarize(value = sum(value, na.rm=T))%>%
+  ungroup()
+Norway_gdp$rgn_id<- "6"
+Norway_gdp$value<- Norway_gdp$value *1000000
+Svalbard_gdp<- Svalbard_gdp %>% group_by(sector, year)%>%
+  dplyr::summarize(value = sum(value, na.rm=T))%>%
+  ungroup()
+Svalbard_gdp<- filter(Svalbard_gdp, value >0)
+Svalbard_gdp$value<- Svalbard_gdp$value*1000000
+Svalbard_gdp$rgn_id<- "5"
+Norway_gdp<- rbind(Norway_gdp, Svalbard_gdp)
+write.csv(Norway_gdp, "Norway_gdp.csv")
+
 # Canada ------------------------------------------------------------------
 
 
@@ -204,9 +233,6 @@ NWT_workforce$Region <- "Beaufort"
 NWT_workforce<- dplyr::mutate(NWT_workforce, value = (NWT_workforce$value/100)*14.2)
 NWT_workforce$value<- round(NWT_workforce$value, digits=0)
 
-
-
-NWT_workforce
 
 # Nunavut -----------------------------------------------------------------
 
@@ -761,6 +787,7 @@ Russia_GRP_total<- Russia_GRP_total%>%group_by(year, sector)%>%
   ungroup()
 Russia_GRP_total$rgn_id<- "4"
 Russia_GRP_total<-Russia_GRP_total[c(4,1,2,3)]
+write.csv(Russia_GRP_total, "Russia_gdp.csv")
 
 ##Work out % employment in each region so can amend jobs - Krasnoyarsk region is huge.
 
