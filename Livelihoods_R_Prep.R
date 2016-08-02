@@ -342,6 +342,8 @@ Greenland_gdp[Greenland_gdp =="Hotels and restaurants"]<-"hospitality"
 Greenland_gdp$value<- Greenland_gdp$value *1000000
 write.csv(Greenland_gdp, "Greenland_gdp.csv")
 
+##Split 80/20 between West and East Greenland in excel
+
 # USA/Alaska --------------------------------------------------------------
 
 
@@ -684,8 +686,8 @@ Alaska_gdp<- tbl_df(Alaska_gdp) %>%
   select(-Area, -IndCode) %>%
   filter(Industry %in% c("Trade", "Transportation and utilities", "    Arts, entertainment, recreation, accommodation, and food services")) %>%
   gather("year", "value", 2:19)
-Alaska_gdp[Alaska_gdp == "Trade"]<- "trade"
-Alaska_gdp[Alaska_gdp == "Transportation and utilities"]<- "trade"
+Alaska_gdp[Alaska_gdp == "Trade"]<- "transport"
+Alaska_gdp[Alaska_gdp == "Transportation and utilities"]<- "transport"
 Alaska_gdp[Alaska_gdp == "    Arts, entertainment, recreation, accommodation, and food services"] <- "hospitality"
 Alaska_gdp$value<-as.numeric(Alaska_gdp$value)
 Alaska_gdp$value<- Alaska_gdp$value * 1000000
