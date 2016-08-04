@@ -1,0 +1,2 @@
+Russia population from 2010 census of Arctic regions. Chukotka has estimates for 2010-2015 which were included. Other regions are the same
+Greenland population split 80/20 for west/east based on rough population estimate

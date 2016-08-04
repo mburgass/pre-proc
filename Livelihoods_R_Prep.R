@@ -298,6 +298,7 @@ canada_gdp = rbind(NWT_gdp, Nunavut_gdp)
 canada_gdp$value<- canada_gdp$value *1000000
 write.csv(canada_gdp, "canada_gdp.csv")
 
+## In excel adjusted NWT to take 14.2% of GRP for Beaufort Delta. 
 # Canada Join -------------------------------------------------------------
 
 canada_jobs = rbind(NWT_jobs_final, Nunavut_jobs_final)
