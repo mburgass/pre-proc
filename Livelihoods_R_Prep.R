@@ -1036,4 +1036,5 @@ gdp_adjusted<- rbind(gdp_adjusted, Alaska_gdp)
 # World Bank Adjusted - Wages ---------------------------------------------
 
 #Canada Wages - 2001-2015
-
+canada_ppp2<- filter(ppp_factor, country == "Canada")
+canada_ppp2<- filter(canada_ppp, year %in% c(2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013))
