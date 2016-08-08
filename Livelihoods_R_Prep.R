@@ -656,7 +656,7 @@ Alaska_Group<-filter(Alaska_Group, !(NA. %in% c('NATURAL RESOURCE & MINING', 'NA
 Alaska_Group<-select(Alaska_Group, Year, AVERAGE.EMPLOYMENT, NA.)
 Alaska_Group<-dplyr::rename(Alaska_Group, value=AVERAGE.EMPLOYMENT, sector=NA.)
 Alaska_Jobs=Alaska_Group
-Alaska_Jobs$rgn_id<- "Alaska"
+Alaska_Jobs$rgn_id<- "1"
 Alaska_Jobs<-Alaska_Jobs[c(4,3,1,2)]
 Alaska_Jobs[Alaska_Jobs=="TRADE, TRANSPORTATION AND UTILITIES"]<- "transport" 
 Alaska_Jobs[Alaska_Jobs=="TRADE, TRANS. & UTILITIES"]<- "transport"
@@ -929,7 +929,7 @@ Russia_Group$value<- round(Russia_Group$value, digits=0)
 Russia_Jobs=Russia_Group%>%group_by(Year, sector)%>%
   dplyr::summarize(value = sum(value, na.rm=T))%>%
   ungroup()
-Russia_Jobs$rgn_id <- "Russia"
+Russia_Jobs$rgn_id <- "4"
 Russia_Jobs<-Russia_Jobs[c(4,2,1,3)]
 Russia_Jobs
 
@@ -953,12 +953,16 @@ Russia_workforce$value<- round(Russia_workforce$value, digits=0)
 ##Reduce workforce size for large regions by % of Arctic regions
 
 le_jobs_sector_year= rbind(Russia_Jobs, Alaska_Jobs, canada_jobs, norway_jobs, Greenland_jobs_final)
-le_jobs_sector_year$sector[le_jobs_sector_year$sector =="hospitality"]<- "tourism"
-le_jobs_sector_year<- le_jobs_sector_year %>% dplyr::group_by(year, rgn_id, sector)%>%
+
+##read back in jobs sector year to change hospitality to tourism.
+le_jobs_sector_year16= read.csv("Livelihoods/Employment_Figures/Final CSV/old/le_jobs_sector_year_arc2016.csv")
+le_jobs_sector_year16$sector[le_jobs_sector_year16$sector =="hospitality"]<- "tourism"
+le_jobs_sector_year16<- rename(le_jobs_sector_year16, year=Year)
+le_jobs_sector_year16<- le_jobs_sector_year16 %>% dplyr::group_by(year, rgn_id, sector)%>%
   summarize(value = sum(value, na.rm=T))%>%
   ungroup()
 ##write.csv(gdp_adjusted, "le_gdp_arc2016.csv")
-##write.csv(le_jobs_sector_year, "le_jobs_sector_year.csv")
+##write.csv(le_jobs_sector_year, "le_jobs_sector_year_arc2016.csv")
 
 
 # World Bank Adjusted GDP -------------------------------------------------
