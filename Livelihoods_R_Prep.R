@@ -1096,4 +1096,9 @@ alaska_wages<-alaska_wages[c(1,3,2,4)]
 
 ## Join together
 le_wages_sector_year= rbind(russia_wages_adj, norway_wages_adj, greenland_wages_adj, alaska_wages, canada_wages_adj)
-write.csv(le_wages_sector_year, "le_wages_sector_year_arc2016.csv")
+##write.csv(le_wages_sector_year, "le_wages_sector_year_arc2016.csv")
+le_wages_sector_year16= read.csv("Livelihoods/Employment_Figures/Final CSV/le_wages_sector_year_arc2016.csv")
+le_wages_sector_year16<- le_wages_sector_year16 %>% dplyr::group_by(year, rgn_id, sector)%>%
+  summarize(value = sum(value, na.rm=T))%>%
+              ungroup() ##Changed hospitality to tourism in excel. Here added these together where tourism fell twice for same region in a year
+##write.csv(le_wages_sector_year16, "le_wages_sector_year_arc2016.csv")
