@@ -1037,4 +1037,63 @@ gdp_adjusted<- rbind(gdp_adjusted, Alaska_gdp)
 
 #Canada Wages - 2001-2015
 canada_ppp2<- filter(ppp_factor, country == "Canada")
-canada_ppp2<- filter(canada_ppp, year %in% c(2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013))
+canada_ppp2<- filter(canada_ppp2, year %in% c(2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015))
+canada_wages= read.csv("Livelihoods/Employment_Figures/wages/canada_wages.csv") ##Canada = 2004 to 2013
+canada_wages$rgn_id<- as.character(canada_wages$rgn_id)
+canada_wages$sector<- as.character(canada_wages$sector) ##tidy up data frame.
+canada_wages_adj= full_join(canada_wages, canada_ppp2, by="year")
+
+canada_wages_adj<- mutate(canada_wages_adj, value2= value/rate)
+canada_wages_adj<- select(canada_wages_adj, sector, year, rgn_id, value2)%>%
+  rename(value=value2)
+
+##Norway Wages 2009-2015
+norway_ppp2<- filter(ppp_factor, country == "Norway")
+norway_ppp2<- filter(norway_ppp2, year %in% c(2009, 2010, 2011, 2012, 2013, 2014, 2015))
+norway_wages4= read.csv("Livelihoods/Employment_Figures/wages/norway_wages.csv") ##Norway = 2009-2015
+norway_wages4$rgn_id<- as.character(norway_wages4$rgn_id)
+norway_wages4$sector<- as.character(norway_wages4$sector) ##tidy up data frame.
+norway_wages_adj= full_join(norway_wages4, norway_ppp2, by="year")
+
+norway_wages_adj<- mutate(norway_wages_adj, value2= value/rate)
+norway_wages_adj<- select(norway_wages_adj, sector, year, rgn_id, value2)%>%
+  rename(value=value2)
+norway_wages_adj<-norway_wages_adj[c(3,1,2,4)]
+
+
+##Russia Wages 2010-2014
+
+russia_wages= read.csv("Livelihoods/Employment_Figures/wages/russia_wages.csv") ##russia = 2010-2014
+
+russia_ppp2<- filter(ppp_factor, country == "Russian Federation")
+russia_ppp2<- filter(russia_ppp, year %in% c(2010, 2011, 2012, 2013, 2014))
+russia_wages$rgn_id<- as.character(russia_wages$rgn_id)
+russia_wages$sector<- as.character(russia_wages$sector) ##tidy up data frame.
+russia_wages_adj= full_join(russia_wages, russia_ppp, by="year")
+
+russia_wages_adj<- mutate(russia_wages_adj, value2= value/rate)
+russia_wages_adj<- select(russia_wages_adj, sector, year, rgn_id, value2)%>%
+  rename(value=value2)
+
+## Greenland Wages 2008-2014
+
+greenland_wages= read.csv("Livelihoods/Employment_Figures/wages/greenland_wages.csv") ##greenland = 2008-2014
+
+greenland_rate2<- filter(xchange_rate, country == "Greenland")
+greenland_rate2<- filter(greenland_rate, year %in% c(2008, 2009, 2010, 2011, 2012, 2013, 2014))
+greenland_wages$rgn_id<- as.character(greenland_wages$rgn_id)
+greenland_wages$sector<- as.character(greenland_wages$sector) ##tidy up data frame.
+greenland_wages_adj= full_join(greenland_wages, greenland_rate2, by="year")
+
+greenland_wages_adj<- mutate(greenland_wages_adj, value2= value/rate)
+greenland_wages_adj<- select(greenland_wages_adj, sector, year, rgn_id, value2)%>%
+  rename(value=value2)
+
+alaska_wages= read.csv("Livelihoods/Employment_Figures/wages/Alaska_wages.csv")
+alaska_wages<-alaska_wages[c(1,3,2,4)]
+
+
+
+## Join together
+le_wages_sector_year= rbind(russia_wages_adj, norway_wages_adj, greenland_wages_adj, alaska_wages, canada_wages_adj)
+write.csv(le_wages_sector_year, "le_wages_sector_year_arc2016.csv")
