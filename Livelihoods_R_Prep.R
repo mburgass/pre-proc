@@ -17,7 +17,7 @@ Troms_Travel$Job.Type<- "tourism"
 
 
 Troms_Group = rbind(Troms_Fish, Troms_Food, Troms_Water, Troms_Travel)
-Troms_Group<-dplyr::rename(Troms_Group, c("Job.Type"="sector"))
+Troms_Group<-dplyr::rename(Troms_Group, sector=Job.Type)
 Troms_Group2 = gather(Troms_Group, "Year", "value", 3:8)
 
 Troms_Jobs = Troms_Group2 %>% separate(Year,c("X","Year"),remove=T,sep="X")%>%  #(1) First strip away the X from the years (this creates a new column called "X" that is empty)
@@ -43,7 +43,7 @@ Nord_Travel$Job.Type<- "tourism"
 
 # Join together
 Nord_Group = rbind(Nord_Fish, Nord_Food, Nord_Water, Nord_Travel)
-Nord_Group<-dplyr::rename(Nord_Group, c("Job.Type"="sector"))
+Nord_Group<-dplyr::rename(Nord_Group, sector=Job.Type)
 Nord_Group2 = gather(Nord_Group, "Year", "value", 3:8)
 
 Nord_Jobs = Nord_Group2 %>% separate(Year,c("X","Year"),remove=T,sep="X")%>%  #(1) First strip away the X from the years (this creates a new column called "X" that is empty)
@@ -70,7 +70,7 @@ Finn_Travel$Job.Type<- "tourism"
 
 # Join together
 Finn_Group = rbind(Finn_Fish, Finn_Food, Finn_Water, Finn_Travel)
-Finn_Group<-dplyr::rename(Finn_Group, c("Job.Type"="sector"))
+Finn_Group<-dplyr::rename(Finn_Group, sector=Job.Type)
 Finn_Group2 = gather(Finn_Group, "Year", "value", 3:8)
 
 Finn_Jobs = Finn_Group2 %>% separate(Year,c("X","Year"),remove=T,sep="X")%>%  #(1) First strip away the X from the years (this creates a new column called "X" that is empty)
@@ -93,7 +93,7 @@ norway_mainland_jobs
 # Svalbard ----------------------------------------------------------------
 Svalbard_Employment = read_excel("Livelihoods/Employment_Figures/Norway/Svalbard_Employment_2008_2014.xlsx", sheet = 1, col_names = TRUE, col_types = NULL, na = "", skip = 0)
 Sval_Employment2 = data.frame(Svalbard_Employment)%>%
-  rename(c("Sector"="sector"))
+  rename(sector=Sector)
 Sval_Employment2<-filter(Sval_Employment2, !(sector %in% c('B Mining and quarrying', 'C-D-E Manufacturing', 'F Construction',
                                                              'G Wholesale and retail trade: repair of motor vehicles and motorcycles',
                                                              'J-K Information and communication', 'L Real estate activities',
@@ -132,7 +132,7 @@ norway_jobs
 
 norway_wages = read_excel("Livelihoods/Employment_Figures/Norway/norway_wages_2009_2015.xlsx", sheet = 1, col_names = TRUE, col_types = NULL, na = "", skip = 0)
 norway_wages2 = data.frame(norway_wages)%>%
-  rename(c("Sector"="sector"))
+  rename(sector=Sector)
 norway_wages2<-filter(norway_wages2, !(sector %in% c('B Mining and quarrying', 'C Manufacturing', 'D Electricity, gas, steam and air conditioning supply', 'E Water supply, sewerage, waste', 'F Construction',
                                                            'G Wholesale and retail trade: repair of motor vehicles and motorcycles',
                                                            'J Information and communication', 'K Financial and insurance activities', 'L Real estate activities',
@@ -156,7 +156,7 @@ norway_wages3[norway_wages3=="H Transportation and storage"]<-"transport"
 norway_wages3[norway_wages3=="I Accommodation and food service activities"]<-"hospitality"
 norway_wages3[norway_wages3=="R Arts, entertainment and recreation"]<-"tourism"
 
-write.csv(norway_wages3, "le_wages_sector_year_arc2016.csv")
+##write.csv(norway_wages3, "le_wages_sector_year_arc2016.csv")
 
 ##Multiplied values in excel by 12 to give annual values in NOK - need to convert to USD.
 
@@ -187,7 +187,7 @@ Svalbard_gdp<- filter(Svalbard_gdp, value >0)
 Svalbard_gdp$value<- Svalbard_gdp$value*1000000
 Svalbard_gdp$rgn_id<- "5"
 Norway_gdp<- rbind(Norway_gdp, Svalbard_gdp)
-write.csv(Norway_gdp, "Norway_gdp.csv")
+##write.csv(Norway_gdp, "Norway_gdp.csv")
 
 # Canada ------------------------------------------------------------------
 
@@ -195,7 +195,7 @@ write.csv(Norway_gdp, "Norway_gdp.csv")
 # NWT ---------------------------------------------------------------------
 NWT_Employment = read.csv('Livelihoods/Employment_Figures/Canada/NWT_Employment_2001_2015.csv')
 NWT_Employment2 = data.frame(NWT_Employment)%>%
-  rename(c("Job.Type"="sector"))
+  rename(sector=Job.Type)
 NWT_Employment2<-dplyr::filter(NWT_Employment2, (sector %in% c("Transportation and warehousing", "Accommodation and food services", "Information, culture and recreation")))
 ## Assume related to ship transport, tourism, ship business
 
@@ -222,7 +222,7 @@ NWT_jobs_final$value<- round(NWT_jobs_final$value, digits=0)
 ###### Total Workforce
 NWT_Employment = read.csv('Livelihoods/Employment_Figures/Canada/NWT_Employment_2001_2015.csv')
 NWT_workforce = data.frame(NWT_Employment)%>%
-  rename(c("Job.Type"="sector"))
+  rename(sector=Job.Type)
 NWT_workforce<- gather(NWT_workforce, "Year", "value", 2:16)
 NWT_workforce<- NWT_workforce %>% separate(Year,c("X","Year"),remove=T,sep="X")%>%  #(1) First strip away the X from the years (this creates a new column called "X" that is empty)
   select(Year,sector,value)
@@ -237,7 +237,7 @@ NWT_workforce$value<- round(NWT_workforce$value, digits=0)
 # Nunavut -----------------------------------------------------------------
 
 Nunavut_Employment = read_excel("Livelihoods/Employment_Figures/Canada/Nunavut_Employment_2008_2014.xlsx", sheet = 1, col_names = TRUE, col_types = NULL, na = "", skip = 0)
-Nunavut_Employment<-data.frame(Nunavut_Employment)%>% rename(c("Job.Type"="sector"))
+Nunavut_Employment<-data.frame(Nunavut_Employment)%>% rename(sector=Job.Type)
 
 Nunavut_Employment2 = dplyr::filter(Nunavut_Employment, (sector %in% c("Fishing, Hunting, Trapping, Mining and Quarrying", "Transportation and Warehousing", "Accommodation and Food Services")))
 ## Job types quite general - taken ones with most likely marine connections.
@@ -265,7 +265,7 @@ Nunavut_workforce$Region <- "Nunavut"
 
 ## Join with beaufort
 canada_workforce = rbind(NWT_workforce, Nunavut_workforce)
-canada_workforce<- rename(canada_workforce, c("Region"="rgn_id"))
+canada_workforce<- rename(canada_workforce, rgn_id=Region)
 
 ##Manaully added in excel to increase to total workforce based on the unemployment rate
 
@@ -296,23 +296,23 @@ NWT_gdp$rgn_id<- "3"
 
 canada_gdp = rbind(NWT_gdp, Nunavut_gdp)
 canada_gdp$value<- canada_gdp$value *1000000
-write.csv(canada_gdp, "canada_gdp.csv")
+##write.csv(canada_gdp, "canada_gdp.csv")
 
 ## In excel adjusted NWT to take 14.2% of GRP for Beaufort Delta. 
 # Canada Join -------------------------------------------------------------
 
 canada_jobs = rbind(NWT_jobs_final, Nunavut_jobs_final)
-canada_jobs<- rename(canada_jobs, c("Region"="rgn_id"))
+canada_jobs<- rename(canada_jobs, rgn_id=Region)
 
 
 # Greenland ---------------------------------------------------------------
 
 ## Only figures for whole country
 Greenland_Employment = read_excel("Livelihoods/Employment_Figures/Greenland/Greenland_Employment_2008_2014.xlsx", sheet = 1, col_names = TRUE, col_types = NULL, na = "", skip = 0)
-Greenland_Employment<-data.frame(Greenland_Employment)%>% rename(c("Job.Type"="sector"))
+Greenland_Employment<-data.frame(Greenland_Employment)%>% rename(sector=Job.Type)
 Greenland_Employment2 = dplyr::filter(Greenland_Employment, (sector %in% c("Fishing, hunting & agriculture", "Transportation", "Hotels and restaurants")))
 ##Jobs quite general - kept with theme of fishing/ship transport and tourism
-Greenland_Employment2=rename(Greenland_Employment2, c("Jobs"="value"))
+Greenland_Employment2=rename(Greenland_Employment2, value=Jobs)
 
 Greenland_Employment2$rgn_id <- "Greenland"
 Greenland_jobs_final=Greenland_Employment2[c(4,2,1,3)]
@@ -327,7 +327,7 @@ Greenland_workforce = Greenland_Employment
 Greenland_workforce<- Greenland_workforce%>%group_by(Year)%>%
   dplyr::summarize(value = sum(Jobs, na.rm=T))%>%
   ungroup()
-write.csv(Greenland_workforce, "Greenland_workforce.csv")
+##write.csv(Greenland_workforce, "Greenland_workforce.csv")
 ##Added in unemployment figures to file to calculate total workforce. Unemployment rate then calculated and added to unemployment rate file
 
 ##Wages added manaully in excel from files
@@ -341,7 +341,7 @@ Greenland_gdp[Greenland_gdp =="Shipping"]<- "transport"
 Greenland_gdp[Greenland_gdp =="Agriculture, fishing, hunting, etc."]<-"fishing"
 Greenland_gdp[Greenland_gdp =="Hotels and restaurants"]<-"hospitality"
 Greenland_gdp$value<- Greenland_gdp$value *1000000
-write.csv(Greenland_gdp, "Greenland_gdp.csv")
+##write.csv(Greenland_gdp, "Greenland_gdp.csv")
 
 ##Split 80/20 between West and East Greenland in excel
 
@@ -654,7 +654,7 @@ Alaska_Group<- select(Alaska_Group, Year, AREANAME, NA., AVERAGE.EMPLOYMENT)
 Alaska_Group<-filter(Alaska_Group, !(NA. %in% c('NATURAL RESOURCE & MINING', 'NATURAL RESOURCES & MINING', 'NATURAL RESOURCES AND MINING', 'MANUFACTURING')))
 ##Dropped natural resource and mining and manufacturing as detailed check of data shows that it is all related to oil/gas/mining - not fishing or trapping
 Alaska_Group<-select(Alaska_Group, Year, AVERAGE.EMPLOYMENT, NA.)
-Alaska_Group<-dplyr::rename(Alaska_Group, c("AVERAGE.EMPLOYMENT"="value", "NA."="sector"))
+Alaska_Group<-dplyr::rename(Alaska_Group, value=AVERAGE.EMPLOYMENT, sector=NA.)
 Alaska_Jobs=Alaska_Group
 Alaska_Jobs$rgn_id<- "Alaska"
 Alaska_Jobs<-Alaska_Jobs[c(4,3,1,2)]
@@ -666,7 +666,7 @@ Alaska_Jobs[Alaska_Jobs=="LEISURE AND HOSPITALITY"]<-"hospitality"
 
 Alaska_workforce = rbind(Alaska_workforce04, Alaska_workforce05, Alaska_workforce06, Alaska_workforce07, Alaska_workforce08, Alaska_workforce09, Alaska_workforce10, Alaska_workforce11, Alaska_workforce12, Alaska_workforce13, Alaska_workforce14)
 Alaska_workforce$rgn_id<- "Alaska"
-write.csv(Alaska_workforce, "Alaska_workforce.csv")
+##write.csv(Alaska_workforce, "Alaska_workforce.csv")
 ##Total workforce worked out in excel by using unemployment rate for the two boroughs. Average unemployment for Alaska worked out by finding out number
 ##of unemployed in each borough using the unemployment rates and then working out % unemployed compared to total workforce across both boroughs.
 
@@ -677,7 +677,7 @@ Alaska_wages[Alaska_wages=="TRADE, TRANSPORTATION AND UTILITIES"]<- "transport"
 Alaska_wages[Alaska_wages=="TRADE, TRANS. & UTILITIES"]<- "transport"
 Alaska_wages[Alaska_wages=="LEISURE & HOSPITALITY"]<-"hospitality"
 Alaska_wages[Alaska_wages=="LEISURE AND HOSPITALITY"]<-"hospitality"
-write.csv(Alaska_wages, "Alaska_wages.csv")
+##write.csv(Alaska_wages, "Alaska_wages.csv")
 ##In excel work out a weighted average for monthly wage between the boroughs based on how many employed in that sector in that borough. Then multiply monthly values by 12 to give annual
 
 ### ---- Alaska Economies ----
@@ -700,7 +700,7 @@ Alaska_gdp$rgn_id<- "1"
 ## need to reduce based on population size of north slope (9,687) and northwest arctic borough (7,752) = 17,439 compared to Alaska (738,432)
 ## 17, 439/738,432 * 100 = 2.36 %
 Alaska_gdp$value<- Alaska_gdp$value * 0.236
-write.csv(Alaska_gdp, "Alaska_gdp.csv")
+##write.csv(Alaska_gdp, "Alaska_gdp.csv")
 
 # Russia ------------------------------------------------------------------
 
@@ -790,7 +790,7 @@ Russia_GRP_total<- Russia_GRP_total%>%group_by(year, sector)%>%
   ungroup()
 Russia_GRP_total$rgn_id<- "4"
 Russia_GRP_total<-Russia_GRP_total[c(4,1,2,3)]
-write.csv(Russia_GRP_total, "Russia_gdp.csv")
+##write.csv(Russia_GRP_total, "Russia_gdp.csv")
 
 ##Work out % employment in each region so can amend jobs - Krasnoyarsk region is huge.
 
@@ -909,9 +909,12 @@ Russia_workforce10$value<- Russia_workforce10$value*1000
 # # bind ------------------------------------------------------------------
 
 Russia_Group = rbind(Russia_Employment10, Russia_Employment11, Russia_Employment12, Russia_Employment13, Russia_Employment14)
-Russia_Group<-dplyr::rename(Russia_Group, c("Agriculture..hunting.and.forestry..fishing..fish.farming"="fishing", "Hotels.and...restaurants"="hospitality", "Transport"="transport"))
 Russia_Group<- gather(Russia_Group, sector, value, 2:4)
 Russia_Group$value<-as.numeric(Russia_Group$value)
+Russia_Group$sector[Russia_Group$sector =="Agriculture..hunting.and.forestry..fishing..fish.farming"] <-"fishing"
+Russia_Group$sector[Russia_Group$sector =="Hotels.and...restaurants"]<- "hospitality"
+Russia_Group$sector[Russia_Group$sector =="Transport"]<- "transport"
+
 Russia_Group$value[Russia_Group$District =="Chukotka Autonomous Okrug"] <-Russia_Group$value[Russia_Group$District =="Chukotka Autonomous Okrug"]/2.2758
 Russia_Group$value[Russia_Group$District =="Krasnoyarsk region"] <-Russia_Group$value[Russia_Group$District =="Krasnoyarsk region"]/83.33333
 Russia_Group$value[Russia_Group$District =="The Republic of Sakha (Yakutia)"] <-Russia_Group$value[Russia_Group$District =="The Republic of Sakha (Yakutia)"]/33.7838
@@ -937,7 +940,7 @@ Russia_workforce$value[Russia_workforce$District =="Krasnoyarsk region"] <-Russi
 Russia_workforce$value[Russia_workforce$District =="The Republic of Sakha (Yakutia)"] <-Russia_workforce$value[Russia_workforce$District =="The Republic of Sakha (Yakutia)"]/33.7838
 Russia_workforce$value<- round(Russia_workforce$value, digits=0)
 
-write.csv(Russia_workforce, "russia_workforce.csv")
+##write.csv(Russia_workforce, "russia_workforce.csv")
 
 ##Total workforce calculated in excel with unemployment rate. ((100-unemployment rate)/100) = % employed. value/%employed = total workforce
 ## total workforce * unemployment rate/100 = unemployed people for each region for each year. Sum employed and unemployed per year to work out average employment rate for Russia study site. Added to unemployment rate file.
@@ -950,4 +953,87 @@ write.csv(Russia_workforce, "russia_workforce.csv")
 
 le_jobs_sector_year= rbind(Russia_Jobs, Alaska_Jobs, canada_jobs, norway_jobs, Greenland_jobs_final)
 le_jobs_sector_year
-write.csv(le_jobs_sector_year, "le_jobs_sector_year.csv")
+##write.csv(le_jobs_sector_year, "le_jobs_sector_year.csv")
+
+
+# World Bank Adjusted GDP -------------------------------------------------
+
+##Read in PPP factor
+ppp_factor= read_excel("Livelihoods/World_Bank/PPP_factor.xls", sheet = 1, col_names = TRUE, col_types = NULL, na = "", skip = 0)
+
+ppp_factor<- filter(ppp_factor, `Country Name` %in% c("Canada", "Greenland", "Norway", "Russian Federation")) %>%
+  gather("year", "rate", 5:60)
+ppp_factor<- select(ppp_factor, `Country Name`, year, rate)%>%
+  rename(country= `Country Name`)
+ppp_factor<- data.frame(ppp_factor)
+ppp_factor$year<- as.integer(ppp_factor$year)
+
+##Read in Canada
+
+canada_gdp= read.csv("Livelihoods/Economies/csv/canada_gdp.csv") ##Canada = 2004 to 2013
+canada_ppp<- filter(ppp_factor, country == "Canada")
+canada_ppp<- filter(canada_ppp, year %in% c(2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013))
+canada_gdp$rgn_id<- as.character(canada_gdp$rgn_id)
+canada_gdp$sector<- as.character(canada_gdp$sector) ##tidy up data frame.
+canada_adjusted= full_join(canada_gdp, canada_ppp, by="year")
+
+canada_adjusted<- mutate(canada_adjusted, value2= value/rate)
+canada_adjusted<- select(canada_adjusted, sector, year, rgn_id, value2)%>%
+  rename(value=value2)
+
+##Read in Russia
+russia_gdp= read.csv("Livelihoods/Economies/csv/Russia_gdp.csv") ##russia = 2008-2014
+
+russia_ppp<- filter(ppp_factor, country == "Russian Federation")
+russia_ppp<- filter(russia_ppp, year %in% c(2008, 2009, 2010, 2011, 2012, 2013, 2014))
+russia_gdp$rgn_id<- as.character(russia_gdp$rgn_id)
+russia_gdp$sector<- as.character(russia_gdp$sector) ##tidy up data frame.
+russia_adjusted= full_join(russia_gdp, russia_ppp, by="year")
+
+russia_adjusted<- mutate(russia_adjusted, value2= value/rate)
+russia_adjusted<- select(russia_adjusted, sector, year, rgn_id, value2)%>%
+  rename(value=value2)
+
+##Read in Norway
+norway_gdp= read.csv("Livelihoods/Economies/csv/Norway_gdp.csv") ##norway = 2008-2013
+norway_ppp<- filter(ppp_factor, country == "Norway")
+norway_ppp<- filter(norway_ppp, year %in% c(2008, 2009, 2010, 2011, 2012, 2013))
+norway_gdp$rgn_id<- as.character(norway_gdp$rgn_id)
+norway_gdp$sector<- as.character(norway_gdp$sector) ##tidy up data frame.
+norway_adjusted= full_join(norway_gdp, norway_ppp, by="year")
+
+norway_adjusted<- mutate(norway_adjusted, value2= value/rate)
+norway_adjusted<- select(norway_adjusted, sector, year, rgn_id, value2)%>%
+  rename(value=value2)
+
+## Read in Greenland
+greenland_gdp= read.csv("Livelihoods/Economies/csv/Greenland_gdp.csv") ##greenland = 2003-2013
+xchange_rate=read_excel("Livelihoods/World_Bank/Exchange_rate.xls") ##Read in exchange rate for Greenland as PPP data not available
+xchange_rate<- filter(xchange_rate, `Country Name` %in% c("Greenland")) %>%
+  gather("year", "rate", 5:60)
+xchange_rate<- select(xchange_rate, `Country Name`, year, rate)%>%
+  rename(country= `Country Name`)
+xchange_rate<- data.frame(xchange_rate)
+xchange_rate$year<- as.integer(xchange_rate$year)
+
+greenland_rate<- filter(xchange_rate, country == "Greenland")
+greenland_rate<- filter(greenland_rate, year %in% c(2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013))
+greenland_gdp$rgn_id<- as.character(greenland_gdp$rgn_id)
+greenland_gdp$sector<- as.character(greenland_gdp$sector) ##tidy up data frame.
+greenland_adjusted= full_join(greenland_gdp, greenland_rate, by="year")
+
+greenland_adjusted<- mutate(greenland_adjusted, value2= value/rate)
+greenland_adjusted<- select(greenland_adjusted, sector, year, rgn_id, value2)%>%
+  rename(value=value2)
+
+
+### join together
+gdp_adjusted= rbind(canada_adjusted, norway_adjusted, greenland_adjusted, russia_adjusted)
+Alaska_gdp<-Alaska_gdp[c(1,2,4,3)]
+gdp_adjusted<- rbind(gdp_adjusted, Alaska_gdp)
+
+
+# World Bank Adjusted - Wages ---------------------------------------------
+
+#Canada Wages - 2001-2015
+
