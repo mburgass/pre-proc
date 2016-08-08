@@ -700,6 +700,7 @@ Alaska_gdp$rgn_id<- "1"
 ## need to reduce based on population size of north slope (9,687) and northwest arctic borough (7,752) = 17,439 compared to Alaska (738,432)
 ## 17, 439/738,432 * 100 = 2.36 %
 Alaska_gdp$value<- Alaska_gdp$value * 0.236
+Alaska_gdp<- rename(Alaska_gdp, sector=Industry)
 ##write.csv(Alaska_gdp, "Alaska_gdp.csv")
 
 # Russia ------------------------------------------------------------------
@@ -952,7 +953,11 @@ Russia_workforce$value<- round(Russia_workforce$value, digits=0)
 ##Reduce workforce size for large regions by % of Arctic regions
 
 le_jobs_sector_year= rbind(Russia_Jobs, Alaska_Jobs, canada_jobs, norway_jobs, Greenland_jobs_final)
-le_jobs_sector_year
+le_jobs_sector_year$sector[le_jobs_sector_year$sector =="hospitality"]<- "tourism"
+le_jobs_sector_year<- le_jobs_sector_year %>% dplyr::group_by(year, rgn_id, sector)%>%
+  summarize(value = sum(value, na.rm=T))%>%
+  ungroup()
+##write.csv(gdp_adjusted, "le_gdp_arc2016.csv")
 ##write.csv(le_jobs_sector_year, "le_jobs_sector_year.csv")
 
 
@@ -1031,7 +1036,12 @@ greenland_adjusted<- select(greenland_adjusted, sector, year, rgn_id, value2)%>%
 gdp_adjusted= rbind(canada_adjusted, norway_adjusted, greenland_adjusted, russia_adjusted)
 Alaska_gdp<-Alaska_gdp[c(1,2,4,3)]
 gdp_adjusted<- rbind(gdp_adjusted, Alaska_gdp)
-
+##Change hospitality to tourism and sum them up per year/rgn
+gdp_adjusted$sector[gdp_adjusted$sector =="hospitality"]<- "tourism"
+gdp_adjusted<- gdp_adjusted %>% dplyr::group_by(year, rgn_id, sector)%>%
+  summarize(value = sum(value, na.rm=T))%>%
+  ungroup()
+##write.csv(gdp_adjusted, "le_gdp_arc2016.csv")
 
 # World Bank Adjusted - Wages ---------------------------------------------
 
