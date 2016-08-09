@@ -962,7 +962,7 @@ le_jobs_sector_year16<- le_jobs_sector_year16 %>% dplyr::group_by(year, rgn_id, 
   summarize(value = sum(value, na.rm=T))%>%
   ungroup()
 ##write.csv(gdp_adjusted, "le_gdp_arc2016.csv")
-##write.csv(le_jobs_sector_year, "le_jobs_sector_year_arc2016.csv")
+write.csv(le_jobs_sector_year16, "le_jobs_sector_year_arc2016.csv")
 
 
 # World Bank Adjusted GDP -------------------------------------------------
