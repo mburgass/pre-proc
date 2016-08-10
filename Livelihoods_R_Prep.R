@@ -159,7 +159,7 @@ norway_wages3[norway_wages3=="R Arts, entertainment and recreation"]<-"tourism"
 ##write.csv(norway_wages3, "le_wages_sector_year_arc2016.csv")
 
 ##Multiplied values in excel by 12 to give annual values in NOK - need to convert to USD.
-## Food sector wages missing so added them in excel same as "tourism" above
+## Food sector wages missing so add them in excell as "hospitality"
 
 # Norway GRP --------------------------------------------------------------
 
@@ -1118,14 +1118,17 @@ alaska_wages<-alaska_wages[c(1,3,2,4)]
 
 ## Join together
 le_wages_sector_year= rbind(russia_wages_adj, norway_wages_adj, greenland_wages_adj, alaska_wages, canada_wages_adj)
+le_wages_sector_year<- rename(usd=value)
 ##write.csv(le_wages_sector_year, "le_wages_sector_year_arc2016.csv")
 le_jobs= read.csv("Livelihoods/Employment_Figures/Final CSV/old/le_jobs_sector_year_arc2016.csv")
 le_jobs$rgn_id<- as.character(le_jobs$rgn_id)
 le_jobs<- le_jobs %>% dplyr::group_by(year, rgn_id, sector)%>%
   summarize(value = sum(value, na.rm=T))%>%
   ungroup()
-le_wages_sector_year<- left_join(le_wages_sector_year, le_jobs, by= c('rgn_id', 'sector', 'year'))
+le_wages_sector_year<- left_join(le_wages_sector_year, le_jobs, by=c('sector', 'year', 'rgn_id'))
 le_wages_sector_year<- na.omit(le_wages_sector_year)
+
+
 
 ## Work out weighted mean of wage for hospitality and tourism
 tourism_wages= filter(le_wages_sector_year, sector %in% c("hospitality", "tourism"))
@@ -1137,6 +1140,8 @@ le_wages_sector_year_update= le_wages_sector_year %>% select(-value.y) %>%
   filter(!(sector %in% c("hospitality", "tourism")))%>%
   rename(value=value.x)
 le_wages_sector_year_update<- full_join(le_wages_sector_year_update, tourism_wages)
-##write.csv(le_wages_sector_year_update, "le_wages_sector_year_arc2016.csv")
+le_wages_sector_year_update<- rename(le_wages_sector_year_update, usd = value)
+  
+write.csv(le_wages_sector_year_update, "le_wages_sector_year_arc2016.csv")
 
-##Tourism wages far too high as have just summed together. Done weighted averages and updated file.
+##Add NA region 7 to file
