@@ -1048,7 +1048,7 @@ gdp_adjusted<- gdp_adjusted %>% dplyr::group_by(year, rgn_id, sector)%>%
 ##write.csv(gdp_adjusted, "le_gdp_arc2016.csv")
 
 # World Bank Adjusted - Wages ---------------------------------------------
-
+## Read in PPP factor above
 #Canada Wages - 2001-2015
 canada_ppp2<- filter(ppp_factor, country == "Canada")
 canada_ppp2<- filter(canada_ppp2, year %in% c(2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015))
@@ -1080,7 +1080,7 @@ norway_wages_adj<-norway_wages_adj[c(3,1,2,4)]
 russia_wages= read.csv("Livelihoods/Employment_Figures/wages/russia_wages.csv") ##russia = 2010-2014
 
 russia_ppp2<- filter(ppp_factor, country == "Russian Federation")
-russia_ppp2<- filter(russia_ppp, year %in% c(2010, 2011, 2012, 2013, 2014))
+russia_ppp2<- filter(russia_ppp2, year %in% c(2010, 2011, 2012, 2013, 2014))
 russia_wages$rgn_id<- as.character(russia_wages$rgn_id)
 russia_wages$sector<- as.character(russia_wages$sector) ##tidy up data frame.
 russia_wages_adj= full_join(russia_wages, russia_ppp2, by="year")
@@ -1091,9 +1091,8 @@ russia_wages_adj<- select(russia_wages_adj, sector, year, rgn_id, value2)%>%
 
 ## Greenland Wages 2008-2014
 
-greenland_wages= read.csv("Livelihoods/Employment_Figures/wages/greenland_wages.csv") ##greenland = 2008-2014 %>%
-  greenland_wages %>%
-    filter(greenland_wages, year != 2014) #taking out 2014 as no exchange rate for it
+greenland_wages= read.csv("Livelihoods/Employment_Figures/wages/greenland_wages.csv") ##greenland = 2008-2014
+greenland_wages<- filter(greenland_wages, !(year == 2014)) #taking out 2014 as no exchange rate for it
 greenland_gdp= read.csv("Livelihoods/Economies/csv/Greenland_gdp.csv") ##greenland = 2003-2013
 xchange_rate=read_excel("Livelihoods/World_Bank/Exchange_rate.xls") ##Read in exchange rate for Greenland as PPP data not available
 xchange_rate<- filter(xchange_rate, `Country Name` %in% c("Greenland")) %>%
@@ -1120,13 +1119,24 @@ alaska_wages<-alaska_wages[c(1,3,2,4)]
 ## Join together
 le_wages_sector_year= rbind(russia_wages_adj, norway_wages_adj, greenland_wages_adj, alaska_wages, canada_wages_adj)
 ##write.csv(le_wages_sector_year, "le_wages_sector_year_arc2016.csv")
-le_wages_sector_year16= read.csv("Livelihoods/Employment_Figures/Final CSV/le_wages_sector_year_arc2016.csv")
-le_jobs= read.csv("Livelihoods/Employment_Figures/Final CSV/le_jobs_sector_year_arc2016.csv")
-le_wages_sector_year16 %>%
-  left_join(le_jobs, by= c('rgn_id', 'sector', 'year'))
-le_wages_sector_year16<- le_wages_sector_year16 %>% dplyr::group_by(year, rgn_id, sector)%>%
+le_jobs= read.csv("Livelihoods/Employment_Figures/Final CSV/old/le_jobs_sector_year_arc2016.csv")
+le_jobs$rgn_id<- as.character(le_jobs$rgn_id)
+le_jobs<- le_jobs %>% dplyr::group_by(year, rgn_id, sector)%>%
   summarize(value = sum(value, na.rm=T))%>%
-              ungroup() ##Changed hospitality to tourism in excel. Here added these together where tourism fell twice for same region in a year
-##write.csv(le_wages_sector_year16, "le_wages_sector_year_arc2016.csv")
+  ungroup()
+le_wages_sector_year<- left_join(le_wages_sector_year, le_jobs, by= c('rgn_id', 'sector', 'year'))
+le_wages_sector_year<- na.omit(le_wages_sector_year)
 
-##Tourism wages far too high as have just summed together. Need to do a weighted average.
+## Work out weighted mean of wage for hospitality and tourism
+tourism_wages= filter(le_wages_sector_year, sector %in% c("hospitality", "tourism"))
+tourism_wages<- tourism_wages%>% group_by(rgn_id, year)%>%
+  summarize(value=weighted.mean(value.x, value.y))
+#Add in column for tourism
+tourism_wages$sector<- "tourism"
+le_wages_sector_year_update= le_wages_sector_year %>% select(-value.y) %>%
+  filter(!(sector %in% c("hospitality", "tourism")))%>%
+  rename(value=value.x)
+le_wages_sector_year_update<- full_join(le_wages_sector_year_update, tourism_wages)
+##write.csv(le_wages_sector_year_update, "le_wages_sector_year_arc2016.csv")
+
+##Tourism wages far too high as have just summed together. Done weighted averages and updated file.
