@@ -1162,4 +1162,4 @@ le_gdp_cpi<- le_gdp_cpi %>% left_join(le_cpi, by="year") %>%
   mutate(value=usd/cpi)%>%
   select(-usd, -cpi)%>%
   rename(usd=value)
-write.csv(le_wages_cpi, "le_gdp_arc2016.csv")
+write.csv(le_gdp_cpi, "le_gdp_arc2016.csv")
