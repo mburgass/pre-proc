@@ -1145,3 +1145,12 @@ le_wages_sector_year_update<- rename(le_wages_sector_year_update, usd = value)
 write.csv(le_wages_sector_year_update, "le_wages_sector_year_arc2016.csv")
 
 ##Add NA region 7 to file
+
+
+# Add CPI -----------------------------------------------------------------
+
+le_wages_cpi= read.csv("Livelihoods/Employment_Figures/Final CSV/le_wages_sector_year_arc2016.csv")
+le_cpi=read.csv("Livelihoods/World_Bank/cpi_2000_2015.csv")
+le_wages_cpi<- le_wages_cpi %>% left_join(le_cpi, by="year") %>%
+  mutate(value=usd/cpi) %>%
+  filter(-usd)
