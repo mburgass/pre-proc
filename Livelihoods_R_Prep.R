@@ -9,9 +9,10 @@ Troms_Food = Troms_Employment2 %>% filter(Job.Type == "10 Food products")
 Troms_Food$Job.Type<-"food"
 Troms_Water = Troms_Employment2 %>% filter(Job.Type == "50 Water transport")
 Troms_Water$Job.Type<- "transport"
-Troms_Travel = Troms_Employment2 %>% filter(Job.Type == "79 Travel agency, tour operators")
+Troms_Travel<- filter(Troms_Employment2, Job.Type %in% c("79 Travel agency, tour operators", "55 Accommodation", "56 Food and beverage service activities", "91 Libraries, museums, other culture", "93 Sports, amusement, recreation"))
 Troms_Travel$Job.Type<- "tourism"
 
+##Added 55, 56, 91, 93 at end to be in line with other countries' definition of tourism jobs. updating manually in excel to save running everything
 ## Ocean based employment considering food products likely to be seafood related, travel tourism likely be ocean related
 # Join together
 
@@ -22,10 +23,11 @@ Troms_Group2 = gather(Troms_Group, "Year", "value", 3:8)
 
 Troms_Jobs = Troms_Group2 %>% separate(Year,c("X","Year"),remove=T,sep="X")%>%  #(1) First strip away the X from the years (this creates a new column called "X" that is empty)
   select(Region,Year,sector, value)%>%
-  group_by(Year)%>%
+  group_by(Year, sector)%>%
+  dplyr::summarize(value = sum(value, na.rm=T))%>%
   ungroup()
-troms_jobs_final=Troms_Jobs[c(1,3,2,4)]
-troms_jobs_final
+troms_jobs_final=Troms_Jobs
+troms_jobs_final$Region<-"Troms"
 
 # Nordland Jobs -----------------------------------------------------------
 
@@ -37,7 +39,7 @@ Nord_Food = Nord_Employment2 %>% filter(Job.Type == "10 Food products")
 Nord_Food$Job.Type<-"food"
 Nord_Water = Nord_Employment2 %>% filter(Job.Type == "50 Water transport")
 Nord_Water$Job.Type<- "transport"
-Nord_Travel = Nord_Employment2 %>% filter(Job.Type == "79 Travel agency, tour operators")
+Nord_Travel<- filter(Nord_Employment2, Job.Type %in% c("79 Travel agency, tour operators", "55 Accommodation", "56 Food and beverage service activities", "91 Libraries, museums, other culture", "93 Sports, amusement, recreation"))
 Nord_Travel$Job.Type<- "tourism"
 ## Ocean based employment considering food products likely to be seafood related, travel tourism likely be ocean related
 
@@ -48,9 +50,10 @@ Nord_Group2 = gather(Nord_Group, "Year", "value", 3:8)
 
 Nord_Jobs = Nord_Group2 %>% separate(Year,c("X","Year"),remove=T,sep="X")%>%  #(1) First strip away the X from the years (this creates a new column called "X" that is empty)
   select(Region,Year,sector, value)%>%
-  group_by(Year)%>%
+  group_by(Year, sector)%>%
+  dplyr::summarize(value = sum(value, na.rm=T))%>%
   ungroup()
-nord_jobs_final=Nord_Jobs[c(1,3,2,4)]
+nord_jobs_final=Nord_Jobs
 nord_jobs_final$Region<-"Nordland"
 
 # Finnmark Jobs -----------------------------------------------------------
@@ -63,7 +66,7 @@ Finn_Food = Finn_Employment2 %>% filter(Job.Type == "10 Food products")
 Finn_Food$Job.Type<-"food"
 Finn_Water = Finn_Employment2 %>% filter(Job.Type == "50 Water transport")
 Finn_Water$Job.Type<- "transport"
-Finn_Travel = Finn_Employment2 %>% filter(Job.Type == "79 Travel agency, tour operators")
+Finn_Travel<- filter(Finn_Employment2, Job.Type %in% c("79 Travel agency, tour operators", "55 Accommodation", "56 Food and beverage service activities", "91 Libraries, museums, other culture", "93 Sports, amusement, recreation"))
 Finn_Travel$Job.Type<- "tourism"
 
 ## Ocean based employment considering food products likely to be seafood related, travel tourism likely be ocean related
@@ -75,9 +78,10 @@ Finn_Group2 = gather(Finn_Group, "Year", "value", 3:8)
 
 Finn_Jobs = Finn_Group2 %>% separate(Year,c("X","Year"),remove=T,sep="X")%>%  #(1) First strip away the X from the years (this creates a new column called "X" that is empty)
   select(Region,Year,sector, value)%>%
-  group_by(Year)%>%
+  group_by(Year, sector)%>%
+  dplyr::summarize(value = sum(value, na.rm=T))%>%
   ungroup()
-Finn_jobs_final=Finn_Jobs[c(1,3,2,4)]
+Finn_jobs_final=Finn_Jobs
 Finn_jobs_final$Region<-"Finnmark"
 
 # Norway Mainland Jobs ----------------------------------------------------
