@@ -90,3 +90,9 @@ write.csv(natural_resources_canada, "natural_resources_canada.csv")
 write.csv(natural_resources_usa, "natural_resources_usa.csv")
 write.csv(natural_resources_greenland, "natural_resources_greenland.csv")
 write.csv(natural_resources_russia, "natural_resources_russia.csv")
+
+## In excel have decided to filter out only seals, narhwal and walrus for pelts and ivory. Narwhal not present in Alaska, Beaufort or mainland Norway
+##Extremely limited Seal catch in Svalbard - between 20-100 total each year, issue by individual quota.
+## Canadian commercial seal hunt does not operate in Nunavut/Beaufort (Newf/St John only). Trying to find catches
+##Alaska no commercial landings - trying to find subsistence data. No quota for seals or walrus. 
+## Lacking quotas for all areas....
